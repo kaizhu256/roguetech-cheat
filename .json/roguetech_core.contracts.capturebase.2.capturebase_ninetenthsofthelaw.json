@@ -613,7 +613,7 @@
     }
    ],
    "description": "",
-   "isPrimary": false,
+   "isPrimary": true,
    "objective": {
     "EncounterObjectGuid": "c02cca7e-6e2c-4a3d-beb0-f9af713a466f"
    },

@@ -4,6 +4,14 @@
   "items": [],
   "tagSetSourceFile": ""
  },
+ "Custom": {
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Gunsmith"
+  },
+  "ChassisDefaults": []
+ },
  "DFADamage": 25,
  "DFAInstability": 13,
  "DFASelfDamage": 25,

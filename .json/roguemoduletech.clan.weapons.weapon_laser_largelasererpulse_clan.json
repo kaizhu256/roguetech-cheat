@@ -11,7 +11,7 @@
  "BonusValueA": "15 Var.Dmg.",
  "BonusValueB": "Pulse Accuracy",
  "Category": "Energy",
- "ClusteringModifier": 5,
+ "ClusteringModifier": 10,
  "ComponentSubType": "Weapon",
  "ComponentTags": {
   "items": [

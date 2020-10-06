@@ -28,8 +28,7 @@
    "Bonuses": [
     "DmgFallOff: 75%",
     "WpnRecoil: 4",
-    "IsGauss",
-    "IsArtillery"
+    "IsGauss"
    ]
   },
   "Category": [

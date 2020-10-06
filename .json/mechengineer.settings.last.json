@@ -163,10 +163,73 @@
       }
      ]
     }
+   },
+   {
+    "Tags": [
+     "QuadMech"
+    ],
+    "Template": {
+     "Names": [
+      {
+       "location": "LeftArm",
+       "text": "Front Left Leg"
+      },
+      {
+       "location": "RightArm",
+       "text": "Front Right Leg"
+      },
+      {
+       "location": "LeftLeg",
+       "text": "Hind Left Leg"
+      },
+      {
+       "location": "RightLeg",
+       "text": "Hind Right Leg"
+      }
+     ]
+    }
    }
   ],
   "MechLocationNamingTemplatesDescription": "If any of the listed tags are found, and the chassis has no ChassisLocationNaming component, add the associated ChassisLocationNaming component",
-  "MechTagsAutoFixEnabled": []
+  "MechTagsAutoFixEnabled": [],
+  "SensorsACategorizer": {
+   "AllowedLocations": "Head",
+   "AutoAddCategoryIdIfMissing": true,
+   "CategoryId": "SensorsA",
+   "ComponentType": "Upgrade",
+   "Prefix": "Gear_Cockpit_"
+  },
+  "SensorsBCategorizer": {
+   "AllowedLocations": "All",
+   "AutoAddCategoryIdIfMissing": true,
+   "CategoryId": "SensorsB",
+   "ComponentType": "Upgrade",
+   "Prefix": "Gear_TargetingTrackingSystem_"
+  },
+  "SensorsBSlotChange": {
+   "By": -1,
+   "From": 2,
+   "FromIsMin": false,
+   "NewMin": null
+  }
+ },
+ "BetterLog": {
+  "Enabled": true,
+  "Formatter": {
+   "AbsoluteTimeFormat": "yyyy-MM-dd HH:mm:ss.fff",
+   "ExceptionFormat": " Exception: {0}",
+   "IndentNewLines": true,
+   "LocationFormat": " [{0}.{1}]",
+   "LogLevelFormat": "{0,-5}",
+   "LogLineFormat": "{0} [{1}] {2} {3}{4}",
+   "MessageFormat": "{0}",
+   "NameFormat": "{0,5}",
+   "NormalizeNewLines": true,
+   "StartupTimeFormat": "{1:D2}:{2:D2}.{3:D3}",
+   "UseAbsoluteTime": false
+  },
+  "Level": "Log",
+  "LevelDescription": "The log level that will be logged, debug will tax the performance at some places and fill the logfile considerably."
  },
  "ComponentExplosions": {
   "Enabled": true,
@@ -182,6 +245,14 @@
   "CritFloatieMessage": "{0} CRIT",
   "CritHitText": "HIT {0}: {1}",
   "CritLinkedText": "Critical hits are linked to '{0}'",
+  "DefaultMaxCritsComponentTypes": [
+   "Weapon",
+   "JumpJet",
+   "Upgrade"
+  ],
+  "DefaultMaxCritsComponentTypesDescription": "For which types the default max crits are applied.",
+  "DefaultMaxCritsPerSlots": 0.5,
+  "DefaultMaxCritsPerSlotsDescription": "How many critical hits a component by default can take for each occupied slot. For CBT use 0, for Expanded Critical Damage behavior use 0.5. Custom CriticalEffects overwrite this behavior.",
   "DescriptionIdentifier": "Criticals",
   "DescriptionTemplate": "Critical Effects:<b><color=#F79B26FF>\r\n{{elements}}</color></b>\r\n",
   "DescriptionUseName": false,
@@ -231,6 +302,10 @@
   "ReservedSlotText": "Reserved slot"
  },
  "Engine": {
+  "AdditionalRunSpeed": 0,
+  "AdditionalRunSpeedDescription": "Additional max run distance regardless of any installed engine.",
+  "AdditionalWalkSpeed": 0,
+  "AdditionalWalkSpeedDescription": "Additional max walk distance regardless of any installed engine.",
   "AllowMixingHeatSinkTypes": false,
   "AllowMixingHeatSinkTypesDescription": "Allow heat sinks patchwork.",
   "AllowMountingAllRatings": false,
@@ -956,10 +1031,6 @@
   "Enabled": true,
   "EnabledDescription": "Make sure invalid mech configurations can't be saved in skirmish and can't be fielded in the campaign."
  },
- "LocationalEffects": {
-  "Enabled": true,
-  "EnabledDescription": "Allows other features to support locational statistic effects."
- },
  "MechLabSlots": {
   "Enabled": true,
   "EnabledDescription": "Makes the mech lab adhere to any custom mech slot counts.",
@@ -975,9 +1046,55 @@
   "EnabledDescription": "Introduces a new statistic effect to allow easy manipulation of (mech only) movement."
  },
  "OrderedStatusEffects": {
-  "Enabled": false,
+  "Enabled": true,
   "EnabledDescription": "Orders status effects, so e.g. install order of mechComponents does not matter for additive and multiplicative effects. Affects all statistic data.",
-  "FilterStatistics": null,
+  "FilterStatistics": [
+   "HeatSinkCapacity",
+   "CBTBE_Charge_Attack_Mod",
+   "CBTBE_Charge_Attacker_Damage_Mod",
+   "CBTBE_Charge_Attacker_Damage_Multi",
+   "CBTBE_Charge_Attacker_Instability_Mod",
+   "CBTBE_Charge_Attacker_Instability_Multi",
+   "CBTBE_Charge_Target_Damage_Mod",
+   "CBTBE_Charge_Target_Damage_Multi",
+   "CBTBE_Charge_Target_Instability_Mod",
+   "CBTBE_Charge_Target_Instability_Multi",
+   "CBTBE_DFA_Attack_Mod",
+   "CBTBE_DFA_Attacker_Damage_Mod",
+   "CBTBE_DFA_Attacker_Damage_Multi",
+   "CBTBE_DFA_Attacker_Instability_Mod",
+   "CBTBE_DFA_Attacker_Instability_Multi",
+   "CBTBE_DFA_Target_Damage_Mod",
+   "CBTBE_DFA_Target_Damage_Multi",
+   "CBTBE_DFA_Target_Instability_Mod",
+   "CBTBE_DFA_Target_Instability_Multi",
+   "CBTBE_Kick_Attack_Mod",
+   "CBTBE_Kick_Extra_Hits_Count",
+   "CBTBE_Kick_Target_Damage_Mod",
+   "CBTBE_Kick_Target_Damage_Multi",
+   "CBTBE_Kick_Target_Instability_Mod",
+   "CBTBE_Kick_Target_Instability_Multi",
+   "CBTBE_Punch_Attack_Mod",
+   "CBTBE_Punch_Extra_Hits_Count",
+   "CBTBE_Punch_Target_Damage_Per_Attacker_Ton",
+   "CBTBE_Punch_Target_Damage_Mod",
+   "CBTBE_Punch_Target_Damage_Multi",
+   "CBTBE_Punch_Target_Instability_Mod",
+   "CBTBE_Punch_Target_Instability_Multi",
+   "CBTBE_Punch_Is_Physical_Weapon",
+   "CBTBE_Physical_Weapon_Location_Table",
+   "CBTBE_Physical_Weapon_Attack_Mod",
+   "CBTBE_Physical_Weapon_Extra_Hits_Count",
+   "CBTBE_Physical_Weapon_Unsteady_Attacker_On_Hit",
+   "CBTBE_Physical_Weapon_Unsteady_Attacker_On_Miss",
+   "CBTBE_Physical_Weapon_Unsteady_Target_On_Hit",
+   "CBTBE_Physical_Weapon_Target_Damage_Per_Attacker_Ton",
+   "CBTBE_Physical_Weapon_Target_Damage_Mod",
+   "CBTBE_Physical_Weapon_Target_Damage_Multi",
+   "CBTBE_Physical_Weapon_Target_Instability_Per_Attacker_Ton",
+   "CBTBE_Physical_Weapon_Target_Instability_Mod",
+   "CBTBE_Physical_Weapon_Target_Instability_Multi"
+  ],
   "FilterStatisticsDescription": "If set, only statistics listed by name will be reordered.",
   "Order": [
    "Int_Add",
@@ -998,10 +1115,7 @@
    "Float_Divide_Denom_Int"
   ],
   "OrderDescription": "The order in which operations are sorted. Operations not part of the list are deemed unsortable and only sortable operations after such a unsortable operations are sorted. For Example: '* + SET / * +' =sort=> '* + SET + * /'.",
-  "OtherStatisticsRequired": [
-   "BaseInitiative",
-   "DamageLevel"
-  ],
+  "OtherStatisticsRequired": null,
   "OtherStatisticsRequiredDescription": "One of the listed statistics is required to be in the same statCollection, otherwise no reordering occurs."
  },
  "OverrideDescriptions": {
@@ -1046,6 +1160,18 @@
   "TonnageStandardPrecisionDescription": "Set to 0.001 for kg fractional accounting on BattleMechs, only modifies half-ton rounding operations as by rule",
   "UnderweightWarningThreshold": 0.1,
   "UnderweightWarningThresholdDescription": "How many tons a mech has to be underweight to show a warning"
+ },
+ "Performance": {
+  "Enabled": false,
+  "EnabledDescription": "Some performance patches to the vanilla game. Could interfere with other performance patches from other mods."
+ },
+ "PlaceholderEffects": {
+  "ComponentEffectStatisticDescription": "Components starting with ComponentEffects-{uid}- will apply statistic effects to the components StatCollection instead of the mech. Really useful only for weapons.",
+  "ComponentEffectStatisticPlaceholder": "{uid}",
+  "ComponentEffectStatisticPrefix": "ComponentEffects",
+  "ComponentEffectStatisticSeparator": "-",
+  "Enabled": true,
+  "EnabledDescription": "Allows other features to support placeholder statistic effects."
  },
  "ShutdownInjuryProtection": {
   "Enabled": true,

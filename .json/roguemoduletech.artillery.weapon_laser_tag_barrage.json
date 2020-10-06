@@ -27,18 +27,18 @@
  "Custom": {
   "BonusDescriptions": {
    "Bonuses": [
-    "AreaOfEffect: 60",
-    "AreaOfEffectDmg: 60",
-    "AreaOfEffectSTABDmg: 30",
-    "AreaOfEffectHeatDmg: 20",
-    "AlwaysStartsFireAnywhere",
-    "FireTerrainSize: 24",
-    "FireTerrainDuration: 2",
-    "FireTerrainStrength: 6",
-    "DesignMask: RoughTerrain",
-    "NoAA",
+    "DelayedImpact: 2",
     "WpnCooldown: 3",
-    "DelayedImpact: 2"
+    "AreaOfEffect: 105",
+    "AreaOfEffectDmg: 80",
+    "AreaOfEffectSTABDmg: 40",
+    "AreaOfEffectHeatDmg: 40",
+    "AlwaysStartsFireAnywhere",
+    "FireTerrainSize: 50",
+    "FireTerrainDuration: 2",
+    "FireTerrainStrength: 15",
+    "DesignMask: RoughTerrain",
+    "NoAA"
    ]
   },
   "Category": [
@@ -61,7 +61,7 @@
  "Damage": 1,
  "DamageVariance": 0,
  "Description": {
-  "Cost": 1210000,
+  "Cost": 1410000,
   "Details": "This TAG was rewired to call on supporting Fire from nearby Artillery to Shell the target with a selection of munitions",
   "Icon": "LightTAG",
   "Id": "Weapon_Laser_TAG_Barrage",
@@ -99,14 +99,14 @@
  "WeaponEffectID": "WeaponEffect-Weapon_TAG",
  "WeaponSubType": "SmallLaserER",
  "deferredEffect": {
-  "AOEDamage": 60,
-  "AOEHeatDamage": 20,
-  "AOEInstability": 30,
-  "AOERange": 60,
+  "AOEDamage": 80,
+  "AOEHeatDamage": 40,
+  "AOEInstability": 40,
+  "AOERange": 105,
   "FireDurationWithoutForest": 2,
-  "FireTerrainCellRadius": 6,
-  "FireTerrainChance": 1,
-  "FireTerrainStrength": 6,
+  "FireTerrainCellRadius": 12,
+  "FireTerrainChance": 0.9,
+  "FireTerrainStrength": 15,
   "RangeColor": {
    "C": "#00FF00",
    "I": 1.5

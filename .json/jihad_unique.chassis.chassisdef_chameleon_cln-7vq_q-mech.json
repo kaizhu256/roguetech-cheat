@@ -43,7 +43,7 @@
    "prefabName": ""
   }
  ],
- "HardpointDataDefID": "hardpointdatadef_battlemaster",
+ "HardpointDataDefID": "hardpointdatadef_chameleon",
  "Heatsinks": 0,
  "InitialTonnage": 5,
  "LOSSourcePositions": [
@@ -217,8 +217,8 @@
  "MeleeToHitModifier": 0,
  "MovementCapDefID": "movedef_mediummech",
  "PathingCapDefID": "pathingdef_assault",
- "PrefabBase": "battlemaster",
- "PrefabIdentifier": "chrPrfMech_battlemasterBase-001",
+ "PrefabBase": "chameleon",
+ "PrefabIdentifier": "chrprfmech_chameleonbase-001",
  "PunchesWithLeftArm": true,
  "Radius": 8,
  "SensorRangeMultiplier": 1,

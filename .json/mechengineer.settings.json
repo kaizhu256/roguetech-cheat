@@ -164,6 +164,31 @@
       }
      ]
     }
+   },
+   {
+    "Tags": [
+     "QuadMech"
+    ],
+    "Template": {
+     "Names": [
+      {
+       "location": "LeftArm",
+       "text": "Front Left Leg"
+      },
+      {
+       "location": "RightArm",
+       "text": "Front Right Leg"
+      },
+      {
+       "location": "LeftLeg",
+       "text": "Hind Left Leg"
+      },
+      {
+       "location": "RightLeg",
+       "text": "Hind Right Leg"
+      }
+     ]
+    }
    }
   ],
   "MechTagsAutoFixEnabled": [],
@@ -224,11 +249,22 @@
    "emod_leg_hip",
    "emod_leg_upper",
    "emod_leg_lower",
-   "emod_leg_foot"
+   "emod_leg_foot",
+   "Quad_Front_leg_hip",
+   "Quad_Front_leg_upper",
+   "Quad_Front_leg_lower",
+   "Quad_Front_leg_foot",
+   "Quad_Hind_leg_hip",
+   "Quad_Hind_leg_upper",
+   "Quad_Hind_leg_lower",
+   "Quad_Hind_leg_foot"
   ]
  },
  "BattleTechLoadFix": {
   "Enabled": true
+ },
+ "BetterLog": {
+  "Level": "Log"
  },
  "ComponentExplosions": {
   "Enabled": true,
@@ -245,6 +281,14 @@
   "CritFloatieMessage": "{0} CRIT",
   "CritHitText": "HIT {0}: {1}",
   "CritLinkedText": "Critical hits are linked to '{0}'",
+  "DefaultMaxCritsComponentTypes": [
+   "Weapon",
+   "JumpJet",
+   "Upgrade"
+  ],
+  "DefaultMaxCritsComponentTypesDescription": "For which types the default max crits are applied to.",
+  "DefaultMaxCritsPerSlots": 0.5,
+  "DefaultMaxCritsPerSlotsDescription": "How many critical hits a component by default can take for each occupied slot. For CBT use 0, for Expanded Critical Damage behavior use 0.5. Custom CriticalEffects overwrite this behavior.",
   "DescriptionIdentifier": "Criticals",
   "DescriptionTemplate": "Critical Effects:<b><color=#F79B26FF>\r\n{{elements}}</color></b>\r\n",
   "DescriptionUseName": false,
@@ -287,12 +331,18 @@
   "ReservedSlotText": "Reserved slot"
  },
  "Engine": {
+  "AdditionalRunSpeed": 0,
+  "AdditionalRunSpeedDescription": "Additional max run distance regardless of any installed engine.",
+  "AdditionalWalkSpeed": 0,
+  "AdditionalWalkSpeedDescription": "Additional max walk distance regardless of any installed engine.",
   "AllowMixingHeatSinkTypes": false,
   "AllowMixingHeatSinkTypesDescription": "Allow heat sinks patchwork.",
   "AllowMountingAllRatings": false,
   "AllowMountingAllRatingsDescription": "Allow mounting all fusion core rating regardless of min/max sprint factors.",
   "AutoConvertJumpCapacityInDefToStat": true,
   "AutoConvertJumpCapacityInDefToStatDescription": "All JumpCapacity values in JumpJetDefs will be auto-converted to the JumpCapacity statistic.",
+  "CBTWalkAndRunMPRounding": false,
+  "CBTWalkAndRunMPRoundingDescription": "If true, walking MPs are rounded down and running MPs are rounded up.",
   "DefaultEngineHeatSinkId": "Gear_HeatSink_Generic_Standard",
   "DefaultEngineHeatSinkIdDescription": "Default heat sink type for engines without a kit.",
   "Enabled": true,
@@ -1026,8 +1076,58 @@
   "Path": "RogueTechSaves"
  },
  "OrderedStatusEffects": {
-  "Enabled": false,
+  "Enabled": true,
   "EnabledDescription": "Orders status effects, so e.g. install order of mechComponents does not matter for additive and multiplicative effects. Affects all statistic data.",
+  "FilterStatistics": [
+   "HeatSinkCapacity",
+   "CBTBE_Charge_Attack_Mod",
+   "CBTBE_Charge_Attacker_Damage_Mod",
+   "CBTBE_Charge_Attacker_Damage_Multi",
+   "CBTBE_Charge_Attacker_Instability_Mod",
+   "CBTBE_Charge_Attacker_Instability_Multi",
+   "CBTBE_Charge_Target_Damage_Mod",
+   "CBTBE_Charge_Target_Damage_Multi",
+   "CBTBE_Charge_Target_Instability_Mod",
+   "CBTBE_Charge_Target_Instability_Multi",
+   "CBTBE_DFA_Attack_Mod",
+   "CBTBE_DFA_Attacker_Damage_Mod",
+   "CBTBE_DFA_Attacker_Damage_Multi",
+   "CBTBE_DFA_Attacker_Instability_Mod",
+   "CBTBE_DFA_Attacker_Instability_Multi",
+   "CBTBE_DFA_Target_Damage_Mod",
+   "CBTBE_DFA_Target_Damage_Multi",
+   "CBTBE_DFA_Target_Instability_Mod",
+   "CBTBE_DFA_Target_Instability_Multi",
+   "CBTBE_Kick_Attack_Mod",
+   "CBTBE_Kick_Extra_Hits_Count",
+   "CBTBE_Kick_Target_Damage_Mod",
+   "CBTBE_Kick_Target_Damage_Multi",
+   "CBTBE_Kick_Target_Instability_Mod",
+   "CBTBE_Kick_Target_Instability_Multi",
+   "CBTBE_Punch_Attack_Mod",
+   "CBTBE_Punch_Extra_Hits_Count",
+   "CBTBE_Punch_Target_Damage_Per_Attacker_Ton",
+   "CBTBE_Punch_Target_Instability_Per_Attacker_Ton",
+   "CBTBE_Punch_Target_Damage_Mod",
+   "CBTBE_Punch_Target_Damage_Multi",
+   "CBTBE_Punch_Target_Instability_Mod",
+   "CBTBE_Punch_Target_Instability_Multi",
+   "CBTBE_Punch_Is_Physical_Weapon",
+   "CBTBE_Physical_Weapon_Location_Table",
+   "CBTBE_Physical_Weapon_Attack_Mod",
+   "CBTBE_Physical_Weapon_Extra_Hits_Count",
+   "CBTBE_Physical_Weapon_Unsteady_Attacker_On_Hit",
+   "CBTBE_Physical_Weapon_Unsteady_Attacker_On_Miss",
+   "CBTBE_Physical_Weapon_Unsteady_Target_On_Hit",
+   "CBTBE_Physical_Weapon_Target_Damage_Per_Attacker_Ton",
+   "CBTBE_Physical_Weapon_Target_Damage_Mod",
+   "CBTBE_Physical_Weapon_Target_Damage_Multi",
+   "CBTBE_Physical_Weapon_Target_Instability_Per_Attacker_Ton",
+   "CBTBE_Physical_Weapon_Target_Instability_Mod",
+   "CBTBE_Physical_Weapon_Target_Instability_Multi",
+   "CBTBE_Punch_Target_Instability_Per_Attacker_Ton"
+  ],
+  "FilterStatisticsDescription": "If set, only statistics listed by name will be reordered.",
   "Order": [
    "Int_Add",
    "Float_Add",
@@ -1046,7 +1146,9 @@
    "Float_Divide_Denom",
    "Float_Divide_Denom_Int"
   ],
-  "OrderDescription": "The order in which operations are sorted. Operations not part of the list are deemded unsortable and only sortable operations after such a unsortable operations are sorted. For Example: '* + SET / * +' =sort=> '* + SET + * /'."
+  "OrderDescription": "The order in which operations are sorted. Operations not part of the list are deemed unsortable and only sortable operations after such a unsortable operations are sorted. For Example: '* + SET / * +' =sort=> '* + SET + * /'.",
+  "OtherStatisticsRequired": null,
+  "OtherStatisticsRequiredDescription": "One of the listed statistics is required to be in the same statCollection, otherwise no reordering occurs."
  },
  "OverrideDescriptions": {
   "BonusDescriptionsDescriptionTemplate": "Traits:<b><color=#F79B26FF>\r\n{{elements}}</color></b>\r\n",

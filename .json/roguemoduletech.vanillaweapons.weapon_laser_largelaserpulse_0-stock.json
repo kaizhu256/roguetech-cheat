@@ -11,6 +11,7 @@
  "BonusValueA": "15 Var.Dmg.",
  "BonusValueB": "Pulse Accuracy",
  "Category": "Energy",
+ "ClusteringModifier": 10,
  "ComponentSubType": "Weapon",
  "ComponentTags": {
   "items": [
@@ -29,6 +30,7 @@
    "Bonuses": [
     "Pulse",
     "MultiLaser",
+    "DoesCluster",
     "LosTech"
    ]
   },
@@ -62,6 +64,7 @@
  "FireTerrainChance": 0.0625,
  "HeatDamage": 0,
  "HeatGenerated": 27,
+ "HitGenerator": "Cluster",
  "ImprovedBallistic": true,
  "IndirectFireCapable": false,
  "Instability": 2.6,

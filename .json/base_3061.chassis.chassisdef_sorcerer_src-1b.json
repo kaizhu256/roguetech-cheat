@@ -1,0 +1,334 @@
+{
+ "AlwaysPunchIfPossible": false,
+ "BattleValue": 9360000,
+ "ChassisTags": {
+  "items": [
+   "SLDFMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 95,
+ "DFAInstability": 48,
+ "DFASelfDamage": 95,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 14115560,
+  "Details": "Shortly after the Sorcerer 1A began walking off of the StarCorps Industries production lines on Fletcher, the Sorcerer 1B began production in the satellite facility on Crofton.  The 1B variant trades in the array of PPCs and Lasers for a Blankenburg Technologies ER PPC, a pair of Artemis IV-enhanced Holly LRM15s, and a trio of Defiance P5M Medium Pulse Lasers. The reduced Heat generation of this payload allowed designers to remove the five external Double Heat Sinks and freed up room for CASE in the right torso.",
+  "Icon": "uixTxrIcon_sorcerer",
+  "Id": "chassisdef_sorcerer_SRC-1B",
+  "Manufacturer": "StarCorps Industries",
+  "Model": "",
+  "Name": "Sorcerer",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Sorcerer"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Battle_Fists",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": null,
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_sorcerer",
+ "Heatsinks": 0,
+ "InitialTonnage": 9.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": 1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": 1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 100,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 200,
+   "MaxRearArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 150,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 300,
+   "MaxRearArmor": 150,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 100,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 200,
+   "MaxRearArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 100,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 200,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 100,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 200,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 48,
+ "MeleeInstability": 24,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "sorcerer",
+ "PrefabIdentifier": "chrprfmech_sorcererbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Cavalry",
+ "Tonnage": 95,
+ "TopSpeed": 105,
+ "TurnRadius": 90,
+ "VariantName": "SRC-1B",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "I've heard these Sorcerer 1B's called 'That other Sorcerer' a few times. Despite being produced around the same time as the 1A, the 1B's weapon payload is notably different; primarily that is trades the array of PPCs for an ER PPC and a pair of LRM launchers. If someone tries to under-run your LRMs, this thing's three Medium Pulse Lasers and Battlefists should help correct the issue.",
+ "weightClass": "ASSAULT"
+}

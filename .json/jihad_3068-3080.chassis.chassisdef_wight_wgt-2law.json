@@ -1,7 +1,9 @@
 {
  "BattleValue": 3087000,
  "ChassisTags": {
-  "items": [],
+  "items": [
+   "mr-resize-0.75"
+  ],
   "tagSetSourceFile": ""
  },
  "Custom": {
@@ -44,7 +46,7 @@
    "hasPrefabName": false
   }
  ],
- "HardpointDataDefID": "hardpointdatadef_panther",
+ "HardpointDataDefID": "hardpointdatadef_wight",
  "Heatsinks": 0,
  "InitialTonnage": 3.5,
  "LOSSourcePositions": [
@@ -213,8 +215,8 @@
  "MeleeToHitModifier": 0,
  "MovementCapDefID": "movedef_lightmech",
  "PathingCapDefID": "pathingdef_light",
- "PrefabBase": "panther",
- "PrefabIdentifier": "chrPrfMech_pantherBase-001",
+ "PrefabBase": "wight",
+ "PrefabIdentifier": "chrprfmech_wightbase-001",
  "PunchesWithLeftArm": false,
  "Radius": 4,
  "SensorRangeMultiplier": 1,

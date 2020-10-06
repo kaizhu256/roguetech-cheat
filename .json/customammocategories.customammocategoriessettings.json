@@ -165,13 +165,15 @@
   "pathingdef_medium_wheeled": 0.8,
   "pathingdef_ultralight": 0.1
  },
+ "MinefieldDetectorStatName": "MinefieldDetection",
+ "MinefieldIFFStatName": "MinefieldIFF",
  "NoCritFloatieMessage": true,
  "NoForestBiomes": [
   "DesignMaskBiomeMartianVacuum",
   "DesignMaskBiomeLunarVacuum"
  ],
  "NullifyDestoryedLocationDamage": false,
- "OrderButtonPaddingScale": 0.3,
+ "OrderButtonPaddingScale": 0.5,
  "OrderButtonWidthScale": 0.5,
  "PatchWeaponSlotsOverflowCultures": [
   "CULTURE_RU_RU"
@@ -179,6 +181,7 @@
  "PenetrateAIMult": 0.4,
  "RemoveFromCritRollStatName": "ignore_damage",
  "SelectionStateMoveBaseProcessMousePosTrottle": 4,
+ "ShowApplyHeatSinkMessage": true,
  "ShowAttackGroundButton": true,
  "ShowWeaponOrderButtons": true,
  "SidePanelInfoSelfExternal": false,
@@ -214,6 +217,13 @@
   }
  },
  "TerrainFiendlyFireRadius": 10,
+ "ToHitMechFromFront": 0,
+ "ToHitMechFromRear": -2,
+ "ToHitMechFromSide": -1,
+ "ToHitSelfJumped": 0,
+ "ToHitVehicleFromFront": 0,
+ "ToHitVehicleFromRear": -2,
+ "ToHitVehicleFromSide": -1,
  "TransferHeatDamageToNormalTag": [
   "heat_damage_to_normal"
  ],
@@ -246,7 +256,9 @@
   "DesignMaskBiomePolarFrozen": 0.5,
   "DesignMaskBiomeTundraFrozen": 0.5
  },
- "WeaponPanelWidthScale": 1.1,
+ "WeaponPanelBackWidthScale": 1.45,
+ "WeaponPanelHeightScale": 1,
+ "WeaponPanelWidthScale": 1,
  "WeaponRealizerSettings": "WeaponRealizerSettings.json",
  "WeaponRealizerStandalone": "WeaponRealizer.dll",
  "bloodSettings": {

@@ -15,6 +15,11 @@
    "LeftLimit": "Upper",
    "RightLimit": "Upper"
   },
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Deimos"
+  },
   "ChassisDefaults": [
    {
     "CategoryID": "CockpitSensors",

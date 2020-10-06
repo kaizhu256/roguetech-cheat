@@ -1,0 +1,18 @@
+{
+ "Description": {
+  "Details": "",
+  "Icon": "",
+  "Id": "pathingdef_deploy_director",
+  "Name": "Deploy director PathingCapabilities Definition"
+ },
+ "GradeMultMaxAscending": 99999.9,
+ "GradeMultMaxDescending": 99999.9,
+ "GradeMultiplier": 0,
+ "MaxGrade": 0,
+ "MaxStairSize": 0,
+ "MaxSteepness": 0,
+ "MinGrade": 0,
+ "MoveCostBackward": 1.5,
+ "MoveCostNormal": 1.05,
+ "PathingAngleCost": 0
+}

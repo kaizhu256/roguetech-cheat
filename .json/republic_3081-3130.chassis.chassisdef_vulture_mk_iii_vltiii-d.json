@@ -13,6 +13,11 @@
    "LeftLimit": "Upper",
    "RightLimit": "Upper"
   },
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "VultureMkIII"
+  },
   "ChassisDefaults": [
    {
     "CategoryID": "CockpitFCS",

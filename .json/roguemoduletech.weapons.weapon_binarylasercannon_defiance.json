@@ -71,9 +71,11 @@
  "MinRange": 0,
  "Modes": [
   {
+   "ClusteringModifier": 100,
    "CriticalChanceMultiplier": -0.6,
    "DamagePerShot": -25,
    "HeatGenerated": 10,
+   "HitGenerator": "Cluster",
    "Id": "x2",
    "Instability": -7.5,
    "ProjectilesPerShot": 1,

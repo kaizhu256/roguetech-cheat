@@ -10,6 +10,11 @@
   "ArmActuatorSupport": {
    "RightLimit": "Lower"
   },
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "ClintIIC"
+  },
   "ChassisDefaults": []
  },
  "DFADamage": 40,

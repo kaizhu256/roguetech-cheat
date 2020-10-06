@@ -5,7 +5,7 @@
     "Details": "Reactor was crit, +10% Chance to be Crit, +10% Damage Taken, -1 Defense",
     "Icon": "uixSvgIcon_equipment_ThermalExchanger",
     "Id": "CriticalEffect-TurretBunkerIni1",
-    "Name": "Ractor Crit (1)"
+    "Name": "Reactor Crit (1)"
    },
    "durationData": {
     "duration": -1
@@ -81,7 +81,7 @@
     "Details": "Reactor was crit, +20% Chance to be Crit, +20% Damage Taken, -2 Defense",
     "Icon": "uixSvgIcon_equipment_ThermalExchanger",
     "Id": "CriticalEffect-TurretBunkerIni2",
-    "Name": "Ractor Crit (1)"
+    "Name": "Reactor Crit (2)"
    },
    "durationData": {
     "duration": -1
@@ -157,7 +157,7 @@
     "Details": "Reactor was crit, +10% Chance to be Crit, +10% Damage Taken, -1 Defense",
     "Icon": "uixSvgIcon_equipment_ThermalExchanger",
     "Id": "CriticalEffect-TurretBunkerIni3",
-    "Name": "Ractor Crit (1)"
+    "Name": "Reactor Crit (1)"
    },
    "durationData": {
     "duration": -1

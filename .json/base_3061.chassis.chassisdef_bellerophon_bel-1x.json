@@ -1,0 +1,237 @@
+{
+ "AlwaysPunchIfPossible": false,
+ "BattleValue": 5383000,
+ "ChassisTags": {
+  "items": [
+   "Primitive"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower",
+   "RightLimit": "Upper"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 60,
+ "DFAInstability": 30,
+ "DFASelfDamage": 60,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 1279760,
+  "Details": "Debuting soon after the Mackie, the Bellerophon was Defiance Industries attempt at creating their own Battlemech. Basing the prototype on an earlier generation Mackie prototype, the project would proved to be fundamentally flawed. While 20% faster then the Mackie, the Bellerophon BEL-1X only mounted 60% of the armor carried by the Mackie. Even worse, the Mech suffered from balance issues stemming from the early generation gyroscope and the concentration of firepower on the right of the Mech. Despite an attempt to market the Mech to the Terran Hegemony, the project was eventually abandoned and the fate of the original prototypes is unknown.",
+  "Icon": "Bellerophon",
+  "Id": "chassisdef_bellerophon_BEL-1X",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Bellerophon",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "Bellerophon"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Cowl",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": false
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_bellerophon",
+ "Heatsinks": 0,
+ "InitialTonnage": 6,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 13,
+   "z": 1
+  },
+  {
+   "x": 3,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 13,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 13,
+   "z": 1
+  },
+  {
+   "x": 3,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -2,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 140,
+   "MaxRearArmor": 70,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 100,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 200,
+   "MaxRearArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 70,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 140,
+   "MaxRearArmor": 70,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 70,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 70,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 30,
+ "MeleeInstability": 15,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "bellerophon",
+ "PrefabIdentifier": "chrprfmech_bellerophonbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Brawler",
+ "Tonnage": 60,
+ "TopSpeed": 150,
+ "TurnRadius": 90,
+ "VariantName": "BEL-1X",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Debuting soon after the Mackie, the Bellerophon was Defiance Industries attempt at creating their own Battlemech. Basing the prototype on an earlier generation Mackie prototype, the project would proved to be fundamentally flawed. While 20% faster then the Mackie, the Bellerophon BEL-1X only mounted 60% of the armor carried by the Mackie. Even worse, the Mech suffered from balance issues stemming from the early generation gyroscope and the concentration of firepower on the right of the Mech. Despite an attempt to market the Mech to the Terran Hegemony, the project was eventually abandoned and the fate of the original prototypes is unknown.",
+ "weightClass": "HEAVY"
+}

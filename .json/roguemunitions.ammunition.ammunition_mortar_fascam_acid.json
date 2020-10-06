@@ -10,7 +10,7 @@
   "Details": "Massive rounds, designed for devastating impact, to be used in an AC/20.",
   "Icon": null,
   "Id": "Ammunition_Mortar_Fascam_Acid",
-  "Name": "Mortar Ammo",
+  "Name": "Acid FASCAM Mortar Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "FASCAM"
@@ -33,10 +33,13 @@
   "FireTerrainChance": 0.01,
   "FireTerrainStrength": 0,
   "Heat": 0,
+  "IFFLevel": 0,
   "InstallCellRange": 10,
   "SFX": "enum:AudioEventList_explosion.explosion_propane_tank",
+  "UIName": "M-FASCAM-A",
   "VFXMinDistance": 30,
   "VFXprefab": "vfxNstPrtl_vehicleCrushed_A",
+  "burnReaction": "None",
   "statusEffects": [
    {
     "Description": {
@@ -75,7 +78,8 @@
      "triggerLimit": 0
     }
    }
-  ]
+  ],
+  "stealthLevel": 1
  },
  "Type": "Normal"
 }

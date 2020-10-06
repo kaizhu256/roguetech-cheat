@@ -11,6 +11,7 @@
  "BonusValueA": "",
  "BonusValueB": "",
  "Category": "Ballistic",
+ "ClusteringModifier": 15,
  "ComponentSubType": "Weapon",
  "ComponentTags": {
   "items": [
@@ -30,8 +31,9 @@
     "WpnAccuracy: +1",
     "PipsIgnored: 1",
     "WpnRecoil: 1",
-    "WeaponJAMFlat: 5%",
-    "MydronAC:3",
+    "WeaponJAMFlat: 10%",
+    "MydronAC: 4",
+    "DoesCluster",
     "IsAC"
    ]
   },
@@ -44,7 +46,7 @@
    "SortKey": "01002"
   }
  },
- "Damage": 16,
+ "Damage": 15,
  "DamageVariance": 0,
  "Description": {
   "Cost": 120000,
@@ -66,6 +68,7 @@
  "FlatJammingChance": 0.05,
  "HeatDamage": 0,
  "HeatGenerated": 5,
+ "HitGenerator": "Cluster",
  "ImprovedBallistic": true,
  "IndirectFireCapable": false,
  "Instability": 3.8,
@@ -74,10 +77,10 @@
  "MinRange": 90,
  "Modes": [
   {
-   "APDamageMultiplier": 0.33,
-   "HeatMultiplier": 0.33,
-   "Id": "x3",
-   "UIName": "Burst(x3)",
+   "APDamageMultiplier": 0.2,
+   "HeatMultiplier": 0.2,
+   "Id": "x4",
+   "UIName": "Burst(x4)",
    "isBaseMode": true
   }
  ],
@@ -90,8 +93,8 @@
   540
  ],
  "RefireModifier": 1,
- "ShotsPerAmmo": 3,
- "ShotsWhenFired": 3,
+ "ShotsPerAmmo": 4,
+ "ShotsWhenFired": 4,
  "StartingAmmoCapacity": 0,
  "Tonnage": 8,
  "Type": "Autocannon",

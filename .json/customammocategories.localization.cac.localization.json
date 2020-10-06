@@ -255,8 +255,78 @@
  {
   "FileName": "",
   "Localization": {
+   "CULTURE_EN_US": "UNKN.LANDMINE"
+  },
+  "Name": "CAC.LANDMINE_UNKNOWN"
+ },
+ {
+  "FileName": "",
+  "Localization": {
    "CULTURE_EN_US": "FLAMES"
   },
   "Name": "CAC.FLAMES"
+ },
+ {
+  "FileName": "",
+  "Localization": {
+   "CULTURE_EN_US": "MODE"
+  },
+  "Name": "CAC.MODE_LABEL"
+ },
+ {
+  "FileName": "",
+  "Localization": {
+   "CULTURE_EN_US": "AMMO"
+  },
+  "Name": "CAC.AMMO_NAME_LABEL"
+ },
+ {
+  "FileName": "",
+  "Localization": {
+   "CULTURE_EN_US": "CLICK TO TOGGLE WEAPON\n"
+  },
+  "Name": "CAC.WEAPON_SIDE_HEADER"
+ },
+ {
+  "FileName": "",
+  "Localization": {
+   "CULTURE_EN_US": "CLICK TO SWITCH MODE\nAVAIBLE MODES:\n"
+  },
+  "Name": "CAC.MODE_SIZE_HEADER"
+ },
+ {
+  "FileName": "",
+  "Localization": {
+   "CULTURE_EN_US": "CLICK TO SWITCH AMMO TYPE\nCTRL+CLICK TO EJECT CURRENT AMMO\n"
+  },
+  "Name": "CAC.AMMO_SIDE_HEADER"
+ },
+ {
+  "FileName": "",
+  "Localization": {
+   "CULTURE_EN_US": "<color=yellow>modifier</color> can change during attack\n<color=green>modifier</color> can't change during attack\n"
+  },
+  "Name": "CAC.DAMAGE_SIZE_HEADER"
+ },
+ {
+  "FileName": "",
+  "Localization": {
+   "CULTURE_EN_US": "ammunition boxes:\n"
+  },
+  "Name": "CAC.AMMO_COUNT_SIDE_HEADER"
+ },
+ {
+  "FileName": "",
+  "Localization": {
+   "CULTURE_EN_US": "currnet ammunition box info:\n"
+  },
+  "Name": "CAC.AMMO_COUNT_CURRENT_SIDE_HEADER"
+ },
+ {
+  "FileName": "",
+  "Localization": {
+   "CULTURE_EN_US": "COUNT"
+  },
+  "Name": "CAC.AMMO_COUNT_LABEL"
  }
 ]

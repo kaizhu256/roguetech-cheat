@@ -3,7 +3,7 @@
  "ChassisTags": {
   "items": [
    "HeroMech",
-   "mr-resize-0.8"
+   "mr-resize-0.6"
   ],
   "tagSetSourceFile": ""
  },
@@ -54,7 +54,7 @@
    "prefabName": ""
   }
  ],
- "HardpointDataDefID": "hardpointdatadef_ostwar",
+ "HardpointDataDefID": "hardpointdatadef_fireball",
  "Heatsinks": 0,
  "InitialTonnage": 2,
  "LOSSourcePositions": [
@@ -228,8 +228,8 @@
  "MeleeToHitModifier": 0,
  "MovementCapDefID": "movedef_lightmech",
  "PathingCapDefID": "pathingdef_heavy",
- "PrefabBase": "ostwar",
- "PrefabIdentifier": "chrprfmech_ostwarhotd-001",
+ "PrefabBase": "fireball",
+ "PrefabIdentifier": "chrprfmech_fireballbase-001",
  "PunchesWithLeftArm": false,
  "Radius": 8,
  "SensorRangeMultiplier": 1,

@@ -1,9 +1,7 @@
 {
  "BattleValue": 3762000,
  "ChassisTags": {
-  "items": [
-   "mr-resize-1.15"
-  ],
+  "items": [],
   "tagSetSourceFile": ""
  },
  "Custom": {
@@ -45,7 +43,7 @@
    "prefabName": ""
   }
  ],
- "HardpointDataDefID": "hardpointdatadef_cougar",
+ "HardpointDataDefID": "hardpointdatadef_pen",
  "Heatsinks": 0,
  "InitialTonnage": 7.5,
  "LOSSourcePositions": [
@@ -238,8 +236,8 @@
  "MeleeToHitModifier": 0,
  "MovementCapDefID": "movedef_heavymech",
  "PathingCapDefID": "pathingdef_heavy",
- "PrefabBase": "cougar",
- "PrefabIdentifier": "chrPrfMech_cougarbase-001",
+ "PrefabBase": "pen",
+ "PrefabIdentifier": "chrprfmech_penbase-001",
  "PunchesWithLeftArm": false,
  "Radius": 4,
  "SensorRangeMultiplier": 1,

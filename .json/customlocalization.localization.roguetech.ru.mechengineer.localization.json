@@ -6474,6 +6474,15 @@
   "Commentary": "",
   "FileName": "\\Mods\\RogueTech Core\\bonusDescriptions\\BonusDescriptions_EWS.json",
   "Localization": {
+   "CULTURE_RU_RU": "{0} видимость"
+  },
+  "Name": "RogueTech_Core.BonusDescriptions_EWS.IncVisibility.Short",
+  "Original": "{0} Vis"
+ },
+ {
+  "Commentary": "",
+  "FileName": "\\Mods\\RogueTech Core\\bonusDescriptions\\BonusDescriptions_EWS.json",
+  "Localization": {
    "CULTURE_RU_RU": "Black Carapace"
   },
   "Name": "RogueTech_Core.BonusDescriptions_EWS.Carapace.Long",
@@ -7176,6 +7185,15 @@
   "Commentary": "",
   "FileName": "\\Mods\\RogueTech Core\\bonusDescriptions\\BonusDescriptions_EWS.json",
   "Localization": {
+   "CULTURE_RU_RU": "{0} видимость"
+  },
+  "Name": "RogueTech_Core.BonusDescriptions_EWS.IncVisibility.Long",
+  "Original": "{0} Visibility"
+ },
+ {
+  "Commentary": "",
+  "FileName": "\\Mods\\RogueTech Core\\bonusDescriptions\\BonusDescriptions_EWS.json",
+  "Localization": {
    "CULTURE_RU_RU": "Даёт заряды Stealth. Тяжелее попасть в носителя. Саморемонт."
   },
   "Name": "RogueTech_Core.BonusDescriptions_EWS.Carapace.Full",
@@ -7873,6 +7891,15 @@
   },
   "Name": "RogueTech_Core.BonusDescriptions_EWS.Signature.Full",
   "Original": "{0} sensor signature"
+ },
+ {
+  "Commentary": "",
+  "FileName": "\\Mods\\RogueTech Core\\bonusDescriptions\\BonusDescriptions_EWS.json",
+  "Localization": {
+   "CULTURE_RU_RU": "{0} видимость"
+  },
+  "Name": "RogueTech_Core.BonusDescriptions_EWS.IncVisibility.Full",
+  "Original": "{0} visibility"
  },
  {
   "Commentary": "",
@@ -8753,7 +8780,7 @@
   "Localization": {
    "CULTURE_RU_RU": "Взрывоопасно"
   },
-  "Name": "RogueTech_Core.BonusDescriptions_RogueTech_Core.WeaponBoom.Short",
+  "Name": "RogueTech_Core.BonusDescriptions_RogueTech_Core.WeaponGaussBoom.Short",
   "Original": "Volatile"
  },
  {
@@ -11345,7 +11372,7 @@
   "Localization": {
    "CULTURE_RU_RU": "Взрывоопасные конденсаторы"
   },
-  "Name": "RogueTech_Core.BonusDescriptions_RogueTech_Core.WeaponBoom.Long",
+  "Name": "RogueTech_Core.BonusDescriptions_RogueTech_Core.WeaponGaussBoom.Long",
   "Original": "Volatile Capacitors"
  },
  {
@@ -13937,7 +13964,7 @@
   "Localization": {
    "CULTURE_RU_RU": "Конденсаторы высокой энергии разряжаются нанося {0} урона при разрушении"
   },
-  "Name": "RogueTech_Core.BonusDescriptions_RogueTech_Core.WeaponBoom.Full",
+  "Name": "RogueTech_Core.BonusDescriptions_RogueTech_Core.WeaponGaussBoom.Full",
   "Original": "High-Energy Capacitors discharge violently for {0} damage when destroyed"
  },
  {

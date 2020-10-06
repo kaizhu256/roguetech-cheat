@@ -11,6 +11,14 @@
   ],
   "tagSetSourceFile": ""
  },
+ "Custom": {
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Spider IIC"
+  },
+  "ChassisDefaults": []
+ },
  "DFADamage": 35,
  "DFAInstability": 18,
  "DFASelfDamage": 35,

@@ -11,7 +11,7 @@
   "Details": "Large bore belted ammunition for 'Mech-mounted machine guns.",
   "Icon": null,
   "Id": "Ammunition_Fluid_Paint",
-  "Name": "Fluid Ammo",
+  "Name": "Paint Fluid Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "Paint"

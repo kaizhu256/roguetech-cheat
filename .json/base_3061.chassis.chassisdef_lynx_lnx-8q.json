@@ -1,0 +1,241 @@
+{
+ "AlwaysPunchIfPossible": false,
+ "BattleValue": 5148000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Upper",
+   "RightLimit": "Upper"
+  },
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Lynx"
+  }
+ },
+ "DFADamage": 55,
+ "DFAInstability": 28,
+ "DFASelfDamage": 55,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 1250962,
+  "Details": "A hard hitting striker mech, the Lynx was one of the first mechs to mount an ER PPC. Produced by Blue Shot Weapons, the Lynx was designed as a striker mech, with a design that blended speed, armor and fire power into a fearsome package. Built around a 275 rated Fusion Core, the Lynx LNX-8Q is armed with a pair of Large Lasers. A pair of Medium Lasers provide close range firepower.",
+  "Icon": "Lynx",
+  "Id": "chassisdef_lynx_LNX-8Q",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Lynx",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "Lynx"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_MultiTrack",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_lynx",
+ "Heatsinks": 0,
+ "InitialTonnage": 5.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 15,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 15,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "weaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "weaponMountID": "Energy"
+    }
+   ],
+   "InternalStructure": 45,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 90,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "weaponMountID": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 65,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 130,
+   "MaxRearArmor": 65,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "weaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "weaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "weaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "weaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 90,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 180,
+   "MaxRearArmor": 90,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "weaponMountID": "Energy"
+    }
+   ],
+   "InternalStructure": 65,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 130,
+   "MaxRearArmor": 65,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "weaponMountID": "Energy"
+    }
+   ],
+   "InternalStructure": 45,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 90,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 65,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 130,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 65,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 130,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 28,
+ "MeleeInstability": 14,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "lynx",
+ "PrefabIdentifier": "chrprfmech_lynxbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 5,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Skirmisher",
+ "Tonnage": 55,
+ "TopSpeed": 80,
+ "TurnRadius": 90,
+ "VariantName": "LNX-8Q",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "A hard hitting striker mech, the Lynx was one of the first mechs to mount an ER PPC. Produced by Blue Shot Weapons, the Lynx was designed as a striker mech, with a design that blended speed, armor and fire power into a fearsome package. Built around a 275 rated Fusion Core, the Lynx LNX-8Q is armed with a pair of Large Lasers. A pair of Medium Lasers provide close range firepower.",
+ "weightClass": "MEDIUM"
+}

@@ -10,6 +10,9 @@
  "BattleValue": 0,
  "BonusValueA": "",
  "BonusValueB": "",
+ "ChassisTagsAccuracyModifiers": {
+  "unit_powerarmor": -10
+ },
  "ComponentSubType": "Weapon",
  "ComponentTags": {
   "items": [

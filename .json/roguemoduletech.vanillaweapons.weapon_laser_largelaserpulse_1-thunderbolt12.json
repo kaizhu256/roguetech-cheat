@@ -11,7 +11,7 @@
  "BonusValueA": "",
  "BonusValueB": "",
  "Category": "Energy",
- "ClusteringModifier": 20,
+ "ClusteringModifier": 50,
  "ComponentSubType": "Weapon",
  "ComponentTags": {
   "items": [

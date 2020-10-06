@@ -1,5 +1,6 @@
 {
- "BattleValue": 6577000,
+ "AlwaysPunchIfPossible": false,
+ "BattleValue": 4048000,
  "ChassisTags": {
   "items": [
    "mr-resize-0.8"
@@ -18,12 +19,12 @@
   },
   "ChassisDefaults": []
  },
- "DFADamage": 70,
- "DFAInstability": 35,
- "DFASelfDamage": 70,
+ "DFADamage": 50,
+ "DFAInstability": 25,
+ "DFASelfDamage": 50,
  "DFAToHitModifier": 0,
  "Description": {
-  "Cost": 1310047,
+  "Cost": 858333,
   "Details": "Born from the Terran Hegemony's attempts to create a medium fire-support platform that would be more advanced than the RLN-1N Rifleman, Mitchell Vehicles unveiled the GLH-1D Galahad in 2570. Though it outgunned the earlier design and found significant acceptance within the Hegemony Armed Forces, the Galahad suffered from the same heat issues as the BattleMech it was meant to replace. This variant uses the original 50 ton mech weapon loadout.",
   "Icon": "Galahad",
   "Id": "chassisdef_galahad_GLH-1D",
@@ -31,9 +32,10 @@
   "Model": "",
   "Name": "Galahad",
   "Purchasable": true,
-  "Rarity": 3,
+  "Rarity": 4,
   "UIName": "Galahad"
  },
+ "EngageRangeModifier": 0,
  "FixedEquipment": [
   {
    "ComponentDefID": "Special_MultiTrack",
@@ -45,51 +47,51 @@
    "prefabName": ""
   }
  ],
- "HardpointDataDefID": "hardpointdatadef_warhammer",
+ "HardpointDataDefID": "hardpointdatadef_gspider",
  "Heatsinks": 0,
- "InitialTonnage": 6,
+ "InitialTonnage": 5,
  "LOSSourcePositions": [
   {
    "x": 0,
-   "y": 15,
+   "y": 12.5,
    "z": 1
   },
   {
-   "x": 4,
-   "y": 14,
+   "x": 3,
+   "y": 13,
    "z": 0
   },
   {
-   "x": -4,
-   "y": 14,
+   "x": -3,
+   "y": 13,
    "z": 0
   }
  ],
  "LOSTargetPositions": [
   {
    "x": 0,
-   "y": 15,
+   "y": 12.5,
    "z": 1
   },
   {
-   "x": 4,
-   "y": 14,
-   "z": 0
-  },
-  {
-   "x": -4,
-   "y": 14,
-   "z": 0
-  },
-  {
    "x": 3,
-   "y": 5,
+   "y": 13,
    "z": 0
   },
   {
    "x": -3,
-   "y": 5,
+   "y": 13,
    "z": 0
+  },
+  {
+   "x": 2.5,
+   "y": 4.5,
+   "z": 2
+  },
+  {
+   "x": -2.5,
+   "y": 4.5,
+   "z": 2
   }
  ],
  "Locations": [
@@ -106,17 +108,17 @@
    "Hardpoints": [
     {
      "Omni": false,
-     "WeaponMount": "Energy"
+     "WeaponMountID": "Energy"
     },
     {
      "Omni": false,
-     "WeaponMount": "Energy"
+     "WeaponMountID": "Energy"
     }
    ],
-   "InternalStructure": 50,
+   "InternalStructure": 40,
    "InventorySlots": 12,
    "Location": "LeftArm",
-   "MaxArmor": 100,
+   "MaxArmor": 80,
    "MaxRearArmor": -1,
    "Tonnage": 0
   },
@@ -124,21 +126,21 @@
    "Hardpoints": [
     {
      "Omni": false,
-     "WeaponMount": "Ballistic"
+     "WeaponMountID": "Ballistic"
     }
    ],
-   "InternalStructure": 70,
+   "InternalStructure": 60,
    "InventorySlots": 12,
    "Location": "LeftTorso",
-   "MaxArmor": 140,
-   "MaxRearArmor": 70,
+   "MaxArmor": 120,
+   "MaxRearArmor": 60,
    "Tonnage": 0
   },
   {
    "Hardpoints": [
     {
      "Omni": false,
-     "WeaponMount": "AntiPersonnel"
+     "WeaponMountID": "AntiPersonnel"
     },
     {
      "Omni": false,
@@ -157,78 +159,80 @@
      "WeaponMountID": "SpecialMelee"
     }
    ],
-   "InternalStructure": 100,
+   "InternalStructure": 80,
    "InventorySlots": 15,
    "Location": "CenterTorso",
-   "MaxArmor": 200,
-   "MaxRearArmor": 100,
+   "MaxArmor": 160,
+   "MaxRearArmor": 80,
    "Tonnage": 0
   },
   {
    "Hardpoints": [
     {
      "Omni": false,
-     "WeaponMount": "Missile"
+     "WeaponMountID": "Missile"
     }
    ],
-   "InternalStructure": 70,
+   "InternalStructure": 60,
    "InventorySlots": 12,
    "Location": "RightTorso",
-   "MaxArmor": 140,
-   "MaxRearArmor": 70,
+   "MaxArmor": 120,
+   "MaxRearArmor": 60,
    "Tonnage": 0
   },
   {
    "Hardpoints": [
     {
      "Omni": false,
-     "WeaponMount": "Energy"
+     "WeaponMountID": "Energy"
     },
     {
      "Omni": false,
-     "WeaponMount": "Energy"
+     "WeaponMountID": "Energy"
     }
    ],
-   "InternalStructure": 50,
+   "InternalStructure": 40,
    "InventorySlots": 12,
    "Location": "RightArm",
-   "MaxArmor": 100,
+   "MaxArmor": 80,
    "MaxRearArmor": -1,
    "Tonnage": 0
   },
   {
    "Hardpoints": [],
-   "InternalStructure": 70,
+   "InternalStructure": 60,
    "InventorySlots": 6,
    "Location": "LeftLeg",
-   "MaxArmor": 140,
+   "MaxArmor": 120,
    "MaxRearArmor": -1,
    "Tonnage": 0
   },
   {
    "Hardpoints": [],
-   "InternalStructure": 70,
+   "InternalStructure": 60,
    "InventorySlots": 6,
    "Location": "RightLeg",
-   "MaxArmor": 140,
+   "MaxArmor": 120,
    "MaxRearArmor": -1,
    "Tonnage": 0
   }
  ],
  "MaxJumpjets": 20,
- "MeleeDamage": 35,
- "MeleeInstability": 18,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 25,
+ "MeleeInstability": 13,
  "MeleeToHitModifier": 0,
- "MovementCapDefID": "movedef_heavymech",
- "PathingCapDefID": "pathingdef_heavy",
- "PrefabBase": "warhammer",
- "PrefabIdentifier": "chrPrfMech_warhammerBase-001",
+ "MovementCapDefID": "movedef_mediummech",
+ "PathingCapDefID": "pathingdef_medium",
+ "PrefabBase": "gspider",
+ "PrefabIdentifier": "chrprfmech_gspiderbase-001",
  "PunchesWithLeftArm": false,
- "Radius": 8,
+ "Radius": 5,
  "SensorRangeMultiplier": 1,
  "Signature": 0,
  "SpotterDistanceMultiplier": 1,
- "Stability": 100,
+ "Stability": 80,
  "StabilityDefenses": [
   0,
   0,
@@ -237,12 +241,12 @@
   0,
   0
  ],
- "StockRole": "Fire Support",
- "Tonnage": 60,
- "TopSpeed": 70,
+ "StockRole": "Juggernaut",
+ "Tonnage": 50,
+ "TopSpeed": 65,
  "TurnRadius": 90,
  "VariantName": "GLH-1D",
  "VisibilityMultiplier": 1,
  "YangsThoughts": "Born from the Terran Hegemony's attempts to create a medium fire-support platform that would be more advanced than the RLN-1N Rifleman, Mitchell Vehicles unveiled the GLH-1D Galahad in 2570. Though it outgunned the earlier design and found significant acceptance within the Hegemony Armed Forces, the Galahad suffered from the same heat issues as the BattleMech it was meant to replace. This variant uses the original 50 ton mech weapon loadout.",
- "weightClass": "HEAVY"
+ "weightClass": "MEDIUM"
 }

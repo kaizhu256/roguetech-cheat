@@ -52,7 +52,8 @@
     "OLAMSHeat: 18",
     "OLAMSJam: 40%",
     "OLAMSRange: 90",
-    "AMSDirectSLAS"
+    "AMSDirectMLAS",
+    "JamChanceMode1: 15%, Laser"
    ]
   },
   "Category": [
@@ -125,7 +126,7 @@
    "isBaseMode": false
   },
   {
-   "DamagePerShot": 15,
+   "DamagePerShot": 25,
    "FlatJammingChance": 0.1,
    "GunneryJammingBase": 5,
    "GunneryJammingMult": 0.015,

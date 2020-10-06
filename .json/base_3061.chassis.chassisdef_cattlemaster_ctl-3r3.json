@@ -7,6 +7,13 @@
   ],
   "tagSetSourceFile": ""
  },
+ "Custom": {
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "CattleMaster"
+  }
+ },
  "DFADamage": 25,
  "DFAInstability": 13,
  "DFASelfDamage": 25,

@@ -1,0 +1,332 @@
+{
+ "AlwaysPunchIfPossible": false,
+ "BattleValue": 9360000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 95,
+ "DFAInstability": 48,
+ "DFASelfDamage": 95,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 14115560,
+  "Details": "Like many designs lost during the Succession Wars, the Sorcerer design saw new life in the decades after the discovery of the Helm Memory Core. The Draconis Combine was the first to create a new variant of the aged SLDF design utilizing technologies at their disposal in 3058. The Sorcerer 2D retains the 380XL Engine, Guardian ECM Suite, one of the original PPCs, and thirteen of the original Double Heat Sinks and adds a pair of Shigunga MRM40s fed by four tons of ammo. A Small Laser is also added to the right arm for anti-personnel work.",
+  "Icon": "uixTxrIcon_sorcerer",
+  "Id": "chassisdef_sorcerer_SRC-2D",
+  "Manufacturer": "StarCorps Industries",
+  "Model": "",
+  "Name": "Sorcerer",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Sorcerer"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Battle_Fists",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": null,
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_sorcerer",
+ "Heatsinks": 0,
+ "InitialTonnage": 9.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": 1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": 1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 100,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 200,
+   "MaxRearArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 150,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 300,
+   "MaxRearArmor": 150,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 100,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 200,
+   "MaxRearArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 100,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 200,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 100,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 200,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 48,
+ "MeleeInstability": 24,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "sorcerer",
+ "PrefabIdentifier": "chrprfmech_sorcererbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Cavalry",
+ "Tonnage": 95,
+ "TopSpeed": 105,
+ "TurnRadius": 90,
+ "VariantName": "SRC-2D",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Boss, I get it, missiles are cool and all but letting loose with 80 of them at a time might be a bit over-zealous. Leave it to the Dracs to slap a pair of MRM40s on one of this brutes; at least they kept onw of the PPCs for some longer range work.",
+ "weightClass": "ASSAULT"
+}

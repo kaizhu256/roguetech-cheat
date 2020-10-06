@@ -7,7 +7,7 @@
   "Details": "Small caliber ammunition designed for long range fire in an AC/2.",
   "Icon": null,
   "Id": "Ammunition_MG_Internal",
-  "Name": "AC/2 Ammo",
+  "Name": "MG",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "STD"

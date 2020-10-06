@@ -16,7 +16,7 @@
   "Details": "Small caliber ammunition designed for long range fire in an AC/2.",
   "Icon": null,
   "Id": "Ammunition_AC2_Caseless",
-  "Name": "AC/2 Ammo",
+  "Name": "Caseless AC/2 Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "CL"

@@ -1,0 +1,20 @@
+{
+ "ActivationCooldown": 0,
+ "ActivationETA": 0,
+ "ActivationTime": "ConsumedByFiring",
+ "Description": {
+  "Details": "Set deploy position",
+  "Icon": "uixSvgIcon_artillery",
+  "Id": "AbilityDefCU_DeploySetPosition",
+  "Name": "SET DEPLOY POSITION"
+ },
+ "FloatParam1": 50,
+ "IntParam1": 1,
+ "Priority": 99999,
+ "Resource": "ConsumesFiring",
+ "StringParam1": "vfxPrfPrtl_fireTerrain_smLoop",
+ "StringParam2": "vfxPrfPrtl_buildingCollapseFiery_medium",
+ "Targeting": "CommandTargetSinglePoint",
+ "WeaponResource": "Weapon_Autocannon_AC20_0-STOCK",
+ "specialRules": "Artillery"
+}

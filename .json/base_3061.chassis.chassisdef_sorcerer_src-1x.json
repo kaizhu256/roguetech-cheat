@@ -1,0 +1,343 @@
+{
+ "AlwaysPunchIfPossible": false,
+ "BattleValue": 9360000,
+ "ChassisTags": {
+  "items": [
+   "SLDFMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 95,
+ "DFAInstability": 48,
+ "DFASelfDamage": 95,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 16938670,
+  "Details": "StarCorps Industries’s Project:  SORCERER is considered one of the best examples of effective counter-industrial espionage techniques; despite being in development for nearly two decades, the various intelligence agencies of the Great Houses never managed to collect any meaningful data on the program. The project’s primary goal was to create an assault BattleMech capable of slipping behind and operations behind enemy lines for an indefinite period of time and if at all possible, do this task undetected. Produced in exceptionally small quantities up until Amaris forces overran their facilities on Fletcher, the 95-ton Sorcerer 1X sports a combination of a Null Signature System and a Chameleon Light Polarization Shield. The 1X carries a pair of Ceres Arms Smasher PPCs, a pair of Donal Snub-Nose PPCs, and pair of Magna 400P Medium Pulse Lasers which in combination with the stealth systems onboard can easily overpower the Mech’s nineteen Double Heat Sinks. Few remember the 1X variant as the more widely-produced and fielded 1A variant stepped off of the manufacturing lines on the same day.",
+  "Icon": "uixTxrIcon_sorcerer",
+  "Id": "chassisdef_sorcerer_SRC-1X",
+  "Manufacturer": "StarCorps Industries",
+  "Model": "",
+  "Name": "Sorcerer",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Sorcerer"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Battle_Fists",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": null,
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Gear_quirk_ChameleonLightPolarizationShield",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_sorcerer",
+ "Heatsinks": 0,
+ "InitialTonnage": 9.5,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": 1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": 1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 100,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 200,
+   "MaxRearArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 150,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 300,
+   "MaxRearArmor": 150,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 100,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 200,
+   "MaxRearArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 80,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 160,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 100,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 200,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 100,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 200,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 48,
+ "MeleeInstability": 24,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "sorcerer",
+ "PrefabIdentifier": "chrprfmech_sorcererbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Cavalry",
+ "Tonnage": 95,
+ "TopSpeed": 105,
+ "TurnRadius": 90,
+ "VariantName": "SRC-1X",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "That's a lot of lightning, boss. You play your cards right, this monster will be spitting out four PPCs without breaking much sweat. Oh, and it's pretty quick on its feet too.",
+ "weightClass": "ASSAULT"
+}

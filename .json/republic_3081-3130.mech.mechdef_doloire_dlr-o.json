@@ -1,9 +1,9 @@
 {
  "ChassisID": "chassisdef_doloire_DLR-O",
  "Description": {
-  "Cost": 2899200,
+  "Cost": 1699245,
   "Details": "Designed for the Republic Armed Forces in 3121, the Doloire is an 80 ton Omnimech designed with a mixture of Clantech and Inner Sphere tech. Designed around a 320 rated Clan XL Engine and an Endo-Composite Structure, the Doloire has 32 tons of pod space, with a pair of hardwired Clan ER Medium Lasers hardwired into the Mechs CT. The Doloire DLR-O is armed with a pair of Large Pulse Lasers and a Gauss Rifle. All of the weapons are Clantech versions, while 4 extra dhs and an Angel ECM suite round out the variant.",
-  "Icon": "uixTxrIcon_awesome",
+  "Icon": "Doloire",
   "Id": "mechdef_doloire_DLR-O",
   "Manufacturer": null,
   "Model": null,
@@ -23,6 +23,24 @@
    "Location": "Head"
   },
   {
+   "AssignedArmor": 120,
+   "AssignedRearArmor": 0,
+   "CurrentArmor": 120,
+   "CurrentInternalStructure": 65,
+   "CurrentRearArmor": 0,
+   "DamageLevel": "Functional",
+   "Location": "LeftArm"
+  },
+  {
+   "AssignedArmor": 145,
+   "AssignedRearArmor": 55,
+   "CurrentArmor": 145,
+   "CurrentInternalStructure": 85,
+   "CurrentRearArmor": 55,
+   "DamageLevel": "Functional",
+   "Location": "LeftTorso"
+  },
+  {
    "AssignedArmor": 205,
    "AssignedRearArmor": 70,
    "CurrentArmor": 205,
@@ -38,25 +56,7 @@
    "CurrentInternalStructure": 85,
    "CurrentRearArmor": 55,
    "DamageLevel": "Functional",
-   "Location": "LeftTorso"
-  },
-  {
-   "AssignedArmor": 145,
-   "AssignedRearArmor": 55,
-   "CurrentArmor": 145,
-   "CurrentInternalStructure": 85,
-   "CurrentRearArmor": 55,
-   "DamageLevel": "Functional",
    "Location": "RightTorso"
-  },
-  {
-   "AssignedArmor": 120,
-   "AssignedRearArmor": 0,
-   "CurrentArmor": 120,
-   "CurrentInternalStructure": 65,
-   "CurrentRearArmor": 0,
-   "DamageLevel": "Functional",
-   "Location": "LeftArm"
   },
   {
    "AssignedArmor": 120,
@@ -126,161 +126,18 @@
    "prefabName": null
   },
   {
-   "ComponentDefID": "Gear_Engine_Heatsinks_2",
-   "ComponentDefType": "HeatSink",
-   "DamageLevel": "Functional",
-   "GUID": null,
-   "HardpointSlot": -1,
-   "MountedLocation": "CenterTorso",
-   "SimGameUID": null,
-   "hasPrefabName": false,
-   "prefabName": null
-  },
-  {
-   "ComponentDefID": "emod_kit_cdhs",
-   "ComponentDefType": "HeatSink",
-   "DamageLevel": "Functional",
-   "GUID": null,
-   "HardpointSlot": -1,
-   "MountedLocation": "CenterTorso",
-   "SimGameUID": null,
-   "hasPrefabName": false,
-   "prefabName": null
-  },
-  {
-   "ComponentDefID": "emod_arm_part_shoulder",
-   "ComponentDefType": "Upgrade",
-   "DamageLevel": "Functional",
-   "GUID": null,
-   "HardpointSlot": 0,
-   "MountedLocation": "LeftArm",
-   "SimGameUID": "",
-   "hasPrefabName": false,
-   "prefabName": null
-  },
-  {
-   "ComponentDefID": "emod_arm_part_upper",
-   "ComponentDefType": "Upgrade",
-   "DamageLevel": "Functional",
-   "GUID": null,
-   "HardpointSlot": 0,
-   "MountedLocation": "LeftArm",
-   "SimGameUID": "",
-   "hasPrefabName": false,
-   "prefabName": null
-  },
-  {
-   "ComponentDefID": "emod_arm_part_shoulder",
-   "ComponentDefType": "Upgrade",
-   "DamageLevel": "Functional",
-   "GUID": null,
-   "HardpointSlot": 0,
-   "MountedLocation": "RightArm",
-   "SimGameUID": "",
-   "hasPrefabName": false,
-   "prefabName": null
-  },
-  {
-   "ComponentDefID": "emod_arm_part_upper",
-   "ComponentDefType": "Upgrade",
-   "DamageLevel": "Functional",
-   "GUID": null,
-   "HardpointSlot": 0,
-   "MountedLocation": "RightArm",
-   "SimGameUID": "",
-   "hasPrefabName": false,
-   "prefabName": null
-  },
-  {
-   "ComponentDefID": "emod_leg_hip",
-   "ComponentDefType": "Upgrade",
-   "DamageLevel": "Functional",
-   "GUID": null,
-   "HardpointSlot": 0,
-   "MountedLocation": "LeftLeg",
-   "SimGameUID": "",
-   "hasPrefabName": false,
-   "prefabName": null
-  },
-  {
-   "ComponentDefID": "emod_leg_upper",
-   "ComponentDefType": "Upgrade",
-   "DamageLevel": "Functional",
-   "GUID": null,
-   "HardpointSlot": 0,
-   "MountedLocation": "LeftLeg",
-   "SimGameUID": "",
-   "hasPrefabName": false,
-   "prefabName": null
-  },
-  {
-   "ComponentDefID": "emod_leg_lower",
-   "ComponentDefType": "Upgrade",
-   "DamageLevel": "Functional",
-   "GUID": null,
-   "HardpointSlot": 0,
-   "MountedLocation": "LeftLeg",
-   "SimGameUID": "",
-   "hasPrefabName": false,
-   "prefabName": null
-  },
-  {
-   "ComponentDefID": "emod_leg_foot",
-   "ComponentDefType": "Upgrade",
-   "DamageLevel": "Functional",
-   "GUID": null,
-   "HardpointSlot": 0,
-   "MountedLocation": "LeftLeg",
-   "SimGameUID": "",
-   "hasPrefabName": false,
-   "prefabName": null
-  },
-  {
-   "ComponentDefID": "emod_leg_hip",
-   "ComponentDefType": "Upgrade",
-   "DamageLevel": "Functional",
-   "GUID": null,
-   "HardpointSlot": 0,
-   "MountedLocation": "RightLeg",
-   "SimGameUID": "",
-   "hasPrefabName": false,
-   "prefabName": null
-  },
-  {
-   "ComponentDefID": "emod_leg_upper",
-   "ComponentDefType": "Upgrade",
-   "DamageLevel": "Functional",
-   "GUID": null,
-   "HardpointSlot": 0,
-   "MountedLocation": "RightLeg",
-   "SimGameUID": "",
-   "hasPrefabName": false,
-   "prefabName": null
-  },
-  {
-   "ComponentDefID": "emod_leg_lower",
-   "ComponentDefType": "Upgrade",
-   "DamageLevel": "Functional",
-   "GUID": null,
-   "HardpointSlot": 0,
-   "MountedLocation": "RightLeg",
-   "SimGameUID": "",
-   "hasPrefabName": false,
-   "prefabName": null
-  },
-  {
-   "ComponentDefID": "emod_leg_foot",
-   "ComponentDefType": "Upgrade",
-   "DamageLevel": "Functional",
-   "GUID": null,
-   "HardpointSlot": 0,
-   "MountedLocation": "RightLeg",
-   "SimGameUID": "",
-   "hasPrefabName": false,
-   "prefabName": null
-  },
-  {
    "ComponentDefID": "Gear_Cockpit_LifeSupportA_Standard",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "Head",
+   "SimGameUID": "",
+   "hasPrefabName": false,
+   "prefabName": null
+  },
+  {
+   "ComponentDefID": "Gear_Cockpit_LifeSupportB_Standard",
    "ComponentDefType": "Upgrade",
    "DamageLevel": "Functional",
    "GUID": null,
@@ -313,46 +170,35 @@
    "prefabName": null
   },
   {
-   "ComponentDefID": "Gear_Cockpit_LifeSupportB_Standard",
+   "ComponentDefID": "Gear_Angel_ECM",
    "ComponentDefType": "Upgrade",
    "DamageLevel": "Functional",
    "GUID": null,
    "HardpointSlot": -1,
-   "MountedLocation": "Head",
+   "MountedLocation": "LeftTorso",
    "SimGameUID": "",
    "hasPrefabName": false,
    "prefabName": null
   },
   {
-   "ComponentDefID": "Gear_HandHeld_Slot",
-   "ComponentDefType": "Upgrade",
+   "ComponentDefID": "Gear_Engine_Heatsinks_2",
+   "ComponentDefType": "HeatSink",
    "DamageLevel": "Functional",
    "GUID": null,
    "HardpointSlot": -1,
    "MountedLocation": "CenterTorso",
-   "SimGameUID": "",
+   "SimGameUID": null,
    "hasPrefabName": false,
    "prefabName": null
   },
   {
-   "ComponentDefID": "Gear_HandHeld_Slot",
-   "ComponentDefType": "Upgrade",
+   "ComponentDefID": "emod_kit_cdhs",
+   "ComponentDefType": "HeatSink",
    "DamageLevel": "Functional",
    "GUID": null,
    "HardpointSlot": -1,
    "MountedLocation": "CenterTorso",
-   "SimGameUID": "",
-   "hasPrefabName": false,
-   "prefabName": null
-  },
-  {
-   "ComponentDefID": "Gear_ActuatorEnhancementSystem",
-   "ComponentDefType": "Upgrade",
-   "DamageLevel": "Functional",
-   "GUID": null,
-   "HardpointSlot": -1,
-   "MountedLocation": "RightArm",
-   "SimGameUID": "",
+   "SimGameUID": null,
    "hasPrefabName": false,
    "prefabName": null
   },
@@ -368,12 +214,166 @@
    "prefabName": null
   },
   {
-   "ComponentDefID": "Weapon_Laser_LargeLaserPulse_CLAN",
-   "ComponentDefType": "Weapon",
+   "ComponentDefID": "emod_arm_part_shoulder",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftArm",
+   "SimGameUID": "",
+   "hasPrefabName": false,
+   "prefabName": null
+  },
+  {
+   "ComponentDefID": "emod_arm_part_upper",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftArm",
+   "SimGameUID": "",
+   "hasPrefabName": false,
+   "prefabName": null
+  },
+  {
+   "ComponentDefID": "Gear_ActuatorEnhancementSystem",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "RightArm",
+   "SimGameUID": "",
+   "hasPrefabName": false,
+   "prefabName": null
+  },
+  {
+   "ComponentDefID": "emod_arm_part_shoulder",
+   "ComponentDefType": "Upgrade",
    "DamageLevel": "Functional",
    "GUID": null,
    "HardpointSlot": 0,
    "MountedLocation": "RightArm",
+   "SimGameUID": "",
+   "hasPrefabName": false,
+   "prefabName": null
+  },
+  {
+   "ComponentDefID": "emod_arm_part_upper",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": 0,
+   "MountedLocation": "RightArm",
+   "SimGameUID": "",
+   "hasPrefabName": false,
+   "prefabName": null
+  },
+  {
+   "ComponentDefID": "emod_leg_hip",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false,
+   "prefabName": null
+  },
+  {
+   "ComponentDefID": "emod_leg_upper",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false,
+   "prefabName": null
+  },
+  {
+   "ComponentDefID": "emod_leg_lower",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false,
+   "prefabName": null
+  },
+  {
+   "ComponentDefID": "emod_leg_foot",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": 0,
+   "MountedLocation": "LeftLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false,
+   "prefabName": null
+  },
+  {
+   "ComponentDefID": "emod_leg_hip",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": 0,
+   "MountedLocation": "RightLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false,
+   "prefabName": null
+  },
+  {
+   "ComponentDefID": "emod_leg_upper",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": 0,
+   "MountedLocation": "RightLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false,
+   "prefabName": null
+  },
+  {
+   "ComponentDefID": "emod_leg_lower",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": 0,
+   "MountedLocation": "RightLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false,
+   "prefabName": null
+  },
+  {
+   "ComponentDefID": "emod_leg_foot",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": 0,
+   "MountedLocation": "RightLeg",
+   "SimGameUID": "",
+   "hasPrefabName": false,
+   "prefabName": null
+  },
+  {
+   "ComponentDefID": "Gear_HandHeld_Slot",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false,
+   "prefabName": null
+  },
+  {
+   "ComponentDefID": "Gear_HandHeld_Slot",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
    "SimGameUID": "",
    "hasPrefabName": false,
    "prefabName": null
@@ -401,6 +401,17 @@
    "prefabName": null
   },
   {
+   "ComponentDefID": "Weapon_Laser_LargeLaserPulse_CLAN",
+   "ComponentDefType": "Weapon",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": 0,
+   "MountedLocation": "RightArm",
+   "SimGameUID": "",
+   "hasPrefabName": false,
+   "prefabName": null
+  },
+  {
    "ComponentDefID": "Ammo_AmmunitionBox_Generic_GAUSS_double",
    "ComponentDefType": "AmmunitionBox",
    "DamageLevel": "Functional",
@@ -417,7 +428,18 @@
    "DamageLevel": "Functional",
    "GUID": null,
    "HardpointSlot": -1,
-   "MountedLocation": "RightLeg",
+   "MountedLocation": "LeftTorso",
+   "SimGameUID": "",
+   "hasPrefabName": false,
+   "prefabName": null
+  },
+  {
+   "ComponentDefID": "Gear_HeatSink_Generic_Double_Clan",
+   "ComponentDefType": "HeatSink",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "LeftTorso",
    "SimGameUID": "",
    "hasPrefabName": false,
    "prefabName": null
@@ -439,33 +461,11 @@
    "DamageLevel": "Functional",
    "GUID": null,
    "HardpointSlot": -1,
-   "MountedLocation": "LeftTorso",
-   "SimGameUID": "",
-   "hasPrefabName": false,
-   "prefabName": null
-  },
-  {
-   "ComponentDefID": "Gear_HeatSink_Generic_Double_Clan",
-   "ComponentDefType": "HeatSink",
-   "DamageLevel": "Functional",
-   "GUID": null,
-   "HardpointSlot": -1,
-   "MountedLocation": "LeftTorso",
-   "SimGameUID": "",
-   "hasPrefabName": false,
-   "prefabName": null
-  },
-  {
-   "ComponentDefID": "Gear_Angel_ECM",
-   "ComponentDefType": "Upgrade",
-   "DamageLevel": "Functional",
-   "GUID": null,
-   "HardpointSlot": -1,
-   "MountedLocation": "LeftTorso",
+   "MountedLocation": "RightLeg",
    "SimGameUID": "",
    "hasPrefabName": false,
    "prefabName": null
   }
  ],
- "simGameMechPartCost": 2899200
+ "simGameMechPartCost": 1699245
 }

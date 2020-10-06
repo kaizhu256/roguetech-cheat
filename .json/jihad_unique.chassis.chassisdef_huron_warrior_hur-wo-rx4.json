@@ -40,7 +40,7 @@
    "prefabName": ""
   }
  ],
- "HardpointDataDefID": "hardpointdatadef_huronw",
+ "HardpointDataDefID": "hardpointdatadef_huronwarrior",
  "Heatsinks": 0,
  "InitialTonnage": 5,
  "LOSSourcePositions": [
@@ -217,8 +217,8 @@
  "MeleeToHitModifier": 0,
  "MovementCapDefID": "movedef_mediummech",
  "PathingCapDefID": "pathingdef_medium",
- "PrefabBase": "huronw",
- "PrefabIdentifier": "chrprfmech_huronwbase-001",
+ "PrefabBase": "huronwarrior",
+ "PrefabIdentifier": "chrprfmech_huronwarriorbase-001",
  "PunchesWithLeftArm": false,
  "Radius": 5,
  "SensorRangeMultiplier": 1,

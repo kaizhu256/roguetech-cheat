@@ -17,7 +17,7 @@
   "Details": "Long range missiles, capable of dealing moderate damage at long range. Each missile lacks punch, but in a group they can deal significant damage.",
   "Icon": null,
   "Id": "Ammunition_LRM_Sensors",
-  "Name": "LRM Ammo",
+  "Name": "Remote Sensor LRM Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "Sensor"
@@ -37,10 +37,13 @@
   "FireOnSuccessHit": true,
   "FireTerrainChance": 0.001,
   "Heat": 0,
+  "IFFLevel": 0,
   "InstallCellRange": 6,
   "SFX": "enum:AudioEventList_explosion.explosion_propane_tank",
+  "UIName": "Sensors",
   "VFXMinDistance": 30,
   "VFXprefab": "vfxPrfPrtl_ECMtargetAdd_burst",
+  "burnReaction": "None",
   "statusEffects": [
    {
     "Description": {
@@ -120,7 +123,8 @@
      "showInTargetPreview": false
     }
    }
-  ]
+  ],
+  "stealthLevel": 1
  },
  "MissileHealth": 2,
  "Type": "Normal"

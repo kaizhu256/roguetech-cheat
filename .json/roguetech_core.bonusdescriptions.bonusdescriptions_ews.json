@@ -362,7 +362,7 @@
   },
   {
    "Bonus": "StealthSensors",
-   "Full": "{0} Sensor Stealth Signature Reduction with {1} Charges Multiplier. Harder to Hit by {2} at Medium, {3} at Long and {4} at Extreme Ranges.",
+   "Full": "{0} Sensor Stealth Signature Reduction, {1} Sensors Check Penalty. Harder to Hit by {2} at Medium, {3} at Long and {4} at Extreme Ranges.",
    "Long": "{0} Sensor Stealth",
    "Short": "S{0} Stealth"
   },

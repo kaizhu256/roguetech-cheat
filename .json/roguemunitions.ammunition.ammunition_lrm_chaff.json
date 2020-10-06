@@ -16,7 +16,7 @@
   "Details": "Long range missiles, capable of dealing moderate damage at long range. Each missile lacks punch, but in a group they can deal significant damage.",
   "Icon": null,
   "Id": "Ammunition_LRM_Chaff",
-  "Name": "LRM Ammo",
+  "Name": "Chaff LRM Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "Chaff"

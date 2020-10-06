@@ -2,7 +2,6 @@
  "BattleValue": 7124000,
  "ChassisTags": {
   "items": [
-   "mr-resize-0.83-1.13-0.93",
    "Primitive"
   ],
   "tagSetSourceFile": ""
@@ -41,7 +40,7 @@
    "prefabName": ""
   }
  ],
- "HardpointDataDefID": "hardpointdatadef_marauder",
+ "HardpointDataDefID": "hardpointdatadef_hector",
  "Heatsinks": 0,
  "InitialTonnage": 7,
  "LOSSourcePositions": [
@@ -213,8 +212,8 @@
  "MeleeToHitModifier": -1,
  "MovementCapDefID": "movedef_heavymech",
  "PathingCapDefID": "pathingdef_heavy",
- "PrefabBase": "marauder",
- "PrefabIdentifier": "chrPrfMech_marauderBase-001",
+ "PrefabBase": "hector",
+ "PrefabIdentifier": "chrprfmech_hectorbase-001",
  "PunchesWithLeftArm": false,
  "Radius": 8,
  "SensorRangeMultiplier": 1,

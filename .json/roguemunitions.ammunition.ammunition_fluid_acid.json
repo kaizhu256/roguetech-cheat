@@ -12,7 +12,7 @@
   "Details": "Large bore belted ammunition for 'Mech-mounted machine guns.",
   "Icon": null,
   "Id": "Ammunition_Fluid_Acid",
-  "Name": "Fluid Ammo",
+  "Name": "Acid Fluid Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "Acid"

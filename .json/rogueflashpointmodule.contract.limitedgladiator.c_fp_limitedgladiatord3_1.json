@@ -465,7 +465,7 @@
        "items": [],
        "tagSetSourceFile": "tags/SpawnEffectTags"
       },
-      "unitDefId": "mechdef_wraith_TR1-TR2P",
+      "unitDefId": "mechdef_pocahontas_TR2-P",
       "unitExcludedTagSet": {
        "items": [],
        "tagSetSourceFile": "tags/UnitTags"
@@ -498,7 +498,7 @@
        "items": [],
        "tagSetSourceFile": "tags/SpawnEffectTags"
       },
-      "unitDefId": "mechdef_wraith_TR1-TR2X",
+      "unitDefId": "mechdef_alexander_TR2-X",
       "unitExcludedTagSet": {
        "items": [],
        "tagSetSourceFile": "tags/UnitTags"

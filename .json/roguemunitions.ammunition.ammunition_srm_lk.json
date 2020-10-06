@@ -17,7 +17,7 @@
   "Details": "Short range missiles, capable of dealing heavy damage at close range via shaped charge warheads.",
   "Icon": null,
   "Id": "Ammunition_SRM_LK",
-  "Name": "SRM Ammo",
+  "Name": "Listen Kill SRM Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "L-K"

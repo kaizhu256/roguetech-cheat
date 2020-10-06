@@ -15,7 +15,7 @@
   "Details": "Long range missiles, capable of dealing moderate damage at long range. Each missile lacks punch, but in a group they can deal significant damage.",
   "Icon": null,
   "Id": "Ammunition_MRM_Tandem",
-  "Name": "MRM Ammo",
+  "Name": "Tandem MRM Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "Tandem"

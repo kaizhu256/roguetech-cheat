@@ -1113,7 +1113,7 @@
        "items": [],
        "tagSetSourceFile": "tags/SpawnEffectTags"
       },
-      "unitDefId": "mechdef_king_crab_KGC-020",
+      "unitDefId": "mechdef_sorcerer_SRC-1X",
       "unitExcludedTagSet": {
        "items": [],
        "tagSetSourceFile": "tags/UnitTags"

@@ -9,6 +9,11 @@
    "LeftLimit": "Lower",
    "RightLimit": "Lower"
   },
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Sling"
+  },
   "ChassisDefaults": []
  },
  "DFADamage": 25,

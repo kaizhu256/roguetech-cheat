@@ -18,7 +18,7 @@
   "Details": "Long range missiles, capable of dealing moderate damage at long range. Each missile lacks punch, but in a group they can deal significant damage.",
   "Icon": null,
   "Id": "Ammunition_HMRM_Thunder",
-  "Name": "LRM Ammo",
+  "Name": "Thunder HMRM Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "Thunder"
@@ -40,11 +40,15 @@
   "FireOnSuccessHit": true,
   "FireTerrainChance": 0.01,
   "Heat": 0,
+  "IFFLevel": 0,
   "InstallCellRange": 0,
   "SFX": "enum:AudioEventList_explosion.explosion_propane_tank",
+  "UIName": "Thunder",
   "VFXMinDistance": 30,
   "VFXprefab": "vfxNstPrtl_vehicleCrushed_A",
-  "statusEffects": []
+  "burnReaction": "None",
+  "statusEffects": [],
+  "stealthLevel": 1
  },
  "MissileHealth": 3,
  "Type": "Normal"

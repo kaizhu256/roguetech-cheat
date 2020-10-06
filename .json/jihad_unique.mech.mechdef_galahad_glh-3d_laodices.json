@@ -1,13 +1,13 @@
 {
  "ChassisID": "chassisdef_galahad_GLH-3D_laodices",
  "Description": {
-  "Cost": 290877,
-  "Details": "This custom variant of the Galahad was used by Phantom Demi-Precentor Delta Laodices, a commander of the 40th Shadow Division.[12] It uses a Small Cockpit, an Improved C3 Computer, one Light Gauss Rifle, and a Guardian ECM Suite - just like a standard 3D Galahad. It differs, however, in that it drops the other Light Gauss Rifle and one ton of ammunition, replacing them with an ER PPC enhanced by an experimental PPC Capacitor in the right arm. In addition, a Light PPC is mounted in the center torso. These modifications allow the 'Mech to remain in combat for far longer.",
+  "Cost": 296365,
+  "Details": "This custom variant of the Galahad was used by Phantom Demi-Precentor Delta Laodices, a commander of the 40th Shadow Division. It uses a Small Cockpit, an Improved C3 Computer, one Light Gauss Rifle, and a Guardian ECM Suite - just like a standard 3D Galahad. It differs, however, in that it drops the other Light Gauss Rifle and one ton of ammunition, replacing them with an ER PPC enhanced by an experimental PPC Capacitor in the right arm. In addition, a Light PPC is mounted in the center torso. These modifications allow the 'Mech to remain in combat for far longer.",
   "Icon": "Galahad",
   "Id": "mechdef_galahad_GLH-3D_laodices",
   "Manufacturer": null,
   "Model": null,
-  "Name": "Galahad GLH-3D",
+  "Name": "Galahad GLH-3D Laodices",
   "Purchasable": true,
   "Rarity": 3,
   "UIName": "Galahad GLH-3D Laodices"
@@ -322,20 +322,11 @@
    "hasPrefabName": false
   },
   {
-   "ComponentDefID": "Gear_HeatSink_Generic_Thermal-Exchanger-I",
-   "ComponentDefType": "HeatSink",
-   "DamageLevel": "Functional",
-   "HardpointSlot": -1,
-   "MountedLocation": "CenterTorso",
-   "SimGameUID": "",
-   "hasPrefabName": false
-  },
-  {
    "ComponentDefID": "Gear_PPC_Capacitator",
    "ComponentDefType": "Upgrade",
    "DamageLevel": "Functional",
    "HardpointSlot": -1,
-   "MountedLocation": "LeftTorso",
+   "MountedLocation": "RightArm",
    "hasPrefabName": false
   },
   {
@@ -411,5 +402,5 @@
    "hasPrefabName": false
   }
  ],
- "simGameMechPartCost": 290877
+ "simGameMechPartCost": 296365
 }

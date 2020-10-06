@@ -4,6 +4,14 @@
   "items": [],
   "tagSetSourceFile": ""
  },
+ "Custom": {
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "HitotsumeKozo"
+  },
+  "ChassisDefaults": []
+ },
  "DFADamage": 55,
  "DFAInstability": 28,
  "DFASelfDamage": 55,

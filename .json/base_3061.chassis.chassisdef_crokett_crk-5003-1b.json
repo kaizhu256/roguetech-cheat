@@ -19,7 +19,7 @@
  "DFASelfDamage": 85,
  "DFAToHitModifier": 0,
  "Description": {
-  "Cost": 10653440,
+  "Cost": 2466179,
   "Details": "A Star League era training mech, the Crockett was introduced in 2735. An 85 ton mech with a mix of weapon types alongside double heat sinks, the Crockett would go on to see frontline service as a command mech and assault mech. The CRK-5003-1b is an upgrade model used by the SLDF’s Royal regiments and features a 255 rated engine alongside an Endo Steel skeleton and a trio of Jump Jets. A pair of ER Large Lasers and a Gauss Rifle form the bulk of the mechs weapons, with 2 Medium Lasers and 4 Medium Pulses surprise opponents at close range.",
   "Icon": "uixTxrIcon_battlemaster",
   "Id": "chassisdef_crokett_CRK-5003-1b",
@@ -95,7 +95,7 @@
    "Hardpoints": [
     {
      "Omni": false,
-     "WeaponMountID": "Energy"
+     "WeaponMount": "Energy"
     }
    ],
    "InternalStructure": 16,
@@ -109,15 +109,15 @@
    "Hardpoints": [
     {
      "Omni": false,
-     "WeaponMountID": "Energy"
+     "WeaponMount": "Energy"
     },
     {
      "Omni": false,
-     "WeaponMountID": "Energy"
+     "WeaponMount": "Energy"
     },
     {
      "Omni": false,
-     "WeaponMountID": "Energy"
+     "WeaponMount": "Energy"
     }
    ],
    "InternalStructure": 70,
@@ -131,11 +131,11 @@
    "Hardpoints": [
     {
      "Omni": false,
-     "WeaponMountID": "AntiPersonnel"
+     "WeaponMountID": "Missile"
     },
     {
      "Omni": false,
-     "WeaponMountID": "Missile"
+     "WeaponMountID": "AntiPersonnel"
     }
    ],
    "InternalStructure": 90,
@@ -149,7 +149,11 @@
    "Hardpoints": [
     {
      "Omni": false,
-     "WeaponMountID": "Energy"
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
     },
     {
      "Omni": false,
@@ -179,11 +183,7 @@
    "Hardpoints": [
     {
      "Omni": false,
-     "WeaponMountID": "Ballistic"
-    },
-    {
-     "Omni": false,
-     "WeaponMountID": "Missile"
+     "WeaponMount": "Ballistic"
     }
    ],
    "InternalStructure": 90,
@@ -197,15 +197,15 @@
    "Hardpoints": [
     {
      "Omni": false,
-     "WeaponMountID": "Energy"
+     "WeaponMount": "Energy"
     },
     {
      "Omni": false,
-     "WeaponMountID": "Energy"
+     "WeaponMount": "Energy"
     },
     {
      "Omni": false,
-     "WeaponMountID": "Energy"
+     "WeaponMount": "Energy"
     }
    ],
    "InternalStructure": 70,

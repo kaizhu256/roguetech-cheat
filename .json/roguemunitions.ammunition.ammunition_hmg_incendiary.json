@@ -16,7 +16,7 @@
   "Details": "Large bore belted ammunition for 'Mech-mounted machine guns.",
   "Icon": null,
   "Id": "Ammunition_HMG_Incendiary",
-  "Name": "HMG Ammo",
+  "Name": "Incdendiary HMG Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "Incendiary"

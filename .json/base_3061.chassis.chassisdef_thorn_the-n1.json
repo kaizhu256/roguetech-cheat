@@ -2,7 +2,7 @@
  "BattleValue": 1642000,
  "ChassisTags": {
   "items": [
-   "mr-resize-0.4-0.48-0.49"
+   "mr-resize-0.8"
   ],
   "tagSetSourceFile": ""
  },
@@ -22,7 +22,7 @@
  "DFASelfDamage": 20,
  "DFAToHitModifier": 0,
  "Description": {
-  "Cost": 286905,
+  "Cost": 291990,
   "Details": "Developed in 3051 on the orders of Precentor Martial Anastasius Focht to try and close the gap between the Clans and Com Guards, the factory refit THE-N1 received its baptism of fire during the Battle of Tukayyid. Having reached a similar conclusion that resulted in the THE-Nb, the CASE was dropped and the standard engine was swapped for an XL Engine to allow the standard weaponry to be stripped for an all energy weapon array: a right arm mounted Kinslaughter H-Class ER PPC and a head-mounted Intek Small Laser. This new weapons array, enhanced by double heat sinks, added a level of lethality never seen before on the Thorn.",
   "Icon": "thorn",
   "Id": "chassisdef_thorn_THE-N1",
@@ -45,7 +45,7 @@
    "prefabName": ""
   }
  ],
- "HardpointDataDefID": "hardpointdatadef_kintaro",
+ "HardpointDataDefID": "hardpointdatadef_thorn",
  "Heatsinks": 0,
  "InitialTonnage": 2,
  "LOSSourcePositions": [
@@ -213,8 +213,8 @@
  "MeleeToHitModifier": 0,
  "MovementCapDefID": "movedef_lightmech",
  "PathingCapDefID": "pathingdef_light",
- "PrefabBase": "kintaro",
- "PrefabIdentifier": "chrPrfMech_kintaroBase-001",
+ "PrefabBase": "thorn",
+ "PrefabIdentifier": "chrprfmech_thornbase-001",
  "PunchesWithLeftArm": false,
  "Radius": 4,
  "SensorRangeMultiplier": 1,

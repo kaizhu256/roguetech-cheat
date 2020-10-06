@@ -1,0 +1,21 @@
+{
+ "Description": {
+  "Details": "",
+  "Icon": "",
+  "Id": "movedef_deploy_director",
+  "Name": "MovementCapabilitiesDef for deploy director"
+ },
+ "LimpVelocity": 0,
+ "MaxJumpAccel": 0,
+ "MaxJumpVel": 0,
+ "MaxJumpVerticalAccel": 0,
+ "MaxRadialAcceleration": 0,
+ "MaxRadialVelocity": 0,
+ "MaxSprintDistance": 0,
+ "MaxWalkDistance": 0,
+ "RunVelocity": 0,
+ "SprintAcceleration": 0,
+ "SprintVelocity": 0,
+ "WalkAcceleration": 0,
+ "WalkVelocity": 0
+}

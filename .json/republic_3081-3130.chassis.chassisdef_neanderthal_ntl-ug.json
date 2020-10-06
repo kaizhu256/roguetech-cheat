@@ -1,0 +1,243 @@
+{
+ "AlwaysPunchIfPossible": false,
+ "BattleValue": 7814000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "DFADamage": 80,
+ "DFAInstability": 40,
+ "DFASelfDamage": 80,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 2164423,
+  "Details": "A Regulan design built to emulate the Lyran Berzerker, the Neandertal is an 80 ton Battlemech designed around two concepts – speed and close combat. A 400 rated XL Engine paired with TSM helps achieve the first objective, while a massive Hatchet makes the Neanderthal deadly in close quarters. The Neanderthal NTL-UG is armed with a pair of Large Lasers and a Large Pulse Laser. A pair of Small Pulse Lasers provide some close range fire power, while Guardian ECM rounds out the mech.",
+  "Icon": "neanderthal",
+  "Id": "chassisdef_neanderthal_NTL-UG",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Neanderthal",
+  "Purchasable": true,
+  "Rarity": 4,
+  "UIName": "Neanderthal"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Distracting",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": null,
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_neand",
+ "Heatsinks": 0,
+ "InitialTonnage": 8,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": 1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": 1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 65,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 130,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    }
+   ],
+   "InternalStructure": 85,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 170,
+   "MaxRearArmor": 85,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 125,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 250,
+   "MaxRearArmor": 125,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 85,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 170,
+   "MaxRearArmor": 85,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 65,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 130,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 85,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 170,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 85,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 170,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 40,
+ "MeleeInstability": 20,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "neand",
+ "PrefabIdentifier": "chrprfmech_neandbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 200,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Skirmisher",
+ "Tonnage": 80,
+ "TopSpeed": 120,
+ "TurnRadius": 90,
+ "VariantName": "NTL-UG",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "A Regulan design built to emulate the Lyran Berzerker, the Neandertal is an 80 ton Battlemech designed around two concepts – speed and close combat. A 400 rated XL Engine paired with TSM helps achieve the first objective, while a massive Hatchet makes the Neanderthal deadly in close quarters. The Neanderthal NTL-UG is armed with a pair of Large Lasers and a Large Pulse Laser. A pair of Small Pulse Lasers provide some close range fire power, while Guardian ECM rounds out the mech.",
+ "weightClass": "ASSAULT"
+}

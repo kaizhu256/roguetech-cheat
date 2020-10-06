@@ -6,6 +6,13 @@
   ],
   "tagSetSourceFile": ""
  },
+ "Custom": {
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "CaveLion"
+  }
+ },
  "DFADamage": 75,
  "DFAInstability": 38,
  "DFASelfDamage": 75,

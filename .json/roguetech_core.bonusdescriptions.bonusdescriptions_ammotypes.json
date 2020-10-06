@@ -553,6 +553,12 @@
    "Short": "Swarm-i"
   },
   {
+   "Bonus": "SpreadRange",
+   "Full": "Projectiles that miss attempt to lock onto secondary target within {0} meters.",
+   "Long": "Spread {0}",
+   "Short": "Spread {0}"
+  },
+  {
    "Bonus": "InertAmmo",
    "Full": "Inert ammo; does not cook off or explode.",
    "Long": "No Explode Inert",

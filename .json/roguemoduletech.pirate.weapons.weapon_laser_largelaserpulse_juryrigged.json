@@ -11,6 +11,7 @@
  "BonusValueA": "Unknown",
  "BonusValueB": "28 Var.Dmg.",
  "Category": "Energy",
+ "ClusteringModifier": 15,
  "ComponentSubType": "Weapon",
  "ComponentTags": {
   "items": [
@@ -35,6 +36,7 @@
     "Explodium: 5",
     "MultiLaser",
     "WpnCrits: x2",
+    "DoesCluster",
     "WeaponBoom: 80"
    ]
   },
@@ -81,6 +83,7 @@
  "GunneryJammingMult": 0.02,
  "HeatDamage": 0,
  "HeatGenerated": 45,
+ "HitGenerator": "Cluster",
  "ImprovedBallistic": true,
  "IndirectFireCapable": false,
  "Instability": 8,

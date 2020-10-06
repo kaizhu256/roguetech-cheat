@@ -11,6 +11,11 @@
    "LeftLimit": "Upper",
    "RightLimit": "Upper"
   },
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "O-Bakemono"
+  },
   "ChassisDefaults": []
  },
  "DFADamage": 80,

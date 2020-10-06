@@ -2,7 +2,7 @@
  "ChassisID": "vehiclechassisdef_DEMOLISHER_GAUSS",
  "Description": {
   "Cost": 7221375,
-  "Details": "",
+  "Details": "This 3053 version of the Demolisher swaps the AC/20's for twin Gauss Rifles with 4 tons of ammunition and a pair of Medium Lasers. It also adds some armor protection.\n\n <b><color=#ffcc00>Tracked: High traction, agile turning.</color></b>\n\n <b><color=#ffcc00>Fusion: Expensive engine that works in a Vacuum.</color></b>\n\n <b><color=#ffcc00>Movement: 3/5 Hex: 90/150 Meters.</color></b>\n\n<b>Armor:</b> Ferro-Fibrous\n<b>Structure:</b> Structure\n<b>Values       A        S  </b>\n<b>Front</b>       250     40\n<b>Left</b>         180     40\n<b>Right</b>       180     40\n<b>Rear</b>        150     40\n<b>Turret</b>      225     40\n\n<b>Total</b>      985    200\n",
   "Icon": "Demolisher",
   "Id": "vehicledef_DEMOLISHER_GAUSS",
   "Name": "Demolisher-G",
@@ -50,7 +50,6 @@
   "items": [
    "mr-resize-1.50",
    "unit_vehicle",
-   "unit_vehicle_omni",
    "unit_assault",
    "unit_tracks",
    "unit_release",
@@ -59,6 +58,8 @@
    "unit_advanced",
    "unit_bracket_high",
    "unit_demolisher",
+   "unit_solaris",
+   "chainelane",
    "WordOfBlake",
    "comstar",
    "steiner",
@@ -188,6 +189,12 @@
    "ComponentDefID": "Tank_Sensors_Generic",
    "ComponentDefType": "Upgrade",
    "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "Front"
+  },
+  {
+   "ComponentDefID": "emod_structureslots_standard",
+   "ComponentDefType": "Upgrade",
    "HardpointSlot": -1,
    "MountedLocation": "Front"
   },

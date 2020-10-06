@@ -11,7 +11,7 @@
   }
  },
  "AdditionalLances": {
-  "AlwaysDisplayHiddenObjectiveIfPrimary": false,
+  "AlwaysDisplayHiddenObjectiveIfPrimary": true,
   "BasedOnVisibleSkullValue": true,
   "DisableAllies": false,
   "DisableEnemies": false,
@@ -35,10 +35,7 @@
    "DuoDuel",
    "AttackDefend"
   ],
-  "ExcludeFromAutocomplete": [
-   "DefendBase",
-   "FireMission"
-  ],
+  "ExcludeFromAutocomplete": [],
   "HideObjective": true,
   "IsPrimaryObjectiveIn": [
    "SimpleBattle",

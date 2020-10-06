@@ -43,7 +43,7 @@
    "prefabName": ""
   }
  ],
- "HardpointDataDefID": "hardpointdatadef_locust",
+ "HardpointDataDefID": "hardpointdatadef_firefly",
  "Heatsinks": 0,
  "InitialTonnage": 3,
  "LOSSourcePositions": [
@@ -218,8 +218,8 @@
  "MeleeToHitModifier": 0,
  "MovementCapDefID": "movedef_lightmech",
  "PathingCapDefID": "pathingdef_light",
- "PrefabBase": "locust",
- "PrefabIdentifier": "chrPrfMech_locustBase-001",
+ "PrefabBase": "firefly",
+ "PrefabIdentifier": "chrprfmech_fireflybase-001",
  "PunchesWithLeftArm": false,
  "Radius": 4,
  "SensorRangeMultiplier": 1,

@@ -18,7 +18,7 @@
   "Details": "Long range missiles, capable of dealing moderate damage at long range. Each missile lacks punch, but in a group they can deal significant damage.",
   "Icon": null,
   "Id": "Ammunition_LRM_Thunder_Augmented",
-  "Name": "LRM Ammo",
+  "Name": "Augmented Thunder LRM Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "Thunder-A"
@@ -42,11 +42,15 @@
   "FireTerrainChance": 0.01,
   "FireTerrainStrength": 0,
   "Heat": 0,
+  "IFFLevel": 0,
   "InstallCellRange": 6,
   "SFX": "enum:AudioEventList_explosion.explosion_propane_tank",
+  "UIName": "Thunder-A",
   "VFXMinDistance": 30,
   "VFXprefab": "vfxNstPrtl_vehicleCrushed_A",
-  "statusEffects": []
+  "burnReaction": "None",
+  "statusEffects": [],
+  "stealthLevel": 1
  },
  "MissileHealth": 2,
  "Type": "Normal"

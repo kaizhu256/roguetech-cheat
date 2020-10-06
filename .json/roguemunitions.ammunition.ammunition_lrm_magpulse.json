@@ -17,7 +17,7 @@
   "Details": "Short range missiles, inferno.",
   "Icon": null,
   "Id": "Ammunition_LRM_MagPulse",
-  "Name": "Inferno SRM Ammo",
+  "Name": "Magpulse EMP LRM Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "EMP"

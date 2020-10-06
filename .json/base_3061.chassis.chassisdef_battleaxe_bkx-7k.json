@@ -4,6 +4,13 @@
   "items": [],
   "tagSetSourceFile": ""
  },
+ "Custom": {
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "BattleAxe"
+  }
+ },
  "DFADamage": 70,
  "DFAInstability": 35,
  "DFASelfDamage": 70,

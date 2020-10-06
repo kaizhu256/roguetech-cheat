@@ -16,7 +16,7 @@
   "Details": "Moderate caliber rounds, suitable for long range fire in an AC/5.",
   "Icon": null,
   "Id": "Ammunition_RAC5_Caseless",
-  "Name": "Rotary AC/5 Ammo",
+  "Name": "Caseless RAC/5 Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "CL"

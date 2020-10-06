@@ -47,14 +47,13 @@
     "FreeActionWithAbility": true
    },
    "PainTolerance": {
-    "HeadHitArmorOnlyMulti": 0.5,
-    "KnockdownDamage": 6,
-    "PenaltyPerAmmoExplosionRatio": 1,
-    "PenaltyPerHeadDamage": 5,
-    "PenaltyPerHeatDamageInjuryRatio": 1,
+    "AmmoExplosionResistPenaltyPerCapacityPercentile": 1,
+    "HeadDamageResistPenaltyPerArmorPoint": 5,
+    "HeadHitArmorOnlyResistPenaltyMulti": 0.5,
+    "KnockdownResistPenalty": 6,
+    "OverheatResistPenaltyPerHeatPercentile": 1,
     "ResistPerGuts": 10,
-    "ShutdownDamage": 12,
-    "TorsoDestroyedDamage": 10
+    "SideLocationDestroyedResistPenalty": 10
    },
    "PilotAttributesMax": 20,
    "SpawnProtection": {
@@ -86,6 +85,7 @@
    "RandomStartByDifficulty": true,
    "ReduceSaveCompression": true,
    "ShowAllArgoUpgrades": true,
+   "SimGameDifficultyLabelsReplacer": false,
    "SkipDeleteSavePopup": true,
    "SkirmishAlwaysUnlimited": true,
    "SkirmishReset": true,
@@ -93,6 +93,10 @@
    "StreamlinedMainMenu": true,
    "UrbanExplosionsFix": true,
    "WeaponTooltip": true
+  },
+  "SimGameDifficultyStrings": {
+   "DESCRIPTION": "Overall Difficulty",
+   "LABEL": "Difficulty"
   },
   "Store": {
    "QuantityOnControl": 20,

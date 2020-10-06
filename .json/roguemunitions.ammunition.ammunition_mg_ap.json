@@ -8,7 +8,7 @@
   "Details": "Large bore belted ammunition for 'Mech-mounted machine guns.",
   "Icon": null,
   "Id": "Ammunition_MG_AP",
-  "Name": "MG Ammo",
+  "Name": "Armor Piercing MG Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "AP"

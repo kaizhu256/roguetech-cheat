@@ -1,0 +1,191 @@
+{
+ "BattleValue": 0,
+ "ChassisTags": {
+  "items": [
+   "BLACKLISTED",
+   "deploy_director"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "CustomParts": {
+  "FiringArc": 360,
+  "Unaffected": {
+   "DesignMasks": "true",
+   "Fire": "true",
+   "Landmines": "true",
+   "Pathing": "true"
+  }
+ },
+ "DFADamage": 0,
+ "DFAInstability": 0,
+ "DFASelfDamage": 0,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 10900000,
+  "Details": "Deploy director",
+  "Icon": "uixTxrIcon_kingcrab",
+  "Id": "chassisdef_deploy_director",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "DEPLOY",
+  "Purchasable": false,
+  "Rarity": 99,
+  "UIName": "DEPLOY"
+ },
+ "HardpointDataDefID": "hardpointdatadef_kingcrab",
+ "Heatsinks": 0,
+ "InitialTonnage": 1,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 14.5,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 15,
+   "z": -1
+  },
+  {
+   "x": -4,
+   "y": 15,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 14.5,
+   "z": 0
+  },
+  {
+   "x": 4,
+   "y": 15,
+   "z": -1
+  },
+  {
+   "x": -4,
+   "y": 15,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": -1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": -1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 1,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 85,
+   "InventorySlots": 1,
+   "Location": "LeftArm",
+   "MaxArmor": 170,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 105,
+   "InventorySlots": 0,
+   "Location": "LeftTorso",
+   "MaxArmor": 210,
+   "MaxRearArmor": 105,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 155,
+   "InventorySlots": 0,
+   "Location": "CenterTorso",
+   "MaxArmor": 310,
+   "MaxRearArmor": 155,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 105,
+   "InventorySlots": 0,
+   "Location": "RightTorso",
+   "MaxArmor": 210,
+   "MaxRearArmor": 105,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 85,
+   "InventorySlots": 0,
+   "Location": "RightArm",
+   "MaxArmor": 170,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 105,
+   "InventorySlots": 0,
+   "Location": "LeftLeg",
+   "MaxArmor": 210,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 105,
+   "InventorySlots": 0,
+   "Location": "RightLeg",
+   "MaxArmor": 210,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 0,
+ "MeleeDamage": 0,
+ "MeleeInstability": 100,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_deploy_director",
+ "PathingCapDefID": "pathingdef_deploy_director",
+ "PrefabBase": "kingcrab",
+ "PrefabIdentifier": "chrPrfMech_kingcrabBase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 200,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Deploy director",
+ "Tonnage": 1,
+ "TopSpeed": 0,
+ "TurnRadius": 0,
+ "VariantName": "DEPLOY",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Deploy direcotor",
+ "weightClass": "LIGHT"
+}

@@ -31,7 +31,7 @@
   "auraUpdateFix": "Never",
   "auraUpdateMinPosDelta": 20,
   "auraUpdateMinTimeDelta": 2,
-  "debug": false,
+  "debug": true,
   "equipmentFlashFailChance": 0.25,
   "sensorsAura": {},
   "unaffectedByHeadHitStatName": "NoHeadDamage"

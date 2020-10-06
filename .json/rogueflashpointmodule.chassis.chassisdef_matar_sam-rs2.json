@@ -7,6 +7,14 @@
   ],
   "tagSetSourceFile": ""
  },
+ "Custom": {
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Matar"
+  },
+  "ChassisDefaults": []
+ },
  "DFADamage": 110,
  "DFAInstability": 75,
  "DFASelfDamage": 110,

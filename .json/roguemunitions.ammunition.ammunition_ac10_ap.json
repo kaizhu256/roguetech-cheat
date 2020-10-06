@@ -20,7 +20,7 @@
   "Details": "Large caliber rounds capable of dealing heavy damage, and designed to be used in an AC/10.",
   "Icon": null,
   "Id": "Ammunition_AC10_AP",
-  "Name": "AC/10 Ammo",
+  "Name": "Armor Piercing AC/10 Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "AP"

@@ -17,7 +17,7 @@
  "DFASelfDamage": 85,
  "DFAToHitModifier": 0,
  "Description": {
-  "Cost": 10653440,
+  "Cost": 2263095,
   "Details": "A Star League era training mech, the Crockett was introduced in 2735. An 85 ton mech with a mix of weapon types alongside double heat sinks, the Crockett would go on to see frontline service as a command mech and assault mech. The CRK-5003-3 is an upgrade model manufactured for Comstar and features a 255 rated engine alongside a trio of Jump Jets. A pair of ER Large Lasers and an LB-10X form the bulk of the mechs weapons, while a pair of SRM-6’s and Small Lasers surprise enemies closing in.",
   "Icon": "uixTxrIcon_battlemaster",
   "Id": "chassisdef_crokett_CRK-5003-3",
@@ -102,11 +102,15 @@
    "Hardpoints": [
     {
      "Omni": false,
-     "WeaponMountID": "Energy"
+     "WeaponMount": "Ballistic"
     },
     {
      "Omni": false,
-     "WeaponMountID": "Energy"
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
     }
    ],
    "InternalStructure": 70,
@@ -120,11 +124,7 @@
    "Hardpoints": [
     {
      "Omni": false,
-     "WeaponMountID": "AntiPersonnel"
-    },
-    {
-     "Omni": false,
-     "WeaponMountID": "Missile"
+     "WeaponMount": "Missile"
     }
    ],
    "InternalStructure": 90,
@@ -136,6 +136,10 @@
   },
   {
    "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
     {
      "Omni": false,
      "WeaponMountID": "Special"
@@ -164,11 +168,11 @@
    "Hardpoints": [
     {
      "Omni": false,
-     "WeaponMountID": "Ballistic"
+     "WeaponMount": "Ballistic"
     },
     {
      "Omni": false,
-     "WeaponMountID": "Missile"
+     "WeaponMount": "Missile"
     }
    ],
    "InternalStructure": 90,
@@ -182,11 +186,11 @@
    "Hardpoints": [
     {
      "Omni": false,
-     "WeaponMountID": "Energy"
+     "WeaponMount": "Energy"
     },
     {
      "Omni": false,
-     "WeaponMountID": "Energy"
+     "WeaponMount": "Energy"
     }
    ],
    "InternalStructure": 70,

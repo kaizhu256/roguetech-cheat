@@ -26,6 +26,13 @@
     "EncounterObjectGuid": "ed007c52-f4cb-4bfc-842a-a50454d8a82a"
    },
    "name": "Chunk_SwapSpawnerPlacement"
+  },
+  {
+   "enableChunkFromContract": true,
+   "encounterChunk": {
+    "EncounterObjectGuid": "953a5930-06d0-4a2d-9840-e9a70c2a63ea"
+   },
+   "name": "Chunk_DisablePilotDeath"
   }
  ],
  "contractDisplayStyle": "BaseCampaignNormal",

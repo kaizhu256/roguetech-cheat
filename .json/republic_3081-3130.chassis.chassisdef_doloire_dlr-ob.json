@@ -20,9 +20,9 @@
  "DFASelfDamage": 80,
  "DFAToHitModifier": 0,
  "Description": {
-  "Cost": 14496000,
+  "Cost": 8496226,
   "Details": "Designed for the Republic Armed Forces in 3121, the Doloire is an 80 ton Omnimech designed with a mixture of Clantech and Inner Sphere tech. Designed around a 320 rated Clan XL Engine and an Endo-Composite Structure, the Doloire has 32 tons of pod space, with a pair of hardwired Clan ER Medium Lasers hardwired into the Mechs CT. The Doloire DLR-OB is armed with a pair of ER PPC’s and a RAC/5; all of which are Clan spec.",
-  "Icon": "uixTxrIcon_awesome",
+  "Icon": "Doloire",
   "Id": "chassisdef_doloire_DLR-OB",
   "Manufacturer": "",
   "Model": "",
@@ -41,6 +41,17 @@
    "HardpointSlot": -1,
    "MountedLocation": "CenterTorso",
    "SimGameUID": null,
+   "hasPrefabName": true,
+   "prefabName": ""
+  },
+  {
+   "ComponentDefID": "Special_MultiTrack",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": "",
    "hasPrefabName": true,
    "prefabName": ""
   },
@@ -96,17 +107,6 @@
    "HardpointSlot": -1,
    "MountedLocation": "RightTorso",
    "SimGameUID": null,
-   "hasPrefabName": true,
-   "prefabName": ""
-  },
-  {
-   "ComponentDefID": "Special_MultiTrack",
-   "ComponentDefType": "Upgrade",
-   "DamageLevel": "Functional",
-   "GUID": null,
-   "HardpointSlot": -1,
-   "MountedLocation": "CenterTorso",
-   "SimGameUID": "",
    "hasPrefabName": true,
    "prefabName": ""
   },
@@ -182,7 +182,12 @@
  ],
  "Locations": [
   {
-   "Hardpoints": [],
+   "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    }
+   ],
    "InternalStructure": 16,
    "InventorySlots": 6,
    "Location": "Head",
@@ -198,11 +203,11 @@
     },
     {
      "Omni": true,
-     "WeaponMountID": "AntiPersonnel"
+     "WeaponMountID": "Energy"
     },
     {
      "Omni": true,
-     "WeaponMountID": "Energy"
+     "WeaponMountID": "AntiPersonnel"
     },
     {
      "Omni": true,
@@ -218,6 +223,14 @@
   },
   {
    "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
     {
      "Omni": true,
      "WeaponMountID": "Energy"
@@ -236,6 +249,14 @@
   },
   {
    "Hardpoints": [
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
     {
      "Omni": true,
      "WeaponMountID": "Energy"
@@ -272,6 +293,14 @@
    "Hardpoints": [
     {
      "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
+     "WeaponMount": "Ballistic"
+    },
+    {
+     "Omni": true,
      "WeaponMountID": "Energy"
     },
     {
@@ -294,11 +323,11 @@
     },
     {
      "Omni": true,
-     "WeaponMountID": "AntiPersonnel"
+     "WeaponMountID": "Energy"
     },
     {
      "Omni": true,
-     "WeaponMountID": "Energy"
+     "WeaponMountID": "AntiPersonnel"
     },
     {
      "Omni": true,

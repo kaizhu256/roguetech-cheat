@@ -14,6 +14,11 @@
    "LeftLimit": "Upper",
    "RightLimit": "Upper"
   },
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "TomaHawkII"
+  },
   "ChassisDefaults": []
  },
  "DFADamage": 100,

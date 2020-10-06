@@ -9,7 +9,7 @@
   "Details": "Large bore belted ammunition for 'Mech-mounted machine guns.",
   "Icon": null,
   "Id": "Ammunition_LMG_Tracer",
-  "Name": "LMG Ammo",
+  "Name": "Tracer LMG Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "Tracer"

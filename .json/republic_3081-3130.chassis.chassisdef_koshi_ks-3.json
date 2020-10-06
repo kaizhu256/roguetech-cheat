@@ -5,6 +5,11 @@
   "tagSetSourceFile": ""
  },
  "Custom": {
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Koshi"
+  },
   "ChassisDefaults": [
    {
     "CategoryID": "Armor",

@@ -18,7 +18,7 @@
   "Details": "Splits into four individually seeking projectiles",
   "Icon": null,
   "Id": "Ammunition_TBOLT20_MIRV",
-  "Name": "Thunderbolt 20 Ammo",
+  "Name": "MIRV Thunderbolt 20 Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "MIRV"

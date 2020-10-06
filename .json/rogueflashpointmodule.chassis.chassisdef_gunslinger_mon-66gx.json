@@ -1,7 +1,10 @@
 {
  "BattleValue": 2061000,
  "ChassisTags": {
-  "items": [],
+  "items": [
+   "PrototypeMech",
+   "SLDFMech"
+  ],
   "tagSetSourceFile": ""
  },
  "DFADamage": 25,

@@ -20,7 +20,7 @@
   "Details": "This is a kinetic energy penetrator, it's damage is velocity dependant so it decreases with range. The great importance of shot placement is abstracted with variable damage.",
   "Icon": null,
   "Id": "Ammunition_RifleLight_APFSDS",
-  "Name": "Light Rifle Ammo",
+  "Name": "APFSDS Light Rifle Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "APFSDS"

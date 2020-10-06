@@ -16,7 +16,7 @@
   "Details": "Large bore belted ammunition for 'Mech-mounted machine guns.",
   "Icon": null,
   "Id": "Ammunition_LMG_Incendiary",
-  "Name": "LMG Ammo",
+  "Name": "Incendiary LMG Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "Incendiary"

@@ -40,9 +40,7 @@
   "items": [
    "OmniRestriction.{location}",
    "component_type_stock",
-   "range_long",
-   "wr-jammable_weapon",
-   "wr-jam_chance_multiplier-3"
+   "range_long"
   ],
   "tagSetSourceFile": ""
  },
@@ -53,9 +51,11 @@
   "BonusDescriptions": {
    "Bonuses": [
     "WpnRecoil: 3",
-    "WeaponJAM: 3",
-    "WeaponJAMFlat: 30%",
-    "Mjoelnir"
+    "Mjoelnir",
+    "MisfireChanceMode1: AC10, 10%",
+    "MisfireChanceMode2: UAC10, 15%",
+    "MisfireChanceMode3: LBX10, 10%",
+    "MisfireChanceMode4: HVAC10, 10%"
    ]
   },
   "Category": [
@@ -105,9 +105,9 @@
   {
    "AIHitChanceCap": 0.1,
    "AmmoCategory": "AC10",
-   "FlatJammingChance": 0.15,
-   "GunneryJammingBase": 3,
-   "GunneryJammingMult": 0.06,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 0,
+   "GunneryJammingMult": 0.01,
    "Id": "AC10",
    "UIName": "AC10",
    "isBaseMode": false
@@ -115,9 +115,9 @@
   {
    "AIHitChanceCap": 0.4,
    "AmmoCategory": "UAC10",
-   "FlatJammingChance": 0.3,
-   "GunneryJammingBase": 3,
-   "GunneryJammingMult": 0.06,
+   "FlatJammingChance": 0.15,
+   "GunneryJammingBase": 0,
+   "GunneryJammingMult": 0.01,
    "Id": "AC10U",
    "RefireModifier": 2,
    "ShotsWhenFired": 1,
@@ -127,9 +127,9 @@
   {
    "AIHitChanceCap": 0.4,
    "AmmoCategory": "LBX10",
-   "FlatJammingChance": 0.25,
-   "GunneryJammingBase": 3,
-   "GunneryJammingMult": 0.06,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 0,
+   "GunneryJammingMult": 0.01,
    "Id": "LBX",
    "LongRange": 120,
    "MaxRange": 120,
@@ -146,9 +146,9 @@
    "APMaxArmorThickness": 60,
    "AmmoCategory": "HVAC10",
    "CriticalChanceMultiplier": 1,
-   "FlatJammingChance": 0.35,
-   "GunneryJammingBase": 4,
-   "GunneryJammingMult": 0.07,
+   "FlatJammingChance": 0.1,
+   "GunneryJammingBase": 0,
+   "GunneryJammingMult": 0.01,
    "Id": "HVAC10",
    "LongRange": 300,
    "MaxRange": 300,

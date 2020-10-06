@@ -1,9 +1,9 @@
 {
  "AIBattleValue": 70,
- "APArmorShardsMod": 0.25,
- "APCriticalChanceMultiplier": 0.125,
- "APDamage": 5,
- "APMaxArmorThickness": 125,
+ "APArmorShardsMod": 0.65,
+ "APCriticalChanceMultiplier": 0.98,
+ "APDamage": 10,
+ "APMaxArmorThickness": 175,
  "ArmorDamageModifier": 1,
  "Category": "NARC",
  "ColorChangeRule": "t0",
@@ -22,7 +22,7 @@
   "Details": "Narc pod with a big shaped charge in it.",
   "Icon": null,
   "Id": "Ammunition_Narc_Explosive",
-  "Name": "Narc Ammo",
+  "Name": "Shaped Charge Narc Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "Shaped Charge"

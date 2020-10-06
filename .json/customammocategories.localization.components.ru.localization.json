@@ -2642,8 +2642,8 @@
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "More enemy {TEAM_TAR_ALLY.FactionDef.Demonym} forces incoming. This is the Secondary Objective version.",
-   "CULTURE_RU_RU": "More enemy {TEAM_TAR_ALLY.FactionDef.Demonym} forces incoming. This is the Secondary Objective version."
+   "CULTURE_EN_US": "More enemy {TEAM_TAR_ALLY.FactionDef.Demonym} forces incoming.  ",
+   "CULTURE_RU_RU": "More enemy {TEAM_TAR_ALLY.FactionDef.Demonym} forces incoming.  "
   },
   "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle..dialogueList22.dialogueContent0.words"
  },
@@ -2674,8 +2674,8 @@
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "Another {TEAM_EMP.FactionDef.Demonym} lance has dropped in Commander! This is the Secondary Objective Version.",
-   "CULTURE_RU_RU": "Another {TEAM_EMP.FactionDef.Demonym} lance has dropped in Commander! This is the Secondary Objective Version."
+   "CULTURE_EN_US": "Another {TEAM_EMP.FactionDef.Demonym} lance has dropped in Commander!  ",
+   "CULTURE_RU_RU": "Another {TEAM_EMP.FactionDef.Demonym} lance has dropped in Commander!  "
   },
   "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle..dialogueList24.dialogueContent0.words"
  },
@@ -2706,8 +2706,8 @@
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "More {TEAM_EMP.FactionDef.Demonym} forces on the field! This is the Secondary Objective Version.",
-   "CULTURE_RU_RU": "More {TEAM_EMP.FactionDef.Demonym} forces on the field! This is the Secondary Objective Version."
+   "CULTURE_EN_US": "More {TEAM_EMP.FactionDef.Demonym} forces on the field!",
+   "CULTURE_RU_RU": "More {TEAM_EMP.FactionDef.Demonym} forces on the field!"
   },
   "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle..dialogueList26.dialogueContent0.words"
  },
@@ -2746,40 +2746,40 @@
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "PLACHEHOLDER (Additional Target Forces Secondary). Inbound hostile Dropship detected, drop zone marked.",
-   "CULTURE_RU_RU": "PLACHEHOLDER (Additional Target Forces Secondary). Inbound hostile Dropship detected, drop zone marked."
+   "CULTURE_EN_US": "Inbound hostile Dropship detected, drop zone marked.",
+   "CULTURE_RU_RU": "Inbound hostile Dropship detected, drop zone marked."
   },
   "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle..dialogueList33.dialogueContent0.words"
  },
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "PLACHEHOLDER (Additional Dropped Target Forces 2 Primary). Inbound hostile Dropship detected, drop zone marked.",
-   "CULTURE_RU_RU": "PLACHEHOLDER (Additional Dropped Target Forces 2 Primary). Inbound hostile Dropship detected, drop zone marked."
+   "CULTURE_EN_US": "Inbound hostile Dropship detected, drop zone marked.",
+   "CULTURE_RU_RU": "Inbound hostile Dropship detected, drop zone marked."
   },
   "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle..dialogueList34.dialogueContent0.words"
  },
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "PLACHEHOLDER (Additional Target Forces 2 Secondary). Inbound hostile Dropship detected, drop zone marked.",
-   "CULTURE_RU_RU": "PLACHEHOLDER (Additional Target Forces 2 Secondary). Inbound hostile Dropship detected, drop zone marked."
+   "CULTURE_EN_US": "Inbound hostile Dropship detected, drop zone marked.",
+   "CULTURE_RU_RU": "Inbound hostile Dropship detected, drop zone marked."
   },
   "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle..dialogueList35.dialogueContent0.words"
  },
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "PLACHEHOLDER (Additional Dropped Forces Enemy Ally Primary). Inbound hostile Dropship detected, drop zone marked.",
-   "CULTURE_RU_RU": "PLACHEHOLDER (Additional Dropped Forces Enemy Ally Primary). Inbound hostile Dropship detected, drop zone marked."
+   "CULTURE_EN_US": "Inbound hostile Dropship detected, drop zone marked.",
+   "CULTURE_RU_RU": "Inbound hostile Dropship detected, drop zone marked."
   },
   "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle..dialogueList36.dialogueContent0.words"
  },
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "PLACHEHOLDER (Additional Dropped Forces Enemy Ally Secondary) . Inbound hostile Dropship detected, drop zone marked.",
-   "CULTURE_RU_RU": "PLACHEHOLDER (Additional Dropped Forces Enemy Ally Secondary) . Inbound hostile Dropship detected, drop zone marked."
+   "CULTURE_EN_US": "Inbound hostile Dropship detected, drop zone marked.",
+   "CULTURE_RU_RU": "Inbound hostile Dropship detected, drop zone marked."
   },
   "Name": "Custom_Ammo_Categories.tournament_1_3wayBattle..dialogueList37.dialogueContent0.words"
  },
@@ -3810,8 +3810,8 @@
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "More enemy {TEAM_TAR_ALLY.FactionDef.Demonym} forces incoming. This is the Secondary Objective version.",
-   "CULTURE_RU_RU": "More enemy {TEAM_TAR_ALLY.FactionDef.Demonym} forces incoming. This is the Secondary Objective version."
+   "CULTURE_EN_US": "More enemy {TEAM_TAR_ALLY.FactionDef.Demonym} forces incoming.  ",
+   "CULTURE_RU_RU": "More enemy {TEAM_TAR_ALLY.FactionDef.Demonym} forces incoming.  "
   },
   "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle..dialogueList22.dialogueContent0.words"
  },
@@ -3842,8 +3842,8 @@
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "Another {TEAM_EMP.FactionDef.Demonym} lance has dropped in Commander! This is the Secondary Objective Version.",
-   "CULTURE_RU_RU": "Another {TEAM_EMP.FactionDef.Demonym} lance has dropped in Commander! This is the Secondary Objective Version."
+   "CULTURE_EN_US": "Another {TEAM_EMP.FactionDef.Demonym} lance has dropped in Commander!  ",
+   "CULTURE_RU_RU": "Another {TEAM_EMP.FactionDef.Demonym} lance has dropped in Commander!  "
   },
   "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle..dialogueList24.dialogueContent0.words"
  },
@@ -3874,8 +3874,8 @@
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "More {TEAM_EMP.FactionDef.Demonym} forces on the field! This is the Secondary Objective Version.",
-   "CULTURE_RU_RU": "More {TEAM_EMP.FactionDef.Demonym} forces on the field! This is the Secondary Objective Version."
+   "CULTURE_EN_US": "More {TEAM_EMP.FactionDef.Demonym} forces on the field!",
+   "CULTURE_RU_RU": "More {TEAM_EMP.FactionDef.Demonym} forces on the field!"
   },
   "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle..dialogueList26.dialogueContent0.words"
  },
@@ -3930,40 +3930,40 @@
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "PLACHEHOLDER (Additional Target Forces Secondary). Inbound hostile Dropship detected, drop zone marked.",
-   "CULTURE_RU_RU": "PLACHEHOLDER (Additional Target Forces Secondary). Inbound hostile Dropship detected, drop zone marked."
+   "CULTURE_EN_US": "Inbound hostile Dropship detected, drop zone marked.",
+   "CULTURE_RU_RU": "Inbound hostile Dropship detected, drop zone marked."
   },
   "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle..dialogueList33.dialogueContent0.words"
  },
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "PLACHEHOLDER (Additional Dropped Target Forces 2 Primary). Inbound hostile Dropship detected, drop zone marked.",
-   "CULTURE_RU_RU": "PLACHEHOLDER (Additional Dropped Target Forces 2 Primary). Inbound hostile Dropship detected, drop zone marked."
+   "CULTURE_EN_US": "Inbound hostile Dropship detected, drop zone marked.",
+   "CULTURE_RU_RU": "Inbound hostile Dropship detected, drop zone marked."
   },
   "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle..dialogueList34.dialogueContent0.words"
  },
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "PLACHEHOLDER (Additional Target Forces 2 Secondary). Inbound hostile Dropship detected, drop zone marked.",
-   "CULTURE_RU_RU": "PLACHEHOLDER (Additional Target Forces 2 Secondary). Inbound hostile Dropship detected, drop zone marked."
+   "CULTURE_EN_US": "Inbound hostile Dropship detected, drop zone marked.",
+   "CULTURE_RU_RU": "Inbound hostile Dropship detected, drop zone marked."
   },
   "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle..dialogueList35.dialogueContent0.words"
  },
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "PLACHEHOLDER (Additional Dropped Forces Enemy Ally Primary). Inbound hostile Dropship detected, drop zone marked.",
-   "CULTURE_RU_RU": "PLACHEHOLDER (Additional Dropped Forces Enemy Ally Primary). Inbound hostile Dropship detected, drop zone marked."
+   "CULTURE_EN_US": "Inbound hostile Dropship detected, drop zone marked.",
+   "CULTURE_RU_RU": "Inbound hostile Dropship detected, drop zone marked."
   },
   "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle..dialogueList36.dialogueContent0.words"
  },
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_a1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "PLACHEHOLDER (Additional Dropped Forces Enemy Ally Secondary) . Inbound hostile Dropship detected, drop zone marked.",
-   "CULTURE_RU_RU": "PLACHEHOLDER (Additional Dropped Forces Enemy Ally Secondary) . Inbound hostile Dropship detected, drop zone marked."
+   "CULTURE_EN_US": "Inbound hostile Dropship detected, drop zone marked.",
+   "CULTURE_RU_RU": "Inbound hostile Dropship detected, drop zone marked."
   },
   "Name": "Custom_Ammo_Categories.tournament_a1_3wayBattle..dialogueList37.dialogueContent0.words"
  },
@@ -4970,8 +4970,8 @@
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "More enemy {TEAM_TAR_ALLY.FactionDef.Demonym} forces incoming. This is the Secondary Objective version.",
-   "CULTURE_RU_RU": "More enemy {TEAM_TAR_ALLY.FactionDef.Demonym} forces incoming. This is the Secondary Objective version."
+   "CULTURE_EN_US": "More enemy {TEAM_TAR_ALLY.FactionDef.Demonym} forces incoming.  ",
+   "CULTURE_RU_RU": "More enemy {TEAM_TAR_ALLY.FactionDef.Demonym} forces incoming.  "
   },
   "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle..dialogueList22.dialogueContent0.words"
  },
@@ -5002,8 +5002,8 @@
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "Another {TEAM_EMP.FactionDef.Demonym} lance has dropped in Commander! This is the Secondary Objective Version.",
-   "CULTURE_RU_RU": "Another {TEAM_EMP.FactionDef.Demonym} lance has dropped in Commander! This is the Secondary Objective Version."
+   "CULTURE_EN_US": "Another {TEAM_EMP.FactionDef.Demonym} lance has dropped in Commander!  ",
+   "CULTURE_RU_RU": "Another {TEAM_EMP.FactionDef.Demonym} lance has dropped in Commander!  "
   },
   "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle..dialogueList24.dialogueContent0.words"
  },
@@ -5034,8 +5034,8 @@
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "More {TEAM_EMP.FactionDef.Demonym} forces on the field! This is the Secondary Objective Version.",
-   "CULTURE_RU_RU": "More {TEAM_EMP.FactionDef.Demonym} forces on the field! This is the Secondary Objective Version."
+   "CULTURE_EN_US": "More {TEAM_EMP.FactionDef.Demonym} forces on the field!",
+   "CULTURE_RU_RU": "More {TEAM_EMP.FactionDef.Demonym} forces on the field!"
   },
   "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle..dialogueList26.dialogueContent0.words"
  },
@@ -5074,40 +5074,40 @@
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "PLACHEHOLDER (Additional Target Forces Secondary). Inbound hostile Dropship detected, drop zone marked.",
-   "CULTURE_RU_RU": "PLACHEHOLDER (Additional Target Forces Secondary). Inbound hostile Dropship detected, drop zone marked."
+   "CULTURE_EN_US": "Inbound hostile Dropship detected, drop zone marked.",
+   "CULTURE_RU_RU": "Inbound hostile Dropship detected, drop zone marked."
   },
   "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle..dialogueList33.dialogueContent0.words"
  },
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "PLACHEHOLDER (Additional Dropped Target Forces 2 Primary). Inbound hostile Dropship detected, drop zone marked.",
-   "CULTURE_RU_RU": "PLACHEHOLDER (Additional Dropped Target Forces 2 Primary). Inbound hostile Dropship detected, drop zone marked."
+   "CULTURE_EN_US": "Inbound hostile Dropship detected, drop zone marked.",
+   "CULTURE_RU_RU": "Inbound hostile Dropship detected, drop zone marked."
   },
   "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle..dialogueList34.dialogueContent0.words"
  },
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "PLACHEHOLDER (Additional Target Forces 2 Secondary). Inbound hostile Dropship detected, drop zone marked.",
-   "CULTURE_RU_RU": "PLACHEHOLDER (Additional Target Forces 2 Secondary). Inbound hostile Dropship detected, drop zone marked."
+   "CULTURE_EN_US": "Inbound hostile Dropship detected, drop zone marked.",
+   "CULTURE_RU_RU": "Inbound hostile Dropship detected, drop zone marked."
   },
   "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle..dialogueList35.dialogueContent0.words"
  },
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "PLACHEHOLDER (Additional Dropped Forces Enemy Ally Primary). Inbound hostile Dropship detected, drop zone marked.",
-   "CULTURE_RU_RU": "PLACHEHOLDER (Additional Dropped Forces Enemy Ally Primary). Inbound hostile Dropship detected, drop zone marked."
+   "CULTURE_EN_US": "Inbound hostile Dropship detected, drop zone marked.",
+   "CULTURE_RU_RU": "Inbound hostile Dropship detected, drop zone marked."
   },
   "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle..dialogueList36.dialogueContent0.words"
  },
  {
   "FileName": "C:\\Games\\steamapps\\common\\BATTLETECH\\Mods\\CustomAmmoCategories\\contracts\\tournament_b1_3wayBattle.json",
   "Localization": {
-   "CULTURE_EN_US": "PLACHEHOLDER (Additional Dropped Forces Enemy Ally Secondary) . Inbound hostile Dropship detected, drop zone marked.",
-   "CULTURE_RU_RU": "PLACHEHOLDER (Additional Dropped Forces Enemy Ally Secondary) . Inbound hostile Dropship detected, drop zone marked."
+   "CULTURE_EN_US": "Inbound hostile Dropship detected, drop zone marked.",
+   "CULTURE_RU_RU": "Inbound hostile Dropship detected, drop zone marked."
   },
   "Name": "Custom_Ammo_Categories.tournament_b1_3wayBattle..dialogueList37.dialogueContent0.words"
  },

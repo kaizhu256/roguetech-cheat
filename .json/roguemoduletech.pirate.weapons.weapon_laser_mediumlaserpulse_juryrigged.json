@@ -12,7 +12,7 @@
  "BonusValueA": "10 Var.Dmg.",
  "BonusValueB": "Pulse Accuracy",
  "Category": "Energy",
- "ClusteringModifier": 5,
+ "ClusteringModifier": 20,
  "ColorsTable": [
   {
    "C": "#eeff00",

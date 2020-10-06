@@ -1,0 +1,241 @@
+{
+ "AlwaysPunchIfPossible": false,
+ "BattleValue": 10581000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "thunderhawk"
+  }
+ },
+ "DFADamage": 100,
+ "DFAInstability": 50,
+ "DFASelfDamage": 100,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 12444680,
+  "Details": "Produced in the last years of the Amaris Civil War for the SLDF, the Thunder Hawk emphasises firepower over speed. A 100 ton mech, the Thunder Hawk TDK-7Y is built around a 300 rated XL Engine and is armed with a trio of Gauss Rifles, with a pair of Medium Pulse Lasers as back up weapons.",
+  "Icon": "uixTxrIcon_thunderhawk",
+  "Id": "chassisdef_thunderhawk_TDK-7Y",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Thunder Hawk",
+  "Purchasable": true,
+  "Rarity": 5,
+  "UIName": "Thunder Hawk"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Command_Mech",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_thunderhawk",
+ "Heatsinks": 0,
+ "InitialTonnage": 10,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 17,
+   "z": 0
+  },
+  {
+   "x": 5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": -5,
+   "y": 16,
+   "z": -1
+  },
+  {
+   "x": 3.5,
+   "y": 5.5,
+   "z": 1
+  },
+  {
+   "x": -3.5,
+   "y": 5.5,
+   "z": 1
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    }
+   ],
+   "InternalStructure": 85,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 170,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    }
+   ],
+   "InternalStructure": 105,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 210,
+   "MaxRearArmor": 105,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 155,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 310,
+   "MaxRearArmor": 155,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    }
+   ],
+   "InternalStructure": 105,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 210,
+   "MaxRearArmor": 105,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Ballistic"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    }
+   ],
+   "InternalStructure": 85,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 170,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 105,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 210,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 105,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 210,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 50,
+ "MeleeInstability": 25,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_assaultmech",
+ "PathingCapDefID": "pathingdef_assault",
+ "PrefabBase": "thunderhawk",
+ "PrefabIdentifier": "chrprfmech_thunderhawkbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Sniper",
+ "Tonnage": 100,
+ "TopSpeed": 60,
+ "TurnRadius": 90,
+ "VariantName": "TDK-7Y",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Produced in the last years of the Amaris Civil War for the SLDF, the Thunder Hawk emphasises firepower over speed. A 100 ton mech, the Thunder Hawk TDK-7Y is built around a 300 rated XL Engine and is armed with a trio of Gauss Rifles, with a pair of Medium Pulse Lasers as back up weapons.",
+ "weightClass": "ASSAULT"
+}

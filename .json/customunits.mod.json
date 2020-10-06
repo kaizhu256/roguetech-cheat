@@ -17,6 +17,30 @@
    "Type": "AssetBundle"
   },
   {
+   "Path": "mech",
+   "Type": "MechDef"
+  },
+  {
+   "Path": "chassis",
+   "Type": "ChassisDef"
+  },
+  {
+   "Path": "movedef",
+   "Type": "MovementCapabilitiesDef"
+  },
+  {
+   "Path": "pathingdef",
+   "Type": "PathingCapabilitiesDef"
+  },
+  {
+   "Path": "pilot",
+   "Type": "PilotDef"
+  },
+  {
+   "Path": "ability",
+   "Type": "AbilityDef"
+  },
+  {
    "AssetBundleName": "standart_shader",
    "Id": "battletechstandartshader",
    "Path": "assets/shaderscarriers/battletechstandartshader.prefab",
@@ -56,12 +80,17 @@
  "Name": "CustomUnits",
  "PackagedOn": "2019-01-31T00:00:00Z",
  "Settings": {
-  "AllowVehiclesEdit": true,
+  "AllowVehiclesEdit": false,
   "CanPilotAlsoMechProbability": 0,
   "CanPilotVehicleProbability": 0,
   "CanPilotVehicleTag": "pilot_vehicle_crew",
   "CannotPilotMechTag": "pilot_nomech_crew",
   "CountContractMaxUnits4AsUnlimited": true,
+  "DeployManual": false,
+  "DeployMaxDistanceFromOriginal": 30,
+  "DeployMinDistanceFromEnemy": 400,
+  "HideActiveAbilitiesIcon": "futuristic",
+  "HidePassiveAbilitiesIcon": "ram",
   "LancesIcons": [
    "one",
    "two",
@@ -72,6 +101,8 @@
   "MechBaySwitchIconMech": "mech",
   "MechBaySwitchIconUp": "weapon_up",
   "MechBaySwitchIconVehicle": "vehicle",
+  "ShowActiveAbilitiesIcon": "futuristic",
+  "ShowPassiveAbilitiesIcon": "ram",
   "ShowVehicleBays": false,
   "debugLog": false,
   "deepWaterDepth": 10,

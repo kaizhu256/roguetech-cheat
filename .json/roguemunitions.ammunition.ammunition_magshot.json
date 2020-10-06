@@ -7,7 +7,7 @@
   "Details": "GAUSS Ammo",
   "Icon": null,
   "Id": "Ammunition_MagShot",
-  "Name": "Gauss Ammo",
+  "Name": "Magshot Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "Std"

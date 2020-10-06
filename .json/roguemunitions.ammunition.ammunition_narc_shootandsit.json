@@ -16,7 +16,7 @@
   "Details": "Sticky Bombs, they go off 1 turn after they land. We can't do pinpoint with these like TT. I'm making their niche high STAB damage.",
   "Icon": null,
   "Id": "Ammunition_Narc_ShootAndSit",
-  "Name": "Narc Ammo",
+  "Name": "Sticky Bomb Narc Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "StickyBomb"
@@ -38,7 +38,7 @@
    "C": "#00FF00",
    "I": 1.5
   },
-  "SFX": "AudioEventList_explosion_explosion_medium",
+  "SFX": "enum:AudioEventList_explosion_explosion_medium",
   "TerrainVFX": "",
   "TerrainVFXScale": {
    "x": 1,

@@ -11,7 +11,7 @@
  "MaxJumpVerticalAccel": 60,
  "MaxRadialAcceleration": 180,
  "MaxRadialVelocity": 90,
- "MaxSprintDistance": 120,
+ "MaxSprintDistance": 150,
  "MaxWalkDistance": 90,
  "RunVelocity": 48,
  "SprintAcceleration": 30,

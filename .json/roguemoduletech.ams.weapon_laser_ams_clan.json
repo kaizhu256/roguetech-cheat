@@ -51,7 +51,7 @@
     "OLAMSShots: 20",
     "OLAMSHeat: 22",
     "OLAMSJam: 30%",
-    "AMSDirectMLAS"
+    "AMSDirectSLAS"
    ]
   },
   "Category": [
@@ -124,13 +124,15 @@
    "isBaseMode": false
   },
   {
-   "DamagePerShot": 25,
-   "FlatJammingChance": 0.1,
-   "GunneryJammingBase": 5,
-   "GunneryJammingMult": 0.015,
-   "HeatGenerated": 15,
+   "AccuracyModifier": -1,
+   "DamagePerShot": 5,
+   "EvasivePipsIgnored": 1,
+   "FlatJammingChance": 0.15,
+   "GunneryJammingBase": 0,
+   "GunneryJammingMult": 0.01,
+   "HeatGenerated": 0,
    "Id": "Laser",
-   "ShotsWhenFired": 0,
+   "ShotsWhenFired": 3,
    "UIName": "Laser",
    "isBaseMode": false
   }

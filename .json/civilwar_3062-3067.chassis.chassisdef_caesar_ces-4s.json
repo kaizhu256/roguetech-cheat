@@ -6,6 +6,14 @@
   ],
   "tagSetSourceFile": ""
  },
+ "Custom": {
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "Caesar"
+  },
+  "ChassisDefaults": []
+ },
  "CustomParts": {
   "CustomParts": [],
   "FiringArc": 130

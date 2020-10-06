@@ -8,7 +8,7 @@
   "Details": "Small caliber ammunition designed for long range fire in an AC/2.",
   "Icon": null,
   "Id": "Ammunition_LBX10_SLUG",
-  "Name": "LBX/10 Ammo",
+  "Name": "Slug LBX/10 Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "Slug"

@@ -77,7 +77,7 @@
   "Play_tex__weapon_lost_all__": 1435765858,
   "tex_stop_all": 4076877235
  },
- "filename": "tex_voicepack.bnk",
+ "filename": "tex_voicepack_processed.bnk",
  "name": "tex_voicepack_soundbank",
  "type": "Voice",
  "volumeRTPCIds": [

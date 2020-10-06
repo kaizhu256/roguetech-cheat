@@ -27,7 +27,7 @@
   "Details": "High Explosive warhead with AOE and minefield clearance, but low direct damage",
   "Icon": null,
   "Id": "Ammunition_TBOLT10_HE",
-  "Name": "Thunderbolt 10 Ammo",
+  "Name": "High Explosive Thunderbolt 10 Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "High Explosive"

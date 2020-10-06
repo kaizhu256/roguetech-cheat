@@ -1,0 +1,249 @@
+{
+ "AlwaysPunchIfPossible": false,
+ "BattleValue": 6577000,
+ "ChassisTags": {
+  "items": [
+   "ClanMech"
+  ],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Lower",
+   "RightLimit": "Lower"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 70,
+ "DFAInstability": 35,
+ "DFASelfDamage": 70,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 1982500,
+  "Details": "A Clan built upgrade of the Guillotine, the Guillotine IIC is assigned to second line units and solahma troops. The Guillotine IIC is armed with a pair of Large Pulse Lasers and an ER PPC. 2 ER Medium Lasers and an SRM-6 give the mech a nasty punch at closer ranges. ",
+  "Icon": "GuillotineIIC",
+  "Id": "chassisdef_guillotine_GLT-IIC",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Guillotine",
+  "Purchasable": true,
+  "Rarity": 3,
+  "UIName": "Guillotine"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Searchlight",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": null,
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_glt",
+ "Heatsinks": 0,
+ "InitialTonnage": 7,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 14,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 15,
+   "z": 1
+  },
+  {
+   "x": 4,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": -4,
+   "y": 14,
+   "z": 0
+  },
+  {
+   "x": 3,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 55,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 110,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Missile"
+    },
+    {
+     "Omni": false,
+     "WeaponMount": "AntiPersonnel"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 110,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 220,
+   "MaxRearArmor": 110,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 75,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 150,
+   "MaxRearArmor": 75,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMount": "Energy"
+    }
+   ],
+   "InternalStructure": 55,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 110,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 75,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 150,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 35,
+ "MeleeInstability": 18,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "glt",
+ "PrefabIdentifier": "chrprfmech_gltbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Skirmisher",
+ "Tonnage": 70,
+ "TopSpeed": 120,
+ "TurnRadius": 90,
+ "VariantName": "GLT-IIC",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "A Clan built upgrade of the Guillotine, the Guillotine IIC is assigned to second line units and solahma troops. The Guillotine IIC is armed with a pair of Large Pulse Lasers and an ER PPC. 2 ER Medium Lasers and an SRM-6 give the mech a nasty punch at closer ranges. ",
+ "weightClass": "HEAVY"
+}

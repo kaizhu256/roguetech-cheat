@@ -20,7 +20,7 @@
   "Details": "Long range missiles, capable of dealing moderate damage at long range. Each missile lacks punch, but in a group they can deal significant damage.",
   "Icon": null,
   "Id": "Ammunition_TBOLT10_Guided",
-  "Name": "Thunderbolt 10 Ammo",
+  "Name": "Guided Thunderbolt 10 Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "Guided"

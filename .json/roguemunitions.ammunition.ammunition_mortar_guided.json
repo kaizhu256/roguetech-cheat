@@ -21,7 +21,7 @@
   "Details": "Massive rounds, designed for devastating impact, to be used in an AC/20.",
   "Icon": null,
   "Id": "Ammunition_Mortar_Guided",
-  "Name": "Mortar Ammo",
+  "Name": "Guided Mortar Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "Guided"

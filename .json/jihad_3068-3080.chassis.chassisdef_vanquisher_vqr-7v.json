@@ -1,9 +1,7 @@
 {
  "BattleValue": 20581000,
  "ChassisTags": {
-  "items": [
-   "mr-resize-1.45-0.85-1.0"
-  ],
+  "items": [],
   "tagSetSourceFile": ""
  },
  "Custom": {
@@ -47,7 +45,7 @@
    "hasPrefabName": false
   }
  ],
- "HardpointDataDefID": "hardpointdatadef_k2pult",
+ "HardpointDataDefID": "hardpointdatadef_vanquisher",
  "Heatsinks": 0,
  "InitialTonnage": 10,
  "LOSSourcePositions": [
@@ -236,8 +234,8 @@
  "MeleeToHitModifier": 0,
  "MovementCapDefID": "movedef_assaultmech",
  "PathingCapDefID": "pathingdef_heavy",
- "PrefabBase": "k2pult",
- "PrefabIdentifier": "chrprfmech_k2pultbase-001",
+ "PrefabBase": "vanquisher",
+ "PrefabIdentifier": "chrprfmech_vanquisherbase-001",
  "PunchesWithLeftArm": false,
  "Radius": 8,
  "SensorRangeMultiplier": 1,

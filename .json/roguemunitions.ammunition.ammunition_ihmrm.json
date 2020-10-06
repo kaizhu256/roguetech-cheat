@@ -18,7 +18,7 @@
   "Details": "Medium range missiles, inferno.",
   "Icon": null,
   "Id": "Ammunition_IHMRM",
-  "Name": "Incendiary MRM Ammo",
+  "Name": "Incendiary HMRM Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "Incendiary"

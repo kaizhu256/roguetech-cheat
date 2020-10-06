@@ -54,7 +54,7 @@
   "Name": "SRM Ammo",
   "Purchasable": true,
   "Rarity": 5,
-  "UIName": "Ammo SRM Counter Missile"
+  "UIName": "Ammo SRM Counter Missile [Half]"
  },
  "DisallowedLocations": "All",
  "InventorySize": 1,

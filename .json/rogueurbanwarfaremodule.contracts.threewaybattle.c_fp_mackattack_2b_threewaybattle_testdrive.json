@@ -1163,7 +1163,7 @@
      "emote": "Default",
      "revealRadius": -1,
      "selectedCastDefId": "castDef_DariusDefault",
-     "words": "Heads up Commander, its a hostile {TEAM_TAR_ALLY.FactionDef.Demonym} lance! This is the Secondary Objective version.",
+     "words": "Heads up Commander, its a hostile {TEAM_TAR_ALLY.FactionDef.Demonym} lance!  ",
      "wordsColor": {
       "a": 1,
       "b": 1,
@@ -1245,7 +1245,7 @@
      "emote": "Default",
      "revealRadius": -1,
      "selectedCastDefId": "castDef_DariusDefault",
-     "words": "Another {TEAM_EMP.FactionDef.Demonym} lance has dropped in Commander! This is the Secondary Objective Version.",
+     "words": "Another {TEAM_EMP.FactionDef.Demonym} lance has dropped in Commander!  ",
      "wordsColor": {
       "a": 1,
       "b": 1,
@@ -1392,7 +1392,7 @@
      "emote": "Default",
      "revealRadius": -1,
      "selectedCastDefId": "castDef_DariusDefault",
-     "words": "PLACHEHOLDER (Hostile to All Primary). Inbound hostile Dropship detected, drop zone marked.",
+     "words": "Inbound hostile Dropship detected, drop zone marked.",
      "wordsColor": {
       "a": 1,
       "b": 1,
@@ -1524,7 +1524,7 @@
      "emote": "Default",
      "revealRadius": -1,
      "selectedCastDefId": "castDef_DariusDefault",
-     "words": "PLACHEHOLDER (Additional Dropped Target Forces 2 Primary). Inbound hostile Dropship detected, drop zone marked.",
+     "words": "Inbound hostile Dropship detected, drop zone marked.",
      "wordsColor": {
       "a": 1,
       "b": 1,
@@ -1549,7 +1549,7 @@
      "emote": "Default",
      "revealRadius": -1,
      "selectedCastDefId": "castDef_DariusDefault",
-     "words": "PLACHEHOLDER (Additional Target Forces 2 Secondary). Inbound hostile Dropship detected, drop zone marked.",
+     "words": "Inbound hostile Dropship detected, drop zone marked.",
      "wordsColor": {
       "a": 1,
       "b": 1,
@@ -1574,7 +1574,7 @@
      "emote": "Default",
      "revealRadius": -1,
      "selectedCastDefId": "castDef_DariusDefault",
-     "words": "PLACHEHOLDER (Additional Dropped Forces Enemy Ally Primary). Inbound hostile Dropship detected, drop zone marked.",
+     "words": "Inbound hostile Dropship detected, drop zone marked.",
      "wordsColor": {
       "a": 1,
       "b": 1,
@@ -1599,7 +1599,7 @@
      "emote": "Default",
      "revealRadius": -1,
      "selectedCastDefId": "castDef_DariusDefault",
-     "words": "PLACHEHOLDER (Additional Dropped Forces Enemy Ally Secondary) . Inbound hostile Dropship detected, drop zone marked.",
+     "words": "Inbound hostile Dropship detected, drop zone marked.",
      "wordsColor": {
       "a": 1,
       "b": 1,

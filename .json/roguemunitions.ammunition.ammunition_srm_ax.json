@@ -18,7 +18,7 @@
   "Details": "Short range missiles, capable of dealing heavy damage at close range via shaped charge warheads.",
   "Icon": null,
   "Id": "Ammunition_SRM_AX",
-  "Name": "SRM Ammo",
+  "Name": "Acid SRM Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "AX"

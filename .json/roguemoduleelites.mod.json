@@ -46,11 +46,6 @@
   {
    "Path": "EliteFire",
    "Type": "LanceDef"
-  },
-  {
-   "Path": "Starter",
-   "ShouldAppendText": true,
-   "Type": "ItemCollectionDef"
   }
  ],
  "Name": "Rogue Elites",

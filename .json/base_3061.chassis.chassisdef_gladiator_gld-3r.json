@@ -1,9 +1,7 @@
 {
  "BattleValue": 5171000,
  "ChassisTags": {
-  "items": [
-   "mr-resize-0.9"
-  ],
+  "items": [],
   "tagSetSourceFile": ""
  },
  "Custom": {
@@ -43,7 +41,7 @@
    "hasPrefabName": false
   }
  ],
- "HardpointDataDefID": "hardpointdatadef_blackknight",
+ "HardpointDataDefID": "hardpointdatadef_gladiator",
  "Heatsinks": 0,
  "InitialTonnage": 5.5,
  "LOSSourcePositions": [
@@ -214,8 +212,8 @@
  "MeleeToHitModifier": 0,
  "MovementCapDefID": "movedef_mediummech",
  "PathingCapDefID": "pathingdef_heavy",
- "PrefabBase": "blackknight",
- "PrefabIdentifier": "chrPrfMech_blackknightBase-001",
+ "PrefabBase": "gladiator",
+ "PrefabIdentifier": "chrprfmech_gladiatorbase-001",
  "PunchesWithLeftArm": false,
  "Radius": 8,
  "SensorRangeMultiplier": 1,

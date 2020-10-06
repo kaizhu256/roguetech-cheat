@@ -98,7 +98,9 @@
     "modType": "System.Single",
     "modValue": "1.03",
     "operation": "Float_Multiply",
-    "statName": "DamagePerShot"
+    "statName": "DamagePerShot",
+    "targetCollection": "Weapon",
+    "targetWeaponSubType": "Melee"
    },
    "targetingData": {
     "effectTargetType": "Creator",

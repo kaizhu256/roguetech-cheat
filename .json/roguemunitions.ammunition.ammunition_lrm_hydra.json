@@ -26,7 +26,7 @@
   "Details": "Long range missiles, inferno.",
   "Icon": null,
   "Id": "Ammunition_LRM_Hydra",
-  "Name": "Incendiary LRM Ammo",
+  "Name": "Hydra LRM Ammo",
   "Purchasable": false,
   "Rarity": 0,
   "UIName": "Hydra"

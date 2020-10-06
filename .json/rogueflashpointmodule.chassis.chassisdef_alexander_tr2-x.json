@@ -1,7 +1,9 @@
 {
  "BattleValue": 1171000,
  "ChassisTags": {
-  "items": [],
+  "items": [
+   "EliteMech"
+  ],
   "tagSetSourceFile": ""
  },
  "Custom": {

@@ -2,7 +2,6 @@
  "BattleValue": 6577000,
  "ChassisTags": {
   "items": [
-   "mr-resize-0.8",
    "SLDFMech"
   ],
   "tagSetSourceFile": ""
@@ -46,7 +45,7 @@
    "prefabName": ""
   }
  ],
- "HardpointDataDefID": "hardpointdatadef_warhammer",
+ "HardpointDataDefID": "hardpointdatadef_gspider",
  "Heatsinks": 0,
  "InitialTonnage": 6,
  "LOSSourcePositions": [
@@ -213,8 +212,8 @@
  "MeleeToHitModifier": 0,
  "MovementCapDefID": "movedef_heavymech",
  "PathingCapDefID": "pathingdef_heavy",
- "PrefabBase": "warhammer",
- "PrefabIdentifier": "chrPrfMech_warhammerBase-001",
+ "PrefabBase": "gspider",
+ "PrefabIdentifier": "chrprfmech_gspiderbase-001",
  "PunchesWithLeftArm": false,
  "Radius": 8,
  "SensorRangeMultiplier": 1,

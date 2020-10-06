@@ -1,0 +1,238 @@
+{
+ "AlwaysPunchIfPossible": false,
+ "BattleValue": 5383000,
+ "ChassisTags": {
+  "items": [],
+  "tagSetSourceFile": ""
+ },
+ "Custom": {
+  "ArmActuatorSupport": {
+   "LeftLimit": "Upper"
+  },
+  "ChassisDefaults": []
+ },
+ "DFADamage": 60,
+ "DFAInstability": 30,
+ "DFASelfDamage": 60,
+ "DFAToHitModifier": 0,
+ "Description": {
+  "Cost": 6457250,
+  "Details": "Debuting in 3055, the Anvil is an FWL Mech designed to work with the light Hammer fire support Mech. A heavy brawler, the Anvil is a 60 ton mech with a 240 rated Fusion Core and an Endo Steel chassis. The Anvil ANV-8M is armed with an Arrow IV and an ER Large Laser. A pair of ER Medium Lasers round out the armament, while MASC and Guardian ECM enhance the Mechs speed and defensive capabilities.",
+  "Icon": "Anvil",
+  "Id": "chassisdef_anvil_ANV-8M",
+  "Manufacturer": "",
+  "Model": "",
+  "Name": "Anvil",
+  "Purchasable": true,
+  "Rarity": 2,
+  "UIName": "Anvil"
+ },
+ "EngageRangeModifier": 0,
+ "FixedEquipment": [
+  {
+   "ComponentDefID": "Special_Extended_Torso_Twist",
+   "ComponentDefType": "Upgrade",
+   "DamageLevel": "Functional",
+   "GUID": null,
+   "HardpointSlot": -1,
+   "MountedLocation": "CenterTorso",
+   "SimGameUID": null,
+   "hasPrefabName": true,
+   "prefabName": ""
+  }
+ ],
+ "HardpointDataDefID": "hardpointdatadef_anvil",
+ "Heatsinks": 0,
+ "InitialTonnage": 6,
+ "LOSSourcePositions": [
+  {
+   "x": 0,
+   "y": 13,
+   "z": 1
+  },
+  {
+   "x": 3,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 13,
+   "z": 0
+  }
+ ],
+ "LOSTargetPositions": [
+  {
+   "x": 0,
+   "y": 13,
+   "z": 1
+  },
+  {
+   "x": 3,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": -3,
+   "y": 13,
+   "z": 0
+  },
+  {
+   "x": 2,
+   "y": 5,
+   "z": 0
+  },
+  {
+   "x": -2,
+   "y": 5,
+   "z": 0
+  }
+ ],
+ "Locations": [
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    }
+   ],
+   "InternalStructure": 16,
+   "InventorySlots": 6,
+   "Location": "Head",
+   "MaxArmor": 45,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Missile"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "LeftArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "AntiPersonnel"
+    }
+   ],
+   "InternalStructure": 70,
+   "InventorySlots": 12,
+   "Location": "LeftTorso",
+   "MaxArmor": 140,
+   "MaxRearArmor": 70,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Special"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "SpecialMelee"
+    }
+   ],
+   "InternalStructure": 100,
+   "InventorySlots": 15,
+   "Location": "CenterTorso",
+   "MaxArmor": 200,
+   "MaxRearArmor": 100,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 70,
+   "InventorySlots": 12,
+   "Location": "RightTorso",
+   "MaxArmor": 140,
+   "MaxRearArmor": 70,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    },
+    {
+     "Omni": false,
+     "WeaponMountID": "Energy"
+    }
+   ],
+   "InternalStructure": 50,
+   "InventorySlots": 12,
+   "Location": "RightArm",
+   "MaxArmor": 100,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 70,
+   "InventorySlots": 6,
+   "Location": "LeftLeg",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  },
+  {
+   "Hardpoints": [],
+   "InternalStructure": 70,
+   "InventorySlots": 6,
+   "Location": "RightLeg",
+   "MaxArmor": 140,
+   "MaxRearArmor": -1,
+   "Tonnage": 0
+  }
+ ],
+ "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
+ "MeleeDamage": 30,
+ "MeleeInstability": 15,
+ "MeleeToHitModifier": 0,
+ "MovementCapDefID": "movedef_heavymech",
+ "PathingCapDefID": "pathingdef_heavy",
+ "PrefabBase": "anvil",
+ "PrefabIdentifier": "chrprfmech_anvilbase-001",
+ "PunchesWithLeftArm": false,
+ "Radius": 8,
+ "SensorRangeMultiplier": 1,
+ "Signature": 0,
+ "SpotterDistanceMultiplier": 1,
+ "Stability": 100,
+ "StabilityDefenses": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "StockRole": "Missile Boat",
+ "Tonnage": 60,
+ "TopSpeed": 150,
+ "TurnRadius": 90,
+ "VariantName": "ANV-8M",
+ "VisibilityMultiplier": 1,
+ "YangsThoughts": "Debuting in 3055, the Anvil is an FWL Mech designed to work with the light Hammer fire support Mech. A heavy brawler, the Anvil is a 60 ton mech with a 240 rated Fusion Core and an Endo Steel chassis. The Anvil ANV-8M is armed with an Arrow IV and an ER Large Laser. A pair of ER Medium Lasers round out the armament, while MASC and Guardian ECM enhance the Mechs speed and defensive capabilities.",
+ "weightClass": "HEAVY"
+}

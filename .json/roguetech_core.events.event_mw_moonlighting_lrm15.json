@@ -508,7 +508,7 @@
          "valueConstant": null
         },
         {
-         "name": "Weapon_LRM_LRM15_EXTENTED",
+         "name": "Item.WeaponDef.Weapon_LRM_LRM15_EXTENTED",
          "set": false,
          "typeString": "System.Int32",
          "value": "1",
@@ -663,7 +663,7 @@
          "valueConstant": null
         },
         {
-         "name": "Weapon_LRM_LRM15_ENHANCED",
+         "name": "Item.WeaponDef.Weapon_LRM_LRM15_ENHANCED",
          "set": false,
          "typeString": "System.Int32",
          "value": "1",
@@ -749,7 +749,7 @@
          "valueConstant": null
         },
         {
-         "name": "Weapon_LRM_LRM15_CLAN",
+         "name": "Item.WeaponDef.Weapon_LRM_LRM15_CLAN",
          "set": false,
          "typeString": "System.Int32",
          "value": "1",
