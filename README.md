@@ -26,47 +26,36 @@ this mod will enable roguetech-specific cheats like build intact mech from singl
 ```javascript
 {
     // cheat - ammoboxes have infinite ammo
-    // (roguetech-compatible)
     "cheat_ammoboxcapacity_infinite": "1",
 
     // cheat - add/remove armor for free
-    // (roguetech-compatible)
     "cheat_armorinstall_free": "1",
 
     // cheat - no longer banned from contract due to poor reputation
-    // (roguetech-compatible)
     "cheat_contractban_off": "1",
 
     // cheat - lose -25% (instead of -80%) reputation from contract's opposing faction
-    // (roguetech-compatible)
     "cheat_contractreputationloss_low": "1",
 
     // cheat - salvage full-mech from one mech-part
-    // (roguetech-compatible)
     "cheat_salvagefullmech_on": "1",
 
     // cheat - 300 salvage in contracts
-    // (roguetech-compatible)
     "cheat_salvagetotal_300": "1",
 
     // cheat - skip intro
-    // (roguetech-compatible)
     "cheat_introskip_on": "1",
 
-    // cheat - in roguetech, disable engine-limits on heatsinks
-    // (roguetech-compatible)
+    // cheat - disable engine-limits on heatsinks
     "cheat_enginevalidation_off": "1",
 
     // cheat - mech-components take up only 1 slot
-    // (roguetech-compatible)
     "cheat_mechcomponentsize_1": "1",
 
     // cheat - can add weapon/equipment/armor to mech over its weight-limit
-    // (roguetech-compatible)
     "cheat_mechweightlimit_off": "1",
 
     // cheat - pilot-abilities have have 0 cooldown
-    // (roguetech-compatible)
     "cheat_pilotabilitycooldown_0": "1",
 
     // cheat - reset pilot-skills by shift-clicking skills-tab in barracks
@@ -74,11 +63,9 @@ this mod will enable roguetech-specific cheats like build intact mech from singl
     "cheat_pilotskill_reset": "",
 
     // cheat - pilot-skills cost less
-    // (roguetech-compatible)
     "cheat_pilotskillcost_low": "1",
 
     // cheat - unused pilot-xp is no longer nagged by darius if pilot-skills are maxed
-    // (roguetech-compatible)
     "cheat_pilotxpnag_off": "1",
 }
 ```
