@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BattletechModCheat")]
+[assembly: AssemblyTitle("RoguetechCheat")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("kaizhu256")]
-[assembly: AssemblyProduct("BattletechModCheat")]
+[assembly: AssemblyProduct("RoguetechCheat")]
 [assembly: AssemblyCopyright("MIT")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

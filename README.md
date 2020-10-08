@@ -1,20 +1,24 @@
-# BattletechModCheat
+# RoguetechCheat
+this mod will enable roguetech-specific cheats like build intact mech from single-part, remove engine-restrictions, remove heatsink-restrictions, etc.
 
-#### changelog 2020.8.29
-- update roguetech dll dependencies
-- update cheat_salvagefullmech_on to improve repair salvage
+#### changelog 2020.10.6
+- create release
+- remove non-roguetech cheats
+- update dll-dependencies to RogueTech Osmium Beta 1.7.1
+- migrate to repo https://github.com/kaizhu256/roguetech-cheat
 - none
 
 #### todo
+- add github-action to auto create release
 - none
 
 #### install instruction
-1.  install BattleTech and ModTek
+1.  install roguetech
 2.  copy this mod into directory BATTLETECH\Mods\
 3.  when first run, this mod will automatically create a file `settings.json`
     in its own directory with below cheat-settings
 4.  to enable/disable cheats, edit file
-    `BATTLETECH\Mods\BattletechModCheat\settings.json`
+    `BATTLETECH\Mods\RoguetechCheat\settings.json`
     by replacing each cheat's value with either "1" or empty-string "",
     respectively
 5.  if you are updating roguetech, repeat steps 2 to 4
@@ -45,9 +49,6 @@
     // (roguetech-compatible)
     "cheat_salvagetotal_300": "1",
 
-    // cheat - sort contracts by difficulty
-    "cheat_contractsort_bydifficulty": "",
-
     // cheat - skip intro
     // (roguetech-compatible)
     "cheat_introskip_on": "1",
@@ -55,9 +56,6 @@
     // cheat - in roguetech, disable engine-limits on heatsinks
     // (roguetech-compatible)
     "cheat_enginevalidation_off": "1",
-
-    // cheat - mechbay2 and mechbay3 can repair 2nd and 3rd mech simultaneously
-    "cheat_mechbayrepair_multi": "",
 
     // cheat - mech-components take up only 1 slot
     // (roguetech-compatible)
@@ -72,6 +70,7 @@
     "cheat_pilotabilitycooldown_0": "1",
 
     // cheat - reset pilot-skills by shift-clicking skills-tab in barracks
+    // (only works if you disable retrainer in roguetech)
     "cheat_pilotskill_reset": "",
 
     // cheat - pilot-skills cost less
@@ -81,19 +80,6 @@
     // cheat - unused pilot-xp is no longer nagged by darius if pilot-skills are maxed
     // (roguetech-compatible)
     "cheat_pilotxpnag_off": "1",
-
-    // cheat - mech can sensorlock-and-fire
-    "cheat_sensorlockfire_on": "",
-
-    // cheat - sell items to shop for 50% (instead of 10%)
-    // (roguetech-compatible)
-    "cheat_shopsellprice_high": "0",
-
-    // cheat - mech can sprint-and-melee
-    "cheat_sprintmelee_on": "",
-
-    // cheat - mech can sprint-and-shoot
-    "cheat_sprintshoot_on": "",
 }
 ```
 
@@ -145,7 +131,7 @@ Then, save the game again exit the game, either delete the added registry key or
 ```csharp
 debugLog cheat_componentsize_1   at System.Environment.get_StackTrace () [0x00000] in <d7ac571ca2d04b2f981d0d886fa067cf>:0
 
-  at BattletechModCheat.Patch_JSONSerializationUtility_RehydrateObjectFromDictionary.Prefix (System.Collections.Generic.Dictionary`2[TKey,TValue] values) [0x00000] in <03a507d7e2ff4278943321530082f36d>:0
+  at RoguetechCheat.Patch_JSONSerializationUtility_RehydrateObjectFromDictionary.Prefix (System.Collections.Generic.Dictionary`2[TKey,TValue] values) [0x00000] in <03a507d7e2ff4278943321530082f36d>:0
 
   at HBS.Util.JSONSerializationUtility.RehydrateObjectFromDictionary_Patch1 (System.Object , System.Collections.Generic.Dictionary`2[TKey,TValue] , System.String , HBS.Stopwatch , HBS.Stopwatch , HBS.Util.JSONSerializationUtility+RehydrationFilteringMode , System.Func`2[System.String,System.Boolean][] ) [0x00000] in <029bfe22d2d74c8e8c8ded1619022103>:0
 

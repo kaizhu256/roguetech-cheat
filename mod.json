@@ -1,15 +1,10 @@
 {
-    "DLL": "BattletechModCheat.dll",
-    "Manifest": [
-        {
-            "Path": "itemCollections",
-            "ShouldAppendText": true,
-            "Type": "ItemCollectionDef"
-        }
-    ],
-    "Name": "BattletechModCheat",
+    "!!jslint_utility2": true,
+    "DLL": "RoguetechCheat.dll",
+    "Name": "RoguetechCheat",
     "OptionallyDependsOn": [
         "BT_Extended_3025",
+        "CustomAmmoCategories",
         "CustomComponents",
         "CustomSalvage",
         "MechEngineer",
@@ -17,5 +12,6 @@
         "RogueTech Core"
     ],
     "Settings": {},
-    "Version": "2020.8.29"
+    "Version": "2020.10.6",
+    "Website": "https://github.com/kaizhu256/roguetech-cheat"
 }

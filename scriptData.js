@@ -2,7 +2,7 @@
 /*
  * scriptData.js
  * example usage:
-node ../BattletechModCheat/scriptData.js taskFileFlatten
+node ../RoguetechCheat/scriptData.js taskFileFlatten
 node ../scriptData.js taskSqliteExportAll
 node ../scriptData.js taskSqliteExport ammotype
 node ../scriptData.js taskSqliteExport chassisdef

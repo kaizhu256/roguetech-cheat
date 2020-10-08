@@ -5,6 +5,7 @@
     merge = refs/heads/base
     remote = origin
 [core]
+    # autocrlf = false
     autocrlf = input
     bare = false
     filemode = false
@@ -16,4 +17,4 @@
     denyCurrentBranch = warn
 [remote "origin"]
     fetch = +refs/heads/*:refs/remotes/origin/*
-    url = https://github.com/kaizhu256/battletech-mod-cheat
+    url = https://github.com/kaizhu256/roguetech-cheat

@@ -13,11 +13,12 @@ temp*
 tmp
 utility2
 !.gitconfig
+!.github
 !.gitignore
 
 /.vs/
 /Assembly-CSharp.dll
-/BattletechModCheat.dll
+/RoguetechCheat.dll
 /bin/
 /itemCollections/itemCollection_Ammo_all.csv
 /obj/

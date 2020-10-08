@@ -7,8 +7,8 @@
     <ProjectGuid>{0426B3A3-D426-4F52-A46D-15815A127467}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BattletechModCheat</RootNamespace>
-    <AssemblyName>BattletechModCheat</AssemblyName>
+    <RootNamespace>RoguetechCheat</RootNamespace>
+    <AssemblyName>RoguetechCheat</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -75,7 +75,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BattletechModCheat.cs" />
+    <Compile Include="RoguetechCheat.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="mod.json" />
@@ -87,10 +87,10 @@
   <PropertyGroup>
     <PostBuildEvent>
       copy /y "$(TargetPath)" "$(ProjectDir)"
-      if exist "\Games\BATTLETECH\Mods\BattletechModCheat\" (
-        copy /y "$(ProjectDir)*.dll" "\Games\BATTLETECH\Mods\BattletechModCheat\"
-        copy /y "$(ProjectDir)*.json" "\Games\BATTLETECH\Mods\BattletechModCheat\"
-        copy /y "$(ProjectDir)README.md" "\Games\BATTLETECH\Mods\BattletechModCheat\"
+      if exist "\Games\BATTLETECH\Mods\RoguetechCheat\" (
+        copy /y "$(ProjectDir)*.dll" "\Games\BATTLETECH\Mods\RoguetechCheat\"
+        copy /y "$(ProjectDir)*.json" "\Games\BATTLETECH\Mods\RoguetechCheat\"
+        copy /y "$(ProjectDir)README.md" "\Games\BATTLETECH\Mods\RoguetechCheat\"
         rd /s /q "\Games\BATTLETECH\Mods\.modtek\Cache\" "\Games\BATTLETECH\Mods\.modtek\Database\"
         <!--
         "\Games\BATTLETECH\BattleTech.exe"

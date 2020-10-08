@@ -1,21 +1,12 @@
 using BattleTech;
-using BattleTech.Framework;
 using BattleTech.UI;
 using Harmony;
-using HBS;
-using HBS.Util;
-using Localize;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Reflection.Emit;
-using System.Text.RegularExpressions;
 using UnityEngine;
 
-namespace BattletechModCheat
+namespace RoguetechCheat
 {
     public class
     Dict2 : SortedList<string, string>
@@ -43,8 +34,16 @@ namespace BattletechModCheat
                 )
                 : val.ToString()
             ).Trim().ToLower();
-            val2 = Regex.Replace(val2, "^true$", "1");
-            val2 = Regex.Replace(val2, "^false$", "");
+            val2 = System.Text.RegularExpressions.Regex.Replace(
+                val2,
+                "^true$",
+                "1"
+            );
+            val2 = System.Text.RegularExpressions.Regex.Replace(
+                val2,
+                "^false$",
+                ""
+            );
             this[key.ToLower()] = val2;
         }
     }
@@ -64,14 +63,11 @@ namespace BattletechModCheat
         public static int
         countJsonParse = 0;
 
-        public static JsonSerializerSettings
+        public static Newtonsoft.Json.JsonSerializerSettings
         jsonSerializerSettings;
 
         public static Dict2
         state;
-
-        public static SelectionStateSensorLock
-        stateSelectionStateSensorLock;
 
         public static object
         debugInline(string name, object obj)
@@ -113,7 +109,7 @@ namespace BattletechModCheat
             /*
              * this function will parse json into List<Dict2>
              */
-            return JsonConvert.DeserializeObject<Dict2>(
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<Dict2>(
                 json,
                 Local.jsonSerializerSettings
             );
@@ -125,7 +121,7 @@ namespace BattletechModCheat
             /*
              * this function will stringify val
              */
-            return JsonConvert.SerializeObject(
+            return Newtonsoft.Json.JsonConvert.SerializeObject(
                 obj,
                 Local.jsonSerializerSettings
             );
@@ -143,18 +139,21 @@ namespace BattletechModCheat
         public static void
         Init(string cwd, string settingsJson)
         {
-            FileLog.logPath = Path.Combine(cwd, "debug.log");
-            File.Delete(FileLog.logPath);
-            Local.jsonSerializerSettings = new JsonSerializerSettings
+            FileLog.logPath = System.IO.Path.Combine(cwd, "debug.log");
+            System.IO.File.Delete(FileLog.logPath);
+            Local.jsonSerializerSettings = new Newtonsoft.Json
+            .JsonSerializerSettings
             {
-                DateParseHandling = DateParseHandling.None,
-                Formatting = Formatting.Indented
+                DateParseHandling = Newtonsoft.Json.DateParseHandling.None,
+                Formatting = Newtonsoft.Json.Formatting.Indented
             };
             Local.state = Local.jsonParseDict2(
-                new Regex(
+                new System.Text.RegularExpressions.Regex(
                     @"```\w*?\n([\S\s]*?)\n```"
                 ).Match(
-                    File.ReadAllText(Path.Combine(cwd, "README.md"))
+                    System.IO.File.ReadAllText(
+                        System.IO.Path.Combine(cwd, "README.md")
+                    )
                 ).Groups[1].ToString()
             );
             Local.cheat_enginevalidation_off = (
@@ -169,7 +168,9 @@ namespace BattletechModCheat
             try
             {
                 foreach (var item in Local.jsonParseDict2(
-                    File.ReadAllText(Path.Combine(cwd, "settings.json"))
+                    System.IO.File.ReadAllText(
+                        System.IO.Path.Combine(cwd, "settings.json")
+                    )
                 ))
                 {
                     Local.state.setItem(item.Key, item.Value);
@@ -179,28 +180,15 @@ namespace BattletechModCheat
             {
                 Local.debugLog("settings.json", err);
             }
-            File.WriteAllText(
-                Path.Combine(cwd, "settings.json"),
+            System.IO.File.WriteAllText(
+                System.IO.Path.Combine(cwd, "settings.json"),
                 Local.jsonStringify(Local.state)
             );
             Local.stateChangedAfter();
             var harmony = HarmonyInstance.Create(
-                "com.github.kaizhu256.BattletechModCheat"
+                "com.github.kaizhu256.RoguetechCheat"
             );
             harmony.PatchAll(Assembly.GetExecutingAssembly());
-            try
-            {
-                Local.Patch_MechEngineer();
-            }
-            catch (Exception err)
-            {
-                Local.debugLog("Patch_MechEngineer", err);
-            }
-        }
-
-        public static void
-        Patch_MechEngineer()
-        {
             // cheat_enginevalidation_off
             if (Local.state.getItem("cheat_enginevalidation_off") != "")
             {
@@ -222,19 +210,23 @@ namespace BattletechModCheat
                 Traverse.Create(engineSettings).Field(
                     "EnforceRulesForAdditionalInternalHeatSinks"
                 ).SetValue(false);
+                // set LimitEngineCoresToTonnage
+                Traverse.Create(engineSettings).Field(
+                    "LimitEngineCoresToTonnage"
+                ).SetValue(false);
             }
         }
     }
 
-    [HarmonyPatch(typeof(JSONSerializationUtility))]
+    [HarmonyPatch(typeof(HBS.Util.JSONSerializationUtility))]
     [HarmonyPatch("RehydrateObjectFromDictionary")]
     [HarmonyPatch(new Type[] {
         typeof(object),
         typeof(Dictionary<string, object>),
         typeof(string),
-        typeof(Stopwatch),
-        typeof(Stopwatch),
-        typeof(JSONSerializationUtility.RehydrationFilteringMode),
+        typeof(HBS.Stopwatch),
+        typeof(HBS.Stopwatch),
+        typeof(HBS.Util.JSONSerializationUtility.RehydrationFilteringMode),
         typeof(Func<string, bool>[])
     })]
     public class
@@ -253,16 +245,18 @@ namespace BattletechModCheat
                     System.Environment.StackTrace
                 );
             }
+            */
             // cheat_enginevalidation_off
             if (Local.cheat_enginevalidation_off)
             {
-                var obj = target as ChassisDef;
+                var obj = (
+                    target as CustomComponents.TagRestrictions
+                );
                 if (obj != null)
                 {
-                    Traverse.Create(obj).Property("MaxJumpjets").SetValue(500);
+                    obj.IncompatibleTags = new string[0];
                 }
             }
-            */
             // cheat_mechcomponentsize_1
             if (Local.cheat_mechcomponentsize_1)
             {
@@ -327,60 +321,23 @@ namespace BattletechModCheat
 
     // patch - cheat_contractreputationloss_cheap
 
-    // patch - cheat_contractsort_bydifficulty
-    [HarmonyPatch(typeof(SGContractsWidget))]
-    [HarmonyPatch("GetContractComparePriority")]
+    // patch - cheat_enginevalidation_off
+    /*
+    [HarmonyPatch(typeof(CustomComponents.DefaultHelper))]
+    [HarmonyPatch("IsModuleFixed")]
     public class
-    Patch_SGContractsWidget_GetContractComparePriority
+    Patch_CustomComponents_DefaultHelper_IsModuleFixed
     {
-        public static bool
-        Prefix(ref int __result, Contract contract)
+        public static void
+        Postfix(ref bool __result)
         {
-            if (Local.state.getItem("cheat_contractsort_bydifficulty") == "")
+            if (Local.state.getItem("cheat_enginevalidation_off") != "")
             {
-                return true;
+                __result = false;
             }
-            __result = contract.Override.GetUIDifficulty();
-            var Sim = UnityGameInstance.BattleTechGame.Simulation;
-            if (!Sim.ContractUserMeetsReputation(contract))
-            {
-                __result += 100;
-                return false;
-            }
-            if (
-                contract.Override.contractDisplayStyle ==
-                ContractDisplayStyle.BaseCampaignRestoration
-            )
-            {
-                __result -= 80;
-                return false;
-            }
-            if (
-                contract.Override.contractDisplayStyle ==
-                ContractDisplayStyle.BaseCampaignStory
-            )
-            {
-                __result -= 60;
-                return false;
-            }
-            if (contract.IsFlashpointCampaignContract)
-            {
-                __result -= 40;
-                return false;
-            }
-            if (contract.IsFlashpointContract)
-            {
-                __result -= 20;
-                return false;
-            }
-            if (contract.TargetSystem == "starsystemdef_" + Sim.CurSystem.Name)
-            {
-                return false;
-            }
-            __result += 20;
-            return false;
         }
     }
+    */
 
     // patch - cheat_introskip_on
     [HarmonyPatch(typeof(IntroCinematicLauncher))]
@@ -391,11 +348,10 @@ namespace BattletechModCheat
         public static void
         Postfix(IntroCinematicLauncher __instance)
         {
-            if (Local.state.getItem("cheat_introskip_on") == "")
+            if (Local.state.getItem("cheat_introskip_on") != "")
             {
-                return;
+                Traverse.Create(__instance).Field("state").SetValue(3);
             }
-            Traverse.Create(__instance).Field("state").SetValue(3);
         }
     }
     [HarmonyPatch(typeof(SplashLauncher))]
@@ -406,11 +362,7 @@ namespace BattletechModCheat
         public static bool
         Prefix()
         {
-            if (Local.state.getItem("cheat_introskip_on") == "")
-            {
-                return true;
-            }
-            return false;
+            return Local.state.getItem("cheat_introskip_on") == "";
         }
     }
     [HarmonyPatch(typeof(SplashLauncher))]
@@ -421,11 +373,7 @@ namespace BattletechModCheat
         public static bool
         Prefix()
         {
-            if (Local.state.getItem("cheat_introskip_on") == "")
-            {
-                return true;
-            }
-            return false;
+            return Local.state.getItem("cheat_introskip_on") == "";
         }
     }
     [HarmonyPatch(typeof(SplashLauncher))]
@@ -456,100 +404,7 @@ namespace BattletechModCheat
         public static bool
         Prefix()
         {
-            if (Local.state.getItem("cheat_introskip_on") == "")
-            {
-                return true;
-            }
-            return false;
-        }
-    }
-
-    // patch - cheat_mechbayrepair_multi
-    [HarmonyPatch(typeof(SimGameState))]
-    [HarmonyPatch("UpdateMechLabWorkQueue")]
-    public class
-    Patch_SimGameState_UpdateMechLabWorkQueue
-    {
-        public static bool
-        Prefix(SimGameState __instance, bool passDay)
-        {
-            /*
-             * this function will patch UpdateMechLabWorkQueue
-             * to simultaneously repair additional mechs in available mechbays
-             */
-            if (Local.state.getItem("cheat_mechbayrepair_multi") == "")
-            {
-                return true;
-            }
-            var sim = __instance;
-            // number of available mechbays
-            var nn = Math.Min(
-                sim.MechLabQueue.Count(),
-                sim.CompanyStats.GetValue<int>(
-                    sim.Constants.Story.MechBayPodsID
-                )
-            );
-            for (var ii = 1; ii < nn && passDay; ii += 1)
-            {
-                // simultaneously repair additional mechs in available mechbays
-                sim.MechLabQueue[ii].PayCost(sim.MechTechSkill);
-            }
-            return true;
-        }
-    }
-    [HarmonyPatch(typeof(TaskTimelineWidget))]
-    [HarmonyPatch("RefreshEntries")]
-    public class
-    Patch_TaskTimelineWidget_RefreshEntries
-    {
-        public static void
-        Postfix(
-            TaskTimelineWidget __instance,
-            SimGameState ___Sim,
-            Dictionary<WorkOrderEntry, TaskManagementElement> ___ActiveItems
-        )
-        {
-            /*
-             * this function will patch TaskTimelineWidget
-             * to update ui's repair-time estimate
-             */
-            if (Local.state.getItem("cheat_mechbayrepair_multi") == "")
-            {
-                return;
-            }
-            var sim = ___Sim;
-            // number of available mechbays
-            var nn = Math.Min(
-                sim.MechLabQueue.Count(),
-                sim.CompanyStats.GetValue<int>(
-                    sim.Constants.Story.MechBayPodsID
-                )
-            );
-            var cumulativeDays = 0;
-            for (var ii = 1; ii < sim.MechLabQueue.Count; ii += 1)
-            {
-                if (!___ActiveItems.TryGetValue(
-                    sim.MechLabQueue[ii],
-                    out TaskManagementElement elem
-                ))
-                {
-                    continue;
-                }
-                if (!___Sim.WorkOrderIsMechTech(sim.MechLabQueue[ii].Type))
-                {
-                    elem.UpdateItem(0);
-                    continue;
-                }
-                // simultaneously repair additional mechs in available mechbays
-                if (1 <= ii && ii + 1 < nn)
-                {
-                    elem.UpdateItem(0);
-                    continue;
-                }
-                // default workqueue
-                cumulativeDays = elem.UpdateItem(cumulativeDays);
-            }
-            __instance.SortEntries();
+            return Local.state.getItem("cheat_introskip_on") == "";
         }
     }
 
@@ -614,7 +469,10 @@ namespace BattletechModCheat
     Patch_MechValidationRules_ValidateMechTonnage
     {
         public static void
-        Postfix(ref Dictionary<MechValidationType, List<Text>> errorMessages)
+        Postfix(
+            ref Dictionary<MechValidationType, List<Localize.Text>>
+            errorMessages
+        )
         {
             if (Local.state.getItem("cheat_mechweightlimit_off") != "")
             {
@@ -656,7 +514,7 @@ namespace BattletechModCheat
                 })
                 .CancelOnEscape()
                 .AddFader(
-                    LazySingletonBehavior<UIManager>
+                    HBS.LazySingletonBehavior<UIManager>
                         .Instance
                         .UILookAndColorConstants
                         .PopupBackfill
@@ -729,7 +587,10 @@ namespace BattletechModCheat
     }
 
     // patch - cheat_salvagefullmech_on
-    [HarmonyPatch(typeof(CustomSalvage.ChassisHandler.AssemblyChancesResult), MethodType.Constructor)]
+    [HarmonyPatch(
+        typeof(CustomSalvage.ChassisHandler.AssemblyChancesResult),
+        MethodType.Constructor
+    )]
     [HarmonyPatch(new Type[] {
         typeof(MechDef),
         typeof(SimGameState),
@@ -771,248 +632,6 @@ namespace BattletechModCheat
     }
 
     // patch - cheat_salvagetotal_300
-
-    // patch - cheat_sensorlockfire_on
-    [HarmonyPatch(typeof(OrderSequence))]
-    [HarmonyPatch("ConsumesActivation", MethodType.Getter)]
-    public class
-    Patch_OrderSequence_ConsumesActivation
-    {
-        public static void
-        Postfix(
-            OrderSequence __instance,
-            ref bool __result,
-            AbstractActor ___owningActor
-        )
-        {
-            if (Local.state.getItem("cheat_sensorlockfire_on") == "")
-            {
-                return;
-            }
-            if (__instance is SensorLockSequence)
-            {
-                __result = false;
-            }
-        }
-    }
-    [HarmonyPatch(typeof(SelectionStateSensorLock))]
-    [HarmonyPatch("CanActorUseThisState")]
-    public class
-    Patch_SelectionStateSensorLock_CanActorUseThisState
-    {
-        public static void
-        Postfix(
-            AbstractActor actor,
-            ref bool __result
-        )
-        {
-            if (Local.state.getItem("cheat_sensorlockfire_on") == "")
-            {
-                return;
-            }
-            var flag = actor?.GetPilot().GetActiveAbility(
-                ActiveAbilityID.SensorLock
-            )?.IsAvailable;
-            if (flag != null)
-            {
-                __result = (bool)flag;
-            }
-        }
-    }
-    [HarmonyPatch(typeof(SelectionStateSensorLock))]
-    [HarmonyPatch("ConsumesFiring", MethodType.Getter)]
-    public class
-    Patch_SelectionStateSensorLock_ConsumesFiring
-    {
-        public static void
-        Postfix(ref bool __result)
-        {
-            if (Local.state.getItem("cheat_sensorlockfire_on") == "")
-            {
-                return;
-            }
-            __result = false;
-        }
-    }
-    [HarmonyPatch(typeof(SelectionStateSensorLock))]
-    [HarmonyPatch("ConsumesMovement", MethodType.Getter)]
-    public class
-    Patch_SelectionStateSensorLock_ConsumesMovement
-    {
-        public static void
-        Postfix(ref bool __result)
-        {
-            if (Local.state.getItem("cheat_sensorlockfire_on") == "")
-            {
-                return;
-            }
-            __result = false;
-        }
-    }
-    [HarmonyPatch(typeof(SelectionStateSensorLock))]
-    [HarmonyPatch("CreateFiringOrders")]
-    public class
-    Patch_SelectionStateSensorLock_CreateFiringOrders
-    {
-        public static void
-        Postfix(
-            SelectionStateSensorLock __instance,
-            string button
-        )
-        {
-            if (Local.state.getItem("cheat_sensorlockfire_on") == "")
-            {
-                return;
-            }
-            if (button == "BTN_FireConfirm" && __instance.HasTarget)
-            {
-                Local.stateSelectionStateSensorLock = __instance;
-            }
-        }
-    }
-    [HarmonyPatch(typeof(SensorLockSequence))]
-    [HarmonyPatch("CompleteOrders")]
-    public class
-    Patch_SensorLockSequence_CompleteOrders
-    {
-        public static bool
-        Prefix(
-            AbstractActor ___owningActor
-        )
-        {
-            if (Local.state.getItem("cheat_sensorlockfire_on") == "")
-            {
-                return true;
-            }
-            // Force the ability to be on cooldown
-            var ability = ___owningActor?.GetPilot().GetActiveAbility(
-                ActiveAbilityID.SensorLock
-            );
-            if (ability == null)
-            {
-                return false;
-            }
-            ability.ActivateMiniCooldown();
-            if (Local.stateSelectionStateSensorLock != null)
-            {
-                Traverse.Create(
-                    Local.stateSelectionStateSensorLock
-                ).Method("ClearTargetedActor").GetValue();
-                // Local.stateSelectionStateSensorLock.BackOut();
-                Local.stateSelectionStateSensorLock = null;
-            }
-            return false;
-        }
-    }
-    [HarmonyPatch(typeof(SensorLockSequence))]
-    [HarmonyPatch("ConsumesFiring", MethodType.Getter)]
-    public class
-    Patch_SensorLockSequence_ConsumesFiring
-    {
-        public static void
-        Postfix(ref bool __result)
-        {
-            if (Local.state.getItem("cheat_sensorlockfire_on") == "")
-            {
-                return;
-            }
-            __result = false;
-        }
-    }
-    [HarmonyPatch(typeof(SensorLockSequence))]
-    [HarmonyPatch("ConsumesMovement", MethodType.Getter)]
-    public class
-    Patch_SensorLockSequence_ConsumesMovement
-    {
-        public static void
-        Postfix(ref bool __result)
-        {
-            if (Local.state.getItem("cheat_sensorlockfire_on") == "")
-            {
-                return;
-            }
-            __result = false;
-        }
-    }
-
-    // patch - cheat_shopsellprice_high
-
-    // patch - cheat_sprintmelee_on
-    [HarmonyPatch(typeof(Pathing))]
-    [HarmonyPatch("GetMeleeDestsForTarget")]
-    public class
-    Patch_Pathing_GetMeleeDestsForTarget
-    {
-        public static IEnumerable<CodeInstruction>
-        Transpiler(
-            IEnumerable<CodeInstruction> instructions
-        )
-        {
-            if (Local.state.getItem("cheat_sprintmelee_on") == "")
-            {
-                return instructions;
-            }
-            List<CodeInstruction> list = instructions.ToList();
-            // transpile - replace - MeleeGrid and WalkingGrid to SprintingGrid
-            list = list.MethodReplacer(
-                AccessTools.Property(
-                    typeof(Pathing),
-                    "MeleeGrid"
-                ).GetGetMethod(true),
-                AccessTools.Property(
-                    typeof(Pathing),
-                    "SprintingGrid"
-                ).GetGetMethod(true)
-            ).MethodReplacer(
-                AccessTools.Property(
-                    typeof(Pathing),
-                    "WalkingGrid"
-                ).GetGetMethod(true),
-                AccessTools.Property(
-                    typeof(Pathing),
-                    "SprintingGrid"
-                ).GetGetMethod(true)
-            ).ToList();
-            // transpile - nop - if (vector.magnitude < 10f) { num = 1; }
-            // IL_014C: ldloca.s  V_4
-            // IL_014E: call      instance float32 [UnityEngine.CoreModule]UnityEngine.Vector3::get_magnitude()
-            // IL_0153: ldc.r4    10
-            // IL_0158: bge.un.s  IL_016C
-            // IL_015A: ldc.i4.1
-            // IL_015B: stloc.3
-            MethodInfo mi = AccessTools.Property(
-                typeof(Vector3),
-                "magnitude"
-            ).GetGetMethod();
-            var ii = list.FindIndex((instruction) =>
-            {
-                return mi.Equals(instruction.operand);
-            }) - 1;
-            for (var jj = 0; jj < 6; jj += 1)
-            {
-                list[ii + jj].opcode = OpCodes.Nop;
-            }
-            return list;
-        }
-    }
-
-    // patch - cheat_sprintshoot_on
-    [HarmonyPatch(typeof(AbstractActor))]
-    [HarmonyPatch("get_CanShootAfterSprinting")]
-    public class
-    Patch_AbstractActor_get_CanShootAfterSprinting
-    {
-        public static void
-        Postfix(ref bool __result)
-        {
-            if (Local.state.getItem("cheat_sprintshoot_on") == "")
-            {
-                return;
-            }
-            __result = true;
-        }
-
-    }
 
     // patch - difficulty_settings
     [HarmonyPatch(typeof(SimGameDifficultySettingList))]
@@ -1271,32 +890,6 @@ namespace BattletechModCheat
     ],
     ""StartOnly"": false,
     ""TelemetryEventName"": ""cheat_salvagetotal_300"",
-    ""Toggle"": false,
-    ""Tooltip"": """",
-    ""UIOrder"": 1000,
-    ""Visible"": false
-},
-{
-    ""DefaultIndex"": 0,
-    ""Enabled"": true,
-    ""ID"": ""cheat_shopsellprice_high"",
-    ""Name"": ""cheat_shopsellprice_high"",
-    ""Options"": [
-        {
-            ""DifficultyConstants"": [
-                {
-                    ""ConstantName"": ""ShopSellModifier"",
-                    ""ConstantType"": ""Finances"",
-                    ""ConstantValue"": ""0.5""
-                }
-            ],
-            ""ID"": ""cheat_shopsellprice_high_on"",
-            ""Name"": ""On"",
-            ""TelemetryEventDesc"": ""1""
-        }
-    ],
-    ""StartOnly"": false,
-    ""TelemetryEventName"": ""cheat_shopsellprice_high"",
     ""Toggle"": false,
     ""Tooltip"": """",
     ""UIOrder"": 1000,
