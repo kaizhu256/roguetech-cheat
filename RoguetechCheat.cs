@@ -338,6 +338,22 @@ namespace RoguetechCheat
         }
     }
     */
+    [HarmonyPatch(typeof(
+        MechEngineer.Features.ArmActuators.ArmActuatorSupport
+    ))]
+    [HarmonyPatch("GetLimit")]
+    public class
+    Patch_MechEngineer_Features_ArmActuators_ArmActuatorSupport_GetLimit
+    {
+        public static void
+        Postfix(ref int __result)
+        {
+            if (Local.state.getItem("cheat_enginevalidation_off") != "")
+            {
+                __result = 99;
+            }
+        }
+    }
 
     // patch - cheat_introskip_on
     [HarmonyPatch(typeof(IntroCinematicLauncher))]
@@ -407,8 +423,6 @@ namespace RoguetechCheat
             return Local.state.getItem("cheat_introskip_on") == "";
         }
     }
-
-    // patch - cheat_enginevalidation_off
 
     // patch - cheat_mechcomponentsize_1
     /*
