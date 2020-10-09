@@ -346,11 +346,13 @@ namespace RoguetechCheat
     Patch_MechEngineer_Features_ArmActuators_ArmActuatorSupport_GetLimit
     {
         public static void
-        Postfix(ref int __result)
+        Postfix(ref MechEngineer.Features.ArmActuators.ArmActuatorSlot __result)
         {
             if (Local.state.getItem("cheat_enginevalidation_off") != "")
             {
-                __result = 99;
+                __result = (
+                    MechEngineer.Features.ArmActuators.ArmActuatorSlot.Hand
+                );
             }
         }
     }
