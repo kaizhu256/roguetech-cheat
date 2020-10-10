@@ -501,7 +501,7 @@ namespace RoguetechCheat
     [HarmonyPatch(typeof(DynamicShops.Patches.StarSystem_OnSystemChange))]
     [HarmonyPatch("AddItemCollection")]
     public class
-    Patch_AmmunitionBoxDef_FromJSON
+    Patch_DynamicShops_Patches_StarSystem_OnSystemChange_AddItemCollection
     {
         public static void
         Postfix(AmmunitionBoxDef __instance)
