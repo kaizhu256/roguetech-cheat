@@ -514,7 +514,7 @@ namespace RoguetechCheat
                 {
                     return;
                 }
-                foreach (var id in new int [] {
+                foreach (var id in new int[] {
                     "Ammo_AmmunitionBox_Nuke_ArrowIV",
                     "Ammo_AmmunitionBox_Nuke_LongTom",
                     "Ammo_AmmunitionBox_Nuke_Thumper"
