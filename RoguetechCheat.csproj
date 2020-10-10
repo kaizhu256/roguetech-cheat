@@ -94,7 +94,7 @@
         copy /y "$(ProjectDir)*.dll" "\Games\BATTLETECH\Mods\RoguetechCheat\"
         copy /y "$(ProjectDir)*.json" "\Games\BATTLETECH\Mods\RoguetechCheat\"
         copy /y "$(ProjectDir)README.md" "\Games\BATTLETECH\Mods\RoguetechCheat\"
-        <!--!! rd /s /q "\Games\BATTLETECH\Mods\.modtek\Cache\" "\Games\BATTLETECH\Mods\.modtek\Database\" -->
+        <!-- rd /s /q "\Games\BATTLETECH\Mods\.modtek\Cache\" "\Games\BATTLETECH\Mods\.modtek\Database\" -->
         <!--
         "\Games\BATTLETECH\BattleTech.exe"
         -->
