@@ -499,37 +499,77 @@ namespace RoguetechCheat
     }
 
     // patch - cheat_nukepurchaseable_on
-    [HarmonyPatch(typeof(DynamicShops.Patches.StarSystem_OnSystemChange))]
-    [HarmonyPatch("DoSystemShop")]
+    [HarmonyPatch(typeof(Shop))]
+    [HarmonyPatch("Initialize")]
     public class
-    Patch_DynamicShops_Patches_StarSystem_OnSystemChange_DoSystemShop
+    Patch_Shop_Initialize
     {
         public static void
-        Postfix(Shop systemShop)
+        Postfix(Shop __instance, List<string> collections)
         {
-            if (Local.state.getItem("cheat_nukepurchaseable_on") != "")
+            if (Local.state.getItem("cheat_nukepurchaseable_on") == "")
             {
-                var obj = systemShop.ItemCollections.FirstOrDefault();
-                if (obj == null)
-                {
-                    return;
-                }
-                foreach (var id in new string[] {
-                    "Ammo_AmmunitionBox_Nuke_ArrowIV",
-                    "Ammo_AmmunitionBox_Nuke_LongTom",
-                    "Ammo_AmmunitionBox_Nuke_Thumper"
-                })
-                {
-                    obj.Entries.Add(new ItemCollectionDef.Entry(
-                        id, // string ID
-                        ShopItemType.AmmunitionBox, // ShopItemType Type
-                        0, // int Count
-                        10 // int Weight
-                    ));
-                }
+                return;
             }
+			if (collections == null || collections.Count == 0)
+			{
+				return;
+			}
+            var obj = __instance.ItemCollections[0];
+            if (obj == null)
+            {
+                return;
+            }
+            foreach (var id in new string[] {
+                "Ammo_AmmunitionBox_Nuke_ArrowIV",
+                "Ammo_AmmunitionBox_Nuke_LongTom",
+                "Ammo_AmmunitionBox_Nuke_Thumper"
+            })
+            {
+                obj.Entries.Add(new ItemCollectionDef.Entry(
+                    id, // string ID
+                    ShopItemType.AmmunitionBox, // ShopItemType Type
+                    0, // int Count
+                    10 // int Weight
+                ));
+            }
+            Local.debugLog("__instance", __instance);
+            Local.debugLog("trace", System.Environment.StackTrace);
         }
     }
+    //!! [HarmonyPatch(typeof(DynamicShops.Patches.StarSystem_OnSystemChange))]
+    //!! [HarmonyPatch("DoSystemShop")]
+    //!! public class
+    //!! Patch_DynamicShops_Patches_StarSystem_OnSystemChange_DoSystemShop
+    //!! {
+        //!! public static void
+        //!! Postfix(Shop systemShop)
+        //!! {
+            //!! if (Local.state.getItem("cheat_nukepurchaseable_on") != "")
+            //!! {
+                //!! var obj = systemShop.ItemCollections.FirstOrDefault();
+                //!! if (obj == null)
+                //!! {
+                    //!! return;
+                //!! }
+                //!! foreach (var id in new string[] {
+                    //!! "Ammo_AmmunitionBox_Nuke_ArrowIV",
+                    //!! "Ammo_AmmunitionBox_Nuke_LongTom",
+                    //!! "Ammo_AmmunitionBox_Nuke_Thumper"
+                //!! })
+                //!! {
+                    //!! obj.Entries.Add(new ItemCollectionDef.Entry(
+                        //!! id, // string ID
+                        //!! ShopItemType.AmmunitionBox, // ShopItemType Type
+                        //!! 0, // int Count
+                        //!! 10 // int Weight
+                    //!! ));
+                //!! }
+                //!! Local.debugLog("systemShop", systemShop);
+                //!! Local.debugLog("trace", System.Environment.StackTrace);
+            //!! }
+        //!! }
+    //!! }
 
     // patch - cheat_pilotabilitycooldown_0
 
