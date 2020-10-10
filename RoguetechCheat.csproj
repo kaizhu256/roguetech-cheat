@@ -44,17 +44,20 @@
       <HintPath>..\BATTLETECH\BattleTech_Data/Managed\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="CustomComponents">
-      <HintPath>..\CustomComponents\CustomComponents.dll</HintPath>
+      <HintPath>..\BATTLETECH\Mods\CustomComponents\CustomComponents.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="CustomSalvage">
-      <HintPath>..\CustomSalvage\CustomSalvage.dll</HintPath>
+      <HintPath>..\BATTLETECH\Mods\CustomSalvage\CustomSalvage.dll</HintPath>
     </Reference>
     <Reference Include="InControl, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\BATTLETECH\BattleTech_Data/Managed\InControl.dll</HintPath>
     </Reference>
+    <Reference Include="DynamicShops">
+      <HintPath>..\BATTLETECH\Mods\DynamicShops\DynamicShops.dll</HintPath>
+    </Reference>
     <Reference Include="MechEngineer">
-      <HintPath>..\MechEngineer\MechEngineer.dll</HintPath>
+      <HintPath>..\BATTLETECH\Mods\MechEngineer\MechEngineer.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">

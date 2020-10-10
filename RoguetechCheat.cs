@@ -497,6 +497,24 @@ namespace RoguetechCheat
         }
     }
 
+    // patch - cheat_nukepurchaseable_on
+    [HarmonyPatch(typeof(DynamicShops.Patches.StarSystem_OnSystemChange))]
+    [HarmonyPatch("AddItemCollection")]
+    public class
+    Patch_AmmunitionBoxDef_FromJSON
+    {
+        public static void
+        Postfix(AmmunitionBoxDef __instance)
+        {
+            if (Local.state.getItem("cheat_ammoboxcapacity_infinite") != "")
+            {
+                Traverse.Create(__instance).Property(
+                    "Capacity"
+                ).SetValue(5000);
+            }
+        }
+    }
+
     // patch - cheat_pilotabilitycooldown_0
 
     // patch - cheat_pilotskill_reset
