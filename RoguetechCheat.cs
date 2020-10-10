@@ -498,45 +498,45 @@ namespace RoguetechCheat
         }
     }
 
-    // patch - cheat_nukepurchaseable_on
-    [HarmonyPatch(typeof(Shop))]
-    [HarmonyPatch("Initialize")]
-    public class
-    Patch_Shop_Initialize
-    {
-        public static void
-        Postfix(Shop __instance, List<string> collections)
-        {
-            if (Local.state.getItem("cheat_nukepurchaseable_on") == "")
-            {
-                return;
-            }
-			if (collections == null || collections.Count == 0)
-			{
-				return;
-			}
-            var obj = __instance.ItemCollections[0];
-            if (obj == null)
-            {
-                return;
-            }
-            foreach (var id in new string[] {
-                "Ammo_AmmunitionBox_Nuke_ArrowIV",
-                "Ammo_AmmunitionBox_Nuke_LongTom",
-                "Ammo_AmmunitionBox_Nuke_Thumper"
-            })
-            {
-                obj.Entries.Add(new ItemCollectionDef.Entry(
-                    id, // string ID
-                    ShopItemType.AmmunitionBox, // ShopItemType Type
-                    0, // int Count
-                    10 // int Weight
-                ));
-            }
-            Local.debugLog("__instance", __instance);
-            Local.debugLog("trace", System.Environment.StackTrace);
-        }
-    }
+    //!! // patch - cheat_nukepurchaseable_on
+    //!! [HarmonyPatch(typeof(Shop))]
+    //!! [HarmonyPatch("Initialize")]
+    //!! public class
+    //!! Patch_Shop_Initialize
+    //!! {
+        //!! public static void
+        //!! Postfix(Shop __instance, List<string> collections)
+        //!! {
+            //!! if (Local.state.getItem("cheat_nukepurchaseable_on") == "")
+            //!! {
+                //!! return;
+            //!! }
+			//!! if (collections == null || collections.Count == 0)
+			//!! {
+				//!! return;
+			//!! }
+            //!! var obj = __instance.ItemCollections[0];
+            //!! if (obj == null)
+            //!! {
+                //!! return;
+            //!! }
+            //!! foreach (var id in new string[] {
+                //!! "Ammo_AmmunitionBox_Nuke_ArrowIV",
+                //!! "Ammo_AmmunitionBox_Nuke_LongTom",
+                //!! "Ammo_AmmunitionBox_Nuke_Thumper"
+            //!! })
+            //!! {
+                //!! obj.Entries.Add(new ItemCollectionDef.Entry(
+                    //!! id, // string ID
+                    //!! ShopItemType.AmmunitionBox, // ShopItemType Type
+                    //!! 0, // int Count
+                    //!! 10 // int Weight
+                //!! ));
+            //!! }
+            //!! Local.debugLog("__instance", __instance);
+            //!! Local.debugLog("trace", System.Environment.StackTrace);
+        //!! }
+    //!! }
     //!! [HarmonyPatch(typeof(DynamicShops.Patches.StarSystem_OnSystemChange))]
     //!! [HarmonyPatch("DoSystemShop")]
     //!! public class
