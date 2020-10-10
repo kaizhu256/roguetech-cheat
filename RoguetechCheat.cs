@@ -499,19 +499,49 @@ namespace RoguetechCheat
 
     // patch - cheat_nukepurchaseable_on
     [HarmonyPatch(typeof(DynamicShops.Patches.StarSystem_OnSystemChange))]
-    [HarmonyPatch("AddItemCollection")]
+    [HarmonyPatch("DoSystemShop")]
     public class
-    Patch_DynamicShops_Patches_StarSystem_OnSystemChange_AddItemCollection
+    Patch_DynamicShops_Patches_StarSystem_OnSystemChange_DoSystemShop
     {
         public static void
-        Postfix(AmmunitionBoxDef __instance)
+        Postfix(Shop systemShop)
         {
-            if (Local.state.getItem("cheat_ammoboxcapacity_infinite") != "")
-            {
-                Traverse.Create(__instance).Property(
-                    "Capacity"
-                ).SetValue(5000);
-            }
+            //!! Local.debugLog("systemShop", systemShop);
+            //!! Local.debugLog("item", item);
+            //!! Local.debugLog("trace", System.Environment.StackTrace);
+            //!! if (Local.state.getItem("cheat_ammoboxcapacity_infinite") != "")
+            //!! {
+                //!! Traverse.Create(__instance).Property(
+                    //!! "Capacity"
+                //!! ).SetValue(5000);
+            //!! }
+            systemShop.ActiveInventory.Add(new ShopDefItem(
+                "Ammo_AmmunitionBox_Nuke_ArrowIV", // string ID
+                ShopItemType.AmmunitionBox, // ShopItemType Type
+                1.0f, // float DiscountModifier
+                0, // int Count
+                true, // bool IsInfinite
+                false, // bool IsDamaged
+                0 // int SellCost
+            ));
+            systemShop.ActiveInventory.Add(new ShopDefItem(
+                "Ammo_AmmunitionBox_Nuke_LongTom", // string ID
+                ShopItemType.AmmunitionBox, // ShopItemType Type
+                1.0f, // float DiscountModifier
+                0, // int Count
+                true, // bool IsInfinite
+                false, // bool IsDamaged
+                0 // int SellCost
+            ));
+            systemShop.ActiveInventory.Add(new ShopDefItem(
+                "Ammo_AmmunitionBox_Nuke_Thumper", // string ID
+                ShopItemType.AmmunitionBox, // ShopItemType Type
+                1.0f, // float DiscountModifier
+                0, // int Count
+                true, // bool IsInfinite
+                false, // bool IsDamaged
+                0 // int SellCost
+            ));
         }
     }
 
