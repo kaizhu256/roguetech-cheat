@@ -55,6 +55,9 @@ this mod will enable roguetech-specific cheats like build intact mech from singl
     // cheat - can add weapon/equipment/armor to mech over its weight-limit
     "cheat_mechweightlimit_off": "1",
 
+    // cheat - can purchase nuclear-ammo from shop
+    "cheat_nukepurchaseable_on": "1",
+
     // cheat - pilot-abilities have have 0 cooldown
     "cheat_pilotabilitycooldown_0": "1",
 

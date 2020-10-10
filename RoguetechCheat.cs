@@ -506,42 +506,36 @@ namespace RoguetechCheat
         public static void
         Postfix(Shop systemShop)
         {
-            //!! Local.debugLog("systemShop", systemShop);
-            //!! Local.debugLog("item", item);
-            //!! Local.debugLog("trace", System.Environment.StackTrace);
-            //!! if (Local.state.getItem("cheat_ammoboxcapacity_infinite") != "")
-            //!! {
-                //!! Traverse.Create(__instance).Property(
-                    //!! "Capacity"
-                //!! ).SetValue(5000);
-            //!! }
-            systemShop.ActiveInventory.Add(new ShopDefItem(
-                "Ammo_AmmunitionBox_Nuke_ArrowIV", // string ID
-                ShopItemType.AmmunitionBox, // ShopItemType Type
-                1.0f, // float DiscountModifier
-                0, // int Count
-                true, // bool IsInfinite
-                false, // bool IsDamaged
-                0 // int SellCost
-            ));
-            systemShop.ActiveInventory.Add(new ShopDefItem(
-                "Ammo_AmmunitionBox_Nuke_LongTom", // string ID
-                ShopItemType.AmmunitionBox, // ShopItemType Type
-                1.0f, // float DiscountModifier
-                0, // int Count
-                true, // bool IsInfinite
-                false, // bool IsDamaged
-                0 // int SellCost
-            ));
-            systemShop.ActiveInventory.Add(new ShopDefItem(
-                "Ammo_AmmunitionBox_Nuke_Thumper", // string ID
-                ShopItemType.AmmunitionBox, // ShopItemType Type
-                1.0f, // float DiscountModifier
-                0, // int Count
-                true, // bool IsInfinite
-                false, // bool IsDamaged
-                0 // int SellCost
-            ));
+            if (Local.state.getItem("cheat_nukepurchaseable_on") != "")
+            {
+                systemShop.ActiveInventory.Add(new ShopDefItem(
+                    "Ammo_AmmunitionBox_Nuke_ArrowIV", // string ID
+                    ShopItemType.AmmunitionBox, // ShopItemType Type
+                    1.0f, // float DiscountModifier
+                    0, // int Count
+                    true, // bool IsInfinite
+                    false, // bool IsDamaged
+                    0 // int SellCost
+                ));
+                systemShop.ActiveInventory.Add(new ShopDefItem(
+                    "Ammo_AmmunitionBox_Nuke_LongTom", // string ID
+                    ShopItemType.AmmunitionBox, // ShopItemType Type
+                    1.0f, // float DiscountModifier
+                    0, // int Count
+                    true, // bool IsInfinite
+                    false, // bool IsDamaged
+                    0 // int SellCost
+                ));
+                systemShop.ActiveInventory.Add(new ShopDefItem(
+                    "Ammo_AmmunitionBox_Nuke_Thumper", // string ID
+                    ShopItemType.AmmunitionBox, // ShopItemType Type
+                    1.0f, // float DiscountModifier
+                    0, // int Count
+                    true, // bool IsInfinite
+                    false, // bool IsDamaged
+                    0 // int SellCost
+                ));
+            }
         }
     }
 
