@@ -142,6 +142,8 @@ namespace RoguetechCheat
         public static void
         Init(string cwd, string settingsJson)
         {
+            // init cwd
+            Local.state.setItem("cwd", cwd);
             // init logging
             FileLog.logPath = System.IO.Path.Combine(cwd, "debug.log");
             System.IO.File.Delete(FileLog.logPath);
@@ -194,9 +196,7 @@ namespace RoguetechCheat
             // init shopitem.csv
             Local.state.setItem(
                 "shopitem.csv",
-                System.IO.File.ReadAllText(
-                    System.IO.Path.Combine(cwd, "shopitem.csv")
-                ).Replace("\r", "").Trim()
+                System.IO.Path.Combine(cwd, "shopitem.csv")
             );
             Local.stateChangedAfter();
             // init harmony
@@ -684,7 +684,11 @@ namespace RoguetechCheat
             }
             string shopItemType;
             foreach (
-                var item in Local.state.getItem("shopitem.csv").Split('\n')
+                var item in
+                System.IO.File.ReadAllText(Local.state.getItem("shopitem.csv"))
+                .Replace("\r", "")
+                .Trim()
+                .Split('\n')
             )
             {
                 shopItemType = item.Split(',')[0];

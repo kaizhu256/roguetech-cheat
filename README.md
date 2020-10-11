@@ -371,12 +371,18 @@ debugLog cheat_componentsize_1   at System.Environment.get_StackTrace () [0x0000
 
   at BattleTech.UnityGameInstance.Update () [0x00000] in <029bfe22d2d74c8e8c8ded1619022103>:0
 
+
 debugLog trace   at System.Environment.get_StackTrace () [0x00000] in <d7ac571ca2d04b2f981d0d886fa067cf>:0
   at RoguetechCheat.Patch_DynamicShops_Patches_StarSystem_OnSystemChange_AddItemCollection.Postfix (BattleTech.Shop systemShop, System.String item) [0x00000] in <129ce738b13d4d6ab6703b29f8810950>:0
   at DynamicShops.Patches.StarSystem_OnSystemChange.AddItemCollection_Patch1 (BattleTech.Shop , System.String ) [0x00000] in <3bf5c372caf64f9d9712047e8df0edc2>:0
   at DynamicShops.Patches.StarSystem_OnSystemChange.DoSystemShop (BattleTech.StarSystem starSystem, BattleTech.Shop systemShop) [0x00000] in <3bf5c372caf64f9d9712047e8df0edc2>:0
   at DynamicShops.Patches.StarSystem_OnSystemChange.ReplaceShops (BattleTech.StarSystem __instance) [0x00000] in <3bf5c372caf64f9d9712047e8df0edc2>:0
   at BattleTech.StarSystem.OnSystemChange_Patch1 (System.Object ) [0x00000] in <029bfe22d2d74c8e8c8ded1619022103>:0
+		// Token: 0x0600952F RID: 38191 RVA: 0x0026FB1A File Offset: 0x0026DD1A
+		public void OnSystemChange()
+		{
+			this.RefreshShops();
+		}
   at BattleTech.SimGameState.SetCurrentSystem (BattleTech.StarSystem system, System.Boolean force, System.Boolean timeSkip) [0x00000] in <029bfe22d2d74c8e8c8ded1619022103>:0
   at BattleTech.Starmap.IncrementTravelIndexAndUpdateCurrentSystem () [0x00000] in <029bfe22d2d74c8e8c8ded1619022103>:0
   at BattleTech.SGTravelManager.HandleNextTravelStep () [0x00000] in <029bfe22d2d74c8e8c8ded1619022103>:0
