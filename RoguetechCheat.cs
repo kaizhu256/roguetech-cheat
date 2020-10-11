@@ -741,6 +741,43 @@ namespace RoguetechCheat
         }
     }
     [HarmonyPatch(typeof(SG_Shop_Screen))]
+    [HarmonyPatch("BuyCurrentSelection")]
+    public class
+    Patch_SG_Shop_Screen_BuyCurrentSelection
+    {
+        public static void
+        Postfix(
+            SG_Shop_Screen __instance,
+            SimGameState ___simState,
+            InventoryDataObject_SHOP ___selectedController
+        )
+        {
+            if (!Local.cheat_shopnuke_on)
+            {
+                return;
+            }
+			ShopDefItem shopDefItem = ___selectedController.shopDefItem;
+			string id = shopDefItem.ID;
+            bool flag;
+            if (___simState.InMechLabStore() && (___selectedController.GetItemType() == MechLabDraggableItemType.StorePart || ___selectedController.GetItemType() == MechLabDraggableItemType.SalvagePart))
+            {
+                flag = false;
+                Local.debugLog("BuyCurrentSelection2", flag);
+            }
+            else if (shopDefItem.IsInfinite)
+            {
+                flag = ___selectedController.GetShop().Purchase(id, Shop.PurchaseType.Normal, ___selectedController.shopDefItem.Type);
+                Local.debugLog("BuyCurrentSelection3", flag);
+            }
+            else
+            {
+                flag = ___selectedController.GetShop().Purchase(id, Shop.PurchaseType.Special, ___selectedController.shopDefItem.Type);
+                Local.debugLog("BuyCurrentSelection4", flag);
+            }
+            Local.debugLog("BuyCurrentSelection5", flag);
+        }
+    }
+    [HarmonyPatch(typeof(SG_Shop_Screen))]
     [HarmonyPatch("AddShopInventory")]
     public class
     Patch_SG_Shop_Screen_AddShopInventory
