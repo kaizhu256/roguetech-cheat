@@ -63,6 +63,9 @@ namespace RoguetechCheat
         public static bool
         cheat_pilotabilitycooldown_0;
 
+        public static bool
+        cheat_shopnuke_on;
+
         public static int
         countJsonParse = 0;
 
@@ -171,6 +174,9 @@ namespace RoguetechCheat
             );
             Local.cheat_pilotabilitycooldown_0 = (
                 state["cheat_pilotabilitycooldown_0"] != ""
+            );
+            Local.cheat_shopnuke_on = (
+                state["cheat_shopnuke_on"] != ""
             );
             // init settings.json
             try
@@ -664,60 +670,69 @@ namespace RoguetechCheat
     // patch - cheat_salvagetotal_300
 
     // patch - cheat_shopnuke_on
-    //!! [HarmonyPatch(typeof(DynamicShops.Patches.StarSystem_OnSystemChange))]
-    //!! [HarmonyPatch("DoSystemShop")]
-    //!! public class
-    //!! Patch_DynamicShops_Patches_StarSystem_OnSystemChange_DoSystemShop
-    //!! {
-        //!! public static void
-        //!! Postfix(Shop systemShop)
-        //!! {
-            //!! if (Local.state.getItem("cheat_shopnuke_on") == "")
-            //!! {
-                //!! return;
-            //!! }
-            //!! var obj = systemShop.ItemCollections.FirstOrDefault();
-            //!! if (obj == null)
-            //!! {
-                //!! return;
-            //!! }
-            //!! string shopItemType;
-            //!! foreach (
-                //!! var item in
-                //!! System.IO.File.ReadAllText(Local.state.getItem("shopitem.csv"))
-                //!! .Replace("\r", "")
-                //!! .Trim()
-                //!! .Split('\n')
-            //!! )
-            //!! {
-                //!! shopItemType = item.Split(',')[0];
-                //!! obj.Entries.Add(new ItemCollectionDef.Entry(
-                    //!! item.Split(',')[1], // string ID
-                    //!! (
-                        //!! shopItemType == "AmmunitionBox"
-                        //!! ? ShopItemType.AmmunitionBox
-                        //!! : shopItemType == "HeatSink"
-                        //!! ? ShopItemType.HeatSink
-                        //!! : shopItemType == "JumpJet"
-                        //!! ? ShopItemType.JumpJet
-                        //!! : shopItemType == "Mech"
-                        //!! ? ShopItemType.Mech
-                        //!! : shopItemType == "MechPart"
-                        //!! ? ShopItemType.MechPart
-                        //!! : shopItemType == "Reference"
-                        //!! ? ShopItemType.Reference
-                        //!! : shopItemType == "Upgrade"
-                        //!! ? ShopItemType.Upgrade
-                        //!! : shopItemType == "Weapon"
-                        //!! ? ShopItemType.Weapon
-                        //!! : ShopItemType.None
-                    //!! ), // ShopItemType Type
-                    //!! 0, // int Count
-                    //!! 10 // int Weight
-                //!! ));
-            //!! }
-        //!! }
-    //!! }
+    [HarmonyPatch(typeof(NaturalStringComparer))]
+    [HarmonyPatch("Compare")]
+    public class
+    Patch_SG_Shop_Screen_AddShopInventory
+    {
+        public static void
+        Postfix(InventoryDataObject_BASE a, InventoryDataObject_BASE b)
+        {
+            if (!Local.cheat_shopnuke_on)
+            {
+                return;
+            }
+			if (
+                !___isInBuyingState
+                || shop != ___theSystem.SystemShop
+            )
+            {
+                return;
+            }
+            foreach (
+                var item in
+                System.IO.File.ReadAllText(Local.state.getItem("shopitem.csv"))
+                .Replace("\r", "")
+                .Trim()
+                .Split('\n')
+            )
+            {
+                string shopItemType;
+                shopItemType = item.Split(',')[0];
+                __instance.AddShopItemToWidget(
+                    new ShopDefItem(
+                        item.Split(',')[1], // string ID
+                        (
+                            shopItemType == "AmmunitionBox"
+                            ? ShopItemType.AmmunitionBox
+                            : shopItemType == "HeatSink"
+                            ? ShopItemType.HeatSink
+                            : shopItemType == "JumpJet"
+                            ? ShopItemType.JumpJet
+                            : shopItemType == "Mech"
+                            ? ShopItemType.Mech
+                            : shopItemType == "MechPart"
+                            ? ShopItemType.MechPart
+                            : shopItemType == "Reference"
+                            ? ShopItemType.Reference
+                            : shopItemType == "Upgrade"
+                            ? ShopItemType.Upgrade
+                            : shopItemType == "Weapon"
+                            ? ShopItemType.Weapon
+                            : ShopItemType.None
+                        ), // ShopItemType Type
+                        1.0f, // float DiscountModifier
+                        0, // int Count
+                        true, // bool IsInfinite
+                        false, // bool IsDamaged
+                        0 // int SellCost
+                    ),
+                    shop,
+                    ___inventoryWidget
+                );
+            }
+        }
+    }
     [HarmonyPatch(typeof(SG_Shop_Screen))]
     [HarmonyPatch("AddShopInventory")]
     public class
@@ -732,7 +747,7 @@ namespace RoguetechCheat
             Shop shop
         )
         {
-            if (Local.state.getItem("cheat_shopnuke_on") == "")
+            if (!Local.cheat_shopnuke_on)
             {
                 return;
             }
@@ -743,12 +758,6 @@ namespace RoguetechCheat
             {
                 return;
             }
-            Local.debugLog("AddShopInventory", 1);
-            //!! var obj = systemShop.ItemCollections.FirstOrDefault();
-            //!! if (obj == null)
-            //!! {
-                //!! return;
-            //!! }
             foreach (
                 var item in
                 System.IO.File.ReadAllText(Local.state.getItem("shopitem.csv"))
