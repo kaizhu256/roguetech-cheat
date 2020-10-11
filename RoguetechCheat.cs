@@ -512,58 +512,6 @@ namespace RoguetechCheat
         }
     }
 
-    // patch - cheat_nukepurchaseable_on
-    [HarmonyPatch(typeof(DynamicShops.Patches.StarSystem_OnSystemChange))]
-    [HarmonyPatch("DoSystemShop")]
-    public class
-    Patch_DynamicShops_Patches_StarSystem_OnSystemChange_DoSystemShop
-    {
-        public static void
-        Postfix(Shop systemShop)
-        {
-            if (Local.state.getItem("cheat_nukepurchaseable_on") == "")
-            {
-                return;
-            }
-            var obj = systemShop.ItemCollections.FirstOrDefault();
-            if (obj == null)
-            {
-                return;
-            }
-            string shopItemType;
-            foreach (
-                var item in Local.state.getItem("shopitem.csv").Split('\n')
-            )
-            {
-                shopItemType = item.Split(',')[0];
-                obj.Entries.Add(new ItemCollectionDef.Entry(
-                    item.Split(',')[1], // string ID
-                    (
-                        shopItemType == "AmmunitionBox"
-                        ? ShopItemType.AmmunitionBox
-                        : shopItemType == "HeatSink"
-                        ? ShopItemType.HeatSink
-                        : shopItemType == "JumpJet"
-                        ? ShopItemType.JumpJet
-                        : shopItemType == "Mech"
-                        ? ShopItemType.Mech
-                        : shopItemType == "MechPart"
-                        ? ShopItemType.MechPart
-                        : shopItemType == "Reference"
-                        ? ShopItemType.Reference
-                        : shopItemType == "Upgrade"
-                        ? ShopItemType.Upgrade
-                        : shopItemType == "Weapon"
-                        ? ShopItemType.Weapon
-                        : ShopItemType.None
-                    ), // ShopItemType Type
-                    0, // int Count
-                    10 // int Weight
-                ));
-            }
-        }
-    }
-
     // patch - cheat_pilotabilitycooldown_0
 
     // patch - cheat_pilotskill_reset
@@ -715,6 +663,58 @@ namespace RoguetechCheat
     }
 
     // patch - cheat_salvagetotal_300
+
+    // patch - cheat_shopnuke_on
+    [HarmonyPatch(typeof(DynamicShops.Patches.StarSystem_OnSystemChange))]
+    [HarmonyPatch("DoSystemShop")]
+    public class
+    Patch_DynamicShops_Patches_StarSystem_OnSystemChange_DoSystemShop
+    {
+        public static void
+        Postfix(Shop systemShop)
+        {
+            if (Local.state.getItem("cheat_shopnuke_on") == "")
+            {
+                return;
+            }
+            var obj = systemShop.ItemCollections.FirstOrDefault();
+            if (obj == null)
+            {
+                return;
+            }
+            string shopItemType;
+            foreach (
+                var item in Local.state.getItem("shopitem.csv").Split('\n')
+            )
+            {
+                shopItemType = item.Split(',')[0];
+                obj.Entries.Add(new ItemCollectionDef.Entry(
+                    item.Split(',')[1], // string ID
+                    (
+                        shopItemType == "AmmunitionBox"
+                        ? ShopItemType.AmmunitionBox
+                        : shopItemType == "HeatSink"
+                        ? ShopItemType.HeatSink
+                        : shopItemType == "JumpJet"
+                        ? ShopItemType.JumpJet
+                        : shopItemType == "Mech"
+                        ? ShopItemType.Mech
+                        : shopItemType == "MechPart"
+                        ? ShopItemType.MechPart
+                        : shopItemType == "Reference"
+                        ? ShopItemType.Reference
+                        : shopItemType == "Upgrade"
+                        ? ShopItemType.Upgrade
+                        : shopItemType == "Weapon"
+                        ? ShopItemType.Weapon
+                        : ShopItemType.None
+                    ), // ShopItemType Type
+                    0, // int Count
+                    10 // int Weight
+                ));
+            }
+        }
+    }
 
     // patch - difficulty_settings
     [HarmonyPatch(typeof(SimGameDifficultySettingList))]

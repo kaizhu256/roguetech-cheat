@@ -37,12 +37,6 @@ this mod will enable roguetech-specific cheats like build intact mech from singl
     // cheat - lose -25% (instead of -80%) reputation from contract's opposing faction
     "cheat_contractreputationloss_low": "1",
 
-    // cheat - salvage full-mech from one mech-part
-    "cheat_salvagefullmech_on": "1",
-
-    // cheat - 300 salvage in contracts
-    "cheat_salvagetotal_300": "1",
-
     // cheat - skip intro
     "cheat_introskip_on": "1",
 
@@ -54,9 +48,6 @@ this mod will enable roguetech-specific cheats like build intact mech from singl
 
     // cheat - can add weapon/equipment/armor to mech over its weight-limit
     "cheat_mechweightlimit_off": "1",
-
-    // cheat - can purchase nuclear-ammo from shop
-    "cheat_nukepurchaseable_on": "1",
 
     // cheat - pilot-abilities have have 0 cooldown
     "cheat_pilotabilitycooldown_0": "1",
@@ -70,6 +61,15 @@ this mod will enable roguetech-specific cheats like build intact mech from singl
 
     // cheat - unused pilot-xp is no longer nagged by darius if pilot-skills are maxed
     "cheat_pilotxpnag_off": "1",
+
+    // cheat - salvage full-mech from one mech-part
+    "cheat_salvagefullmech_on": "1",
+
+    // cheat - 300 salvage in contracts
+    "cheat_salvagetotal_300": "1",
+
+    // cheat - can purchase nuclear-ammo from shop
+    "cheat_shopnuke_on": "1",
 }
 ```
 
