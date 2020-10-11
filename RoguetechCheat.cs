@@ -350,7 +350,6 @@ namespace RoguetechCheat
             }
         }
     }
-    */
     [HarmonyPatch(typeof(
         MechEngineer.Features.ArmActuators.ArmActuatorSupport
     ))]
@@ -369,6 +368,7 @@ namespace RoguetechCheat
             }
         }
     }
+    */
 
     // patch - cheat_introskip_on
     [HarmonyPatch(typeof(IntroCinematicLauncher))]
@@ -686,8 +686,8 @@ namespace RoguetechCheat
 
         public static int Compare(InventoryDataObject_BASE a, InventoryDataObject_BASE b)
         {
-            string text = a.GetId();
-            string text2 = b.GetId();
+            string text = a.GetItemType().ToString() + '.' + a.GetId();
+            string text2 = b.GetItemType().ToString() + '.' + b.GetId();
             if (text == null)
             {
                 text = "";
