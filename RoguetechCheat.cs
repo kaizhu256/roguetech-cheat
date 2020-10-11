@@ -785,7 +785,7 @@ namespace RoguetechCheat
                         0, // int Count
                         true, // bool IsInfinite
                         false, // bool IsDamaged
-                        1 // int SellCos
+                        0 // int SellCost
                     ),
                     shop,
                     ___inventoryWidget
