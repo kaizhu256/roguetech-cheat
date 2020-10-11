@@ -4,6 +4,7 @@ using Harmony;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
+using System.Text.RegularExpressions;
 using UnityEngine;
 
 namespace RoguetechCheat
@@ -672,8 +673,24 @@ namespace RoguetechCheat
     [HarmonyPatch(typeof(NaturalStringComparer))]
     [HarmonyPatch("Compare")]
     public class
-    Patch_SG_Shop_Screen_AddShopInventory
+    Patch_NaturalStringComparer_Compare
     {
+        private static Regex _re = new Regex(
+            "(?<=\\D)(?=\\d)|(?<=\\d)(?=\\D)",
+            RegexOptions.Compiled
+        );
+
+        private static int PartCompare(string x, string y)
+        {
+            int num;
+            int value;
+            if (int.TryParse(x, out num) && int.TryParse(y, out value))
+            {
+                return num.CompareTo(value);
+            }
+            return x.CompareTo(y);
+        }
+
         public static void
         Postfix(
             InventoryDataObject_BASE a,
@@ -706,13 +723,13 @@ namespace RoguetechCheat
                     Math.Min(text.Length, text2.Length)
                 ) != 0)
             {
-                string[] array = NaturalStringComparer._re.Split(text);
-                string[] array2 = NaturalStringComparer._re.Split(text2);
+                string[] array = _re.Split(text);
+                string[] array2 = _re.Split(text2);
                 int num = 0;
                 int num2;
                 for (; ; )
                 {
-                    num2 = NaturalStringComparer.PartCompare(
+                    num2 = PartCompare(
                         array[num],
                         array2[num]
                     );
