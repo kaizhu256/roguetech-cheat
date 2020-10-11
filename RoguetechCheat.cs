@@ -142,8 +142,6 @@ namespace RoguetechCheat
         public static void
         Init(string cwd, string settingsJson)
         {
-            // init cwd
-            Local.state.setItem("cwd", cwd);
             // init logging
             FileLog.logPath = System.IO.Path.Combine(cwd, "debug.log");
             System.IO.File.Delete(FileLog.logPath);
@@ -164,6 +162,7 @@ namespace RoguetechCheat
                     )
                 ).Groups[1].ToString()
             );
+            Local.state.setItem("cwd", cwd);
             Local.cheat_enginevalidation_off = (
                 state["cheat_enginevalidation_off"] != ""
             );
@@ -719,6 +718,81 @@ namespace RoguetechCheat
             //!! }
         //!! }
     //!! }
+    [HarmonyPatch(typeof(SG_Shop_Screen))]
+    [HarmonyPatch("AddShopInventory")]
+    public class
+    Patch_SG_Shop_Screen_AddShopInventory
+    {
+        public static void
+        Postfix(
+            MechLabInventoryWidget_ListView ___inventoryWidget,
+            SG_Shop_Screen __instance,
+            StarSystem ___theSystem,
+            bool ___isInBuyingState,
+            Shop shop
+        )
+        {
+            if (Local.state.getItem("cheat_shopnuke_on") == "")
+            {
+                return;
+            }
+			if (
+                !___isInBuyingState
+                || shop != ___theSystem.SystemShop
+            )
+            {
+                return;
+            }
+            Local.debugLog("AddShopInventory", 1);
+            //!! var obj = systemShop.ItemCollections.FirstOrDefault();
+            //!! if (obj == null)
+            //!! {
+                //!! return;
+            //!! }
+            foreach (
+                var item in
+                System.IO.File.ReadAllText(Local.state.getItem("shopitem.csv"))
+                .Replace("\r", "")
+                .Trim()
+                .Split('\n')
+            )
+            {
+                string shopItemType;
+                shopItemType = item.Split(',')[0];
+                __instance.AddShopItemToWidget(
+                    new ShopDefItem(
+                        item.Split(',')[1], // string ID
+                        (
+                            shopItemType == "AmmunitionBox"
+                            ? ShopItemType.AmmunitionBox
+                            : shopItemType == "HeatSink"
+                            ? ShopItemType.HeatSink
+                            : shopItemType == "JumpJet"
+                            ? ShopItemType.JumpJet
+                            : shopItemType == "Mech"
+                            ? ShopItemType.Mech
+                            : shopItemType == "MechPart"
+                            ? ShopItemType.MechPart
+                            : shopItemType == "Reference"
+                            ? ShopItemType.Reference
+                            : shopItemType == "Upgrade"
+                            ? ShopItemType.Upgrade
+                            : shopItemType == "Weapon"
+                            ? ShopItemType.Weapon
+                            : ShopItemType.None
+                        ), // ShopItemType Type
+                        1.0f, // float DiscountModifier
+                        0, // int Count
+                        true, // bool IsInfinite
+                        false, // bool IsDamaged
+                        1 // int SellCos
+                    ),
+                    shop,
+                    ___inventoryWidget
+                );
+            }
+        }
+    }
 
     // patch - difficulty_settings
     [HarmonyPatch(typeof(SimGameDifficultySettingList))]
