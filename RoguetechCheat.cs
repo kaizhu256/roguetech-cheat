@@ -684,47 +684,47 @@ namespace RoguetechCheat
             return x.CompareTo(y);
         }
 
-		public static int Compare(InventoryDataObject_BASE a, InventoryDataObject_BASE b)
-		{
-			string text = a.GetId();
-			string text2 = b.GetId();
-			if (text == null)
-			{
-				text = "";
-			}
-			if (text2 == null)
-			{
-				text2 = "";
-			}
-			text = text.ToLower();
-			text2 = text2.ToLower();
-			if (string.Compare(text, 0, text2, 0, Math.Min(text.Length, text2.Length)) != 0)
-			{
-				string[] array = _re.Split(text);
-				string[] array2 = _re.Split(text2);
-				int num = 0;
-				int num2;
-				for (;;)
-				{
-					num2 = PartCompare(array[num], array2[num]);
-					if (num2 != 0)
-					{
-						break;
-					}
-					num++;
-				}
-				return num2;
-			}
-			if (text.Length == text2.Length)
-			{
-				return 0;
-			}
-			if (text.Length >= text2.Length)
-			{
-				return 1;
-			}
-			return -1;
-		}
+        public static int Compare(InventoryDataObject_BASE a, InventoryDataObject_BASE b)
+        {
+            string text = a.GetId();
+            string text2 = b.GetId();
+            if (text == null)
+            {
+                text = "";
+            }
+            if (text2 == null)
+            {
+                text2 = "";
+            }
+            text = text.ToLower();
+            text2 = text2.ToLower();
+            if (string.Compare(text, 0, text2, 0, Math.Min(text.Length, text2.Length)) != 0)
+            {
+                string[] array = _re.Split(text);
+                string[] array2 = _re.Split(text2);
+                int num = 0;
+                int num2;
+                for (; ; )
+                {
+                    num2 = PartCompare(array[num], array2[num]);
+                    if (num2 != 0)
+                    {
+                        break;
+                    }
+                    num++;
+                }
+                return num2;
+            }
+            if (text.Length == text2.Length)
+            {
+                return 0;
+            }
+            if (text.Length >= text2.Length)
+            {
+                return 1;
+            }
+            return -1;
+        }
 
         public static void
         Postfix(
