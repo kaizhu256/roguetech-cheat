@@ -91,6 +91,7 @@
     <PostBuildEvent>
       copy /y "$(TargetPath)" "$(ProjectDir)"
       if exist "\Games\BATTLETECH\Mods\RoguetechCheat\" (
+        copy /y "$(ProjectDir)*.csv" "\Games\BATTLETECH\Mods\RoguetechCheat\"
         copy /y "$(ProjectDir)*.dll" "\Games\BATTLETECH\Mods\RoguetechCheat\"
         copy /y "$(ProjectDir)*.json" "\Games\BATTLETECH\Mods\RoguetechCheat\"
         copy /y "$(ProjectDir)README.md" "\Games\BATTLETECH\Mods\RoguetechCheat\"

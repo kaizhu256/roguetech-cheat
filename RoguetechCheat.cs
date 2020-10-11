@@ -140,14 +140,17 @@ namespace RoguetechCheat
         public static void
         Init(string cwd, string settingsJson)
         {
+            // init logging
             FileLog.logPath = System.IO.Path.Combine(cwd, "debug.log");
             System.IO.File.Delete(FileLog.logPath);
+            // init jsonSerializerSettings
             Local.jsonSerializerSettings = new Newtonsoft.Json
             .JsonSerializerSettings
             {
                 DateParseHandling = Newtonsoft.Json.DateParseHandling.None,
                 Formatting = Newtonsoft.Json.Formatting.Indented
             };
+            // init state from README.md
             Local.state = Local.jsonParseDict2(
                 new System.Text.RegularExpressions.Regex(
                     @"```\w*?\n([\S\s]*?)\n```"
@@ -166,6 +169,7 @@ namespace RoguetechCheat
             Local.cheat_pilotabilitycooldown_0 = (
                 state["cheat_pilotabilitycooldown_0"] != ""
             );
+            // init settings.json
             try
             {
                 foreach (var item in Local.jsonParseDict2(
@@ -185,7 +189,15 @@ namespace RoguetechCheat
                 System.IO.Path.Combine(cwd, "settings.json"),
                 Local.jsonStringify(Local.state)
             );
+            // init shopitem.csv
+            Local.state.setItem(
+                "shopitem.csv",
+                System.IO.File.ReadAllText(
+                    System.IO.Path.Combine(cwd, "settings.json")
+                ).Replace("\r", "").Trim()
+            );
             Local.stateChangedAfter();
+            // init harmony
             var harmony = HarmonyInstance.Create(
                 "com.github.kaizhu256.RoguetechCheat"
             );
@@ -507,38 +519,47 @@ namespace RoguetechCheat
         public static void
         Postfix(Shop systemShop)
         {
-            if (Local.state.getItem("cheat_nukepurchaseable_on") != "")
+            if (Local.state.getItem("cheat_nukepurchaseable_on") == "")
             {
-                var obj = systemShop.ItemCollections.FirstOrDefault();
-                if (obj == null)
-                {
-                    return;
-                }
-                string shopItemType;
-                foreach (var item in new string[] {
-                    "AmmunitionBox.Ammo_AmmunitionBox_Nuke_ArrowIV",
-                    "AmmunitionBox.Ammo_AmmunitionBox_Nuke_LongTom",
-                    "AmmunitionBox.Ammo_AmmunitionBox_Nuke_Thumper",
-                    "Weapon.Weapon_Artillery_ArrowIV",
-                    "Weapon.Weapon_Artillery_LONGTOM",
-                    "Weapon.Weapon_Artillery_SNIPER",
-                    "Weapon.Weapon_Artillery_THUMPER",
-                })
-                {
-                    shopItemType = item.Split('.')[0];
-                    obj.Entries.Add(new ItemCollectionDef.Entry(
-                        item.Split('.')[1], // string ID
-                        (
-                            shopItemType == "AmmunitionBox"
-                            ? ShopItemType.AmmunitionBox
-                            : shopItemType == "Weapon"
-                            ? ShopItemType.Weapon
-                            : ShopItemType.None
-                        ), // ShopItemType Type
-                        0, // int Count
-                        10 // int Weight
-                    ));
-                }
+                return;
+            }
+            var obj = systemShop.ItemCollections.FirstOrDefault();
+            if (obj == null)
+            {
+                return;
+            }
+            Local.debugLog("shopitem", "4");
+            string shopItemType;
+            foreach (
+                var item in Local.state.getItem("shopitem.csv").Split('\n')
+            )
+            {
+                Local.debugLog("shopitem1", item.Split(','));
+                shopItemType = item.Split(',')[0];
+                //!! obj.Entries.Add(new ItemCollectionDef.Entry(
+                    //!! item.Split(',')[1], // string ID
+                    //!! (
+                        //!! shopItemType == "AmmunitionBox"
+                        //!! ? ShopItemType.AmmunitionBox
+                        //!! : shopItemType == "HeatSink"
+                        //!! ? ShopItemType.HeatSink
+                        //!! : shopItemType == "JumpJet"
+                        //!! ? ShopItemType.JumpJet
+                        //!! : shopItemType == "Mech"
+                        //!! ? ShopItemType.Mech
+                        //!! : shopItemType == "MechPart"
+                        //!! ? ShopItemType.MechPart
+                        //!! : shopItemType == "Reference"
+                        //!! ? ShopItemType.Reference
+                        //!! : shopItemType == "Upgrade"
+                        //!! ? ShopItemType.Upgrade
+                        //!! : shopItemType == "Weapon"
+                        //!! ? ShopItemType.Weapon
+                        //!! : ShopItemType.None
+                    //!! ), // ShopItemType Type
+                    //!! 0, // int Count
+                    //!! 10 // int Weight
+                //!! ));
             }
         }
     }
