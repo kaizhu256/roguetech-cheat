@@ -514,15 +514,27 @@ namespace RoguetechCheat
                 {
                     return;
                 }
-                foreach (var id in new string[] {
-                    "Ammo_AmmunitionBox_Nuke_ArrowIV",
-                    "Ammo_AmmunitionBox_Nuke_LongTom",
-                    "Ammo_AmmunitionBox_Nuke_Thumper"
+                string shopItemType;
+                foreach (var item in new string[] {
+                    "AmmunitionBox.Ammo_AmmunitionBox_Nuke_ArrowIV",
+                    "AmmunitionBox.Ammo_AmmunitionBox_Nuke_LongTom",
+                    "AmmunitionBox.Ammo_AmmunitionBox_Nuke_Thumper",
+                    "Weapon.Weapon_Artillery_ArrowIV",
+                    "Weapon.Weapon_Artillery_LONGTOM",
+                    "Weapon.Weapon_Artillery_SNIPER",
+                    "Weapon.Weapon_Artillery_THUMPER",
                 })
                 {
+                    shopItemType = item.Split('.')[0];
                     obj.Entries.Add(new ItemCollectionDef.Entry(
-                        id, // string ID
-                        ShopItemType.AmmunitionBox, // ShopItemType Type
+                        item.Split('.')[1], // string ID
+                        (
+                            shopItemType == "AmmunitionBox"
+                            ? ShopItemType.AmmunitionBox
+                            : shopItemType == "Weapon"
+                            ? ShopItemType.Weapon
+                            : ShopItemType.None
+                        ), // ShopItemType Type
                         0, // int Count
                         10 // int Weight
                     ));
