@@ -3,6 +3,7 @@ using BattleTech.UI;
 using Harmony;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using UnityEngine;
@@ -663,6 +664,60 @@ namespace RoguetechCheat
     // patch - cheat_salvagetotal_300
 
     // patch - cheat_shopnuke_on
+    [HarmonyPatch(typeof(DynamicShops.Patches.StarSystem_OnSystemChange))]
+    [HarmonyPatch("DoSystemShop")]
+    public class
+    Patch_DynamicShops_Patches_StarSystem_OnSystemChange_DoSystemShop
+    {
+        public static void
+        Postfix(Shop systemShop)
+        {
+            if (!Local.cheat_shopnuke_on)
+            {
+                return;
+            }
+            var obj = systemShop.ItemCollections.FirstOrDefault();
+            if (obj == null)
+            {
+                return;
+            }
+            string shopItemType;
+            foreach (
+                var item in
+                System.IO.File.ReadAllText(Local.state.getItem("shopitem.csv"))
+                .Replace("\r", "")
+                .Trim()
+                .Split('\n')
+            )
+            {
+                shopItemType = item.Split(',')[0];
+                obj.Entries.Add(new ItemCollectionDef.Entry(
+                    item.Split(',')[1], // string ID
+                    (
+                        shopItemType == "AmmunitionBox"
+                        ? ShopItemType.AmmunitionBox
+                        : shopItemType == "HeatSink"
+                        ? ShopItemType.HeatSink
+                        : shopItemType == "JumpJet"
+                        ? ShopItemType.JumpJet
+                        : shopItemType == "Mech"
+                        ? ShopItemType.Mech
+                        : shopItemType == "MechPart"
+                        ? ShopItemType.MechPart
+                        : shopItemType == "Reference"
+                        ? ShopItemType.Reference
+                        : shopItemType == "Upgrade"
+                        ? ShopItemType.Upgrade
+                        : shopItemType == "Weapon"
+                        ? ShopItemType.Weapon
+                        : ShopItemType.None
+                    ), // ShopItemType Type
+                    0, // int Count
+                    10 // int Weight
+                ));
+            }
+        }
+    }
     [HarmonyPatch(typeof(NaturalStringComparer))]
     [HarmonyPatch("Compare")]
     public class
@@ -684,7 +739,10 @@ namespace RoguetechCheat
             return x.CompareTo(y);
         }
 
-        public static int Compare(InventoryDataObject_BASE a, InventoryDataObject_BASE b)
+        public static int Compare(
+            InventoryDataObject_BASE a,
+            InventoryDataObject_BASE b
+        )
         {
             string text = a.GetItemType().ToString() + '.' + a.GetId();
             string text2 = b.GetItemType().ToString() + '.' + b.GetId();
@@ -698,7 +756,13 @@ namespace RoguetechCheat
             }
             text = text.ToLower();
             text2 = text2.ToLower();
-            if (string.Compare(text, 0, text2, 0, Math.Min(text.Length, text2.Length)) != 0)
+            if (string.Compare(
+                text,
+                0,
+                text2,
+                0,
+                Math.Min(text.Length, text2.Length)
+            ) != 0)
             {
                 string[] array = _re.Split(text);
                 string[] array2 = _re.Split(text2);
@@ -737,112 +801,6 @@ namespace RoguetechCheat
             {
                 __result = Compare(a, b);
                 return;
-            }
-        }
-    }
-    [HarmonyPatch(typeof(SG_Shop_Screen))]
-    [HarmonyPatch("BuyCurrentSelection")]
-    public class
-    Patch_SG_Shop_Screen_BuyCurrentSelection
-    {
-        public static void
-        Postfix(
-            SG_Shop_Screen __instance,
-            SimGameState ___simState,
-            InventoryDataObject_SHOP ___selectedController
-        )
-        {
-            if (!Local.cheat_shopnuke_on)
-            {
-                return;
-            }
-			ShopDefItem shopDefItem = ___selectedController.shopDefItem;
-			string id = shopDefItem.ID;
-            bool flag;
-            if (___simState.InMechLabStore() && (___selectedController.GetItemType() == MechLabDraggableItemType.StorePart || ___selectedController.GetItemType() == MechLabDraggableItemType.SalvagePart))
-            {
-                flag = false;
-                Local.debugLog("BuyCurrentSelection2", flag);
-            }
-            else if (shopDefItem.IsInfinite)
-            {
-                flag = ___selectedController.GetShop().Purchase(id, Shop.PurchaseType.Normal, ___selectedController.shopDefItem.Type);
-                Local.debugLog("BuyCurrentSelection3", flag);
-            }
-            else
-            {
-                flag = ___selectedController.GetShop().Purchase(id, Shop.PurchaseType.Special, ___selectedController.shopDefItem.Type);
-                Local.debugLog("BuyCurrentSelection4", flag);
-            }
-            Local.debugLog("BuyCurrentSelection5", flag);
-        }
-    }
-    [HarmonyPatch(typeof(SG_Shop_Screen))]
-    [HarmonyPatch("AddShopInventory")]
-    public class
-    Patch_SG_Shop_Screen_AddShopInventory
-    {
-        public static void
-        Postfix(
-            MechLabInventoryWidget_ListView ___inventoryWidget,
-            SG_Shop_Screen __instance,
-            StarSystem ___theSystem,
-            bool ___isInBuyingState,
-            Shop shop
-        )
-        {
-            if (!Local.cheat_shopnuke_on)
-            {
-                return;
-            }
-            if (
-                !___isInBuyingState
-                || shop != ___theSystem.SystemShop
-            )
-            {
-                return;
-            }
-            foreach (
-                var item in
-                System.IO.File.ReadAllText(Local.state.getItem("shopitem.csv"))
-                .Replace("\r", "")
-                .Trim()
-                .Split('\n')
-            )
-            {
-                string shopItemType;
-                shopItemType = item.Split(',')[0];
-                __instance.AddShopItemToWidget(
-                    new ShopDefItem(
-                        item.Split(',')[1], // string ID
-                        (
-                            shopItemType == "AmmunitionBox"
-                            ? ShopItemType.AmmunitionBox
-                            : shopItemType == "HeatSink"
-                            ? ShopItemType.HeatSink
-                            : shopItemType == "JumpJet"
-                            ? ShopItemType.JumpJet
-                            : shopItemType == "Mech"
-                            ? ShopItemType.Mech
-                            : shopItemType == "MechPart"
-                            ? ShopItemType.MechPart
-                            : shopItemType == "Reference"
-                            ? ShopItemType.Reference
-                            : shopItemType == "Upgrade"
-                            ? ShopItemType.Upgrade
-                            : shopItemType == "Weapon"
-                            ? ShopItemType.Weapon
-                            : ShopItemType.None
-                        ), // ShopItemType Type
-                        1.0f, // float DiscountModifier
-                        0, // int Count
-                        true, // bool IsInfinite
-                        false, // bool IsDamaged
-                        0 // int SellCost
-                    ),
-                    shop,
-                    ___inventoryWidget
-                );
             }
         }
     }
