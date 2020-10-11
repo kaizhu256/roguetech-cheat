@@ -85,9 +85,9 @@
    "isBaseMode": false
   },
   {
+   "AccuracyModifier": 53,
    "AlwaysIndirectVisuals": false,
    "CantHitUnaffecedByPathing": false,
-   "DirectFireModifier": 53,
    "EvasivePipsIgnored": 15,
    "Id": "flak",
    "IndirectFireCapable": false,

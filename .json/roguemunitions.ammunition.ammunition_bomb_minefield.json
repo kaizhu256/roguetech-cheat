@@ -33,7 +33,7 @@
   "FireTerrainStrength": 0,
   "Heat": 0,
   "IFFLevel": 0,
-  "InstallCellRange": 30,
+  "InstallCellRange": 32,
   "SFX": "enum:AudioEventList_explosion.explosion_propane_tank",
   "UIName": "Minefield",
   "burnReaction": "None",

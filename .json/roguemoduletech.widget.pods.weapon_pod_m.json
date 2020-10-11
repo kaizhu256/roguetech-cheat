@@ -1,14 +1,19 @@
 {
- "APArmorShardsMod": 0,
+ "APArmorShardsMod": 1,
  "APCriticalChanceMultiplier": 0.5,
- "APMaxArmorThickness": 1,
+ "APMaxArmorThickness": 12,
  "AccuracyModifier": -2,
  "AllowedLocations": "CenterTorso",
  "AmmoCategory": "AC20Internal",
- "AttackRecoil": 4,
+ "AttackRecoil": 3,
+ "BallisticDamagePerPallet": true,
  "BattleValue": 0,
  "BonusValueA": "",
  "BonusValueB": "",
+ "CantHitUnaffecedByPathing": true,
+ "ChassisTagsAccuracyModifiers": {
+  "unit_powerarmor": -3
+ },
  "ComponentSubType": "Weapon",
  "ComponentTags": {
   "items": [
@@ -24,10 +29,13 @@
   "BonusDescriptions": {
    "Bonuses": [
     "IsMelee",
-    "BoltOn: 3",
+    "BoltOn: 1.5",
     "DmgFallOff: 25%",
     "1shot",
-    "PipsIgnored: 1",
+    "PipsIgnored: 2",
+    "WpnAccuracy: +2",
+    "AccuracyUnit: PowerArmor",
+    "AccuracyUnit2: +3",
     "InternalAmmo: 25",
     "NoAA"
    ]
@@ -46,7 +54,7 @@
   },
   "HandHeld": {
    "HandsUsed": false,
-   "Tonnage": 3
+   "Tonnage": 1.5
   },
   "InventorySorter": {
    "SortKey": "04002"
@@ -54,6 +62,7 @@
   "MechConfiguration": {}
  },
  "Damage": 6,
+ "DamageNotDivided": true,
  "DamageVariance": 0,
  "Description": {
   "Cost": 20000,
@@ -70,14 +79,14 @@
  "DisallowedLocations": "All",
  "DistantVariance": 0.25,
  "EvasiveDamageMultiplier": 0,
- "EvasivePipsIgnored": 1,
+ "EvasivePipsIgnored": 2,
  "HeatDamage": 0,
  "HeatGenerated": 3,
  "HitGenerator": "Cluster",
  "IFFDef": "notblanksowontdamageselfbutcandamagefriendlies",
  "ImprovedBallistic": true,
  "IndirectFireCapable": false,
- "Instability": 25,
+ "Instability": 3,
  "InventorySize": 1,
  "MaxRange": 120,
  "MinRange": 0,

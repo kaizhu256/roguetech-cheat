@@ -96,6 +96,11 @@
    "two",
    "three"
   ],
+  "ManualDeployForbidContractTypes": [
+   "Blackout",
+   "SoloDuel",
+   "DuoDuel"
+  ],
   "MaxVehicleRandomPilots": 0,
   "MechBaySwitchIconDown": "weapon_down",
   "MechBaySwitchIconMech": "mech",

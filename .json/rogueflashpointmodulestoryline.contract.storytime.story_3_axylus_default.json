@@ -1299,7 +1299,7 @@
        "items": [],
        "tagSetSourceFile": "Tags/SpawnEffectTags"
       },
-      "unitDefId": "vehicledef_APC_HeavyWheeled_VBIED",
+      "unitDefId": "vehicledef_JEdgar",
       "unitExcludedTagSet": {
        "items": [],
        "tagSetSourceFile": "Tags/UnitTags"
@@ -1332,7 +1332,7 @@
        "items": [],
        "tagSetSourceFile": "Tags/SpawnEffectTags"
       },
-      "unitDefId": "vehicledef_BULLETANT_PRIMITIVE",
+      "unitDefId": "vehicledef_Korvin",
       "unitExcludedTagSet": {
        "items": [],
        "tagSetSourceFile": "Tags/UnitTags"

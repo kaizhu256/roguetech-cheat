@@ -223,7 +223,7 @@
    "Name": "AuriganDirectorate"
   },
   {
-   "CanAlly": false,
+   "CanAlly": true,
    "Description": "",
    "DoesGainReputation": true,
    "FactionDefID": "faction_AuriganRestoration",

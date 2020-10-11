@@ -9,5 +9,5 @@
  "filename": "weapons.bnk",
  "name": "weapons",
  "type": "Combat",
- "volumeShift": -24
+ "volumeShift": -0.75
 }

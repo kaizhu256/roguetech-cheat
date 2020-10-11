@@ -1,4 +1,5 @@
 {
+ "AlwaysPunchIfPossible": false,
  "BattleValue": 7718000,
  "ChassisTags": {
   "items": [],
@@ -8,6 +9,11 @@
   "ArmActuatorSupport": {
    "LeftLimit": "Lower"
   },
+  "AssemblyVariant": {
+   "Exclude": false,
+   "Include": true,
+   "PrefabID": "salamander"
+  },
   "ChassisDefaults": []
  },
  "DFADamage": 80,
@@ -15,8 +21,8 @@
  "DFASelfDamage": 80,
  "DFAToHitModifier": 0,
  "Description": {
-  "Cost": 2124057,
-  "Details": "A 'Mech that truly lives up to its name! The Awesome 8Q mounts a frightening trio of PPCs that can destroy, knock down, or debilitate any target in no time. It's ungainly, but it can shrug off huge amounts of incoming fire.",
+  "Cost": 10002210,
+  "Details": "An assault grade fire support mech, the Salamander entered production in 3055. An 80 ton mech, the Salamander is built around a 320 rated XL Engine and an Endo Steel Skeleton, allowing it to carry 43 tons of weapons and equipment. The Salamander PPR-5S is armed with a trio of LRM-20’s. A pair of Medium Lasers act as back up weapons.",
   "Icon": "Salamander",
   "Id": "chassisdef_salamander_PPR-5S",
   "Manufacturer": "",
@@ -26,16 +32,18 @@
   "Rarity": 4,
   "UIName": "Salamander"
  },
+ "EngageRangeModifier": 0,
  "FixedEquipment": [
   {
    "ComponentDefID": "Special_Accurate_Category_Missiles",
    "ComponentDefType": "Upgrade",
    "DamageLevel": "Functional",
+   "GUID": null,
    "HardpointSlot": -1,
-   "IsFixed": false,
    "MountedLocation": "CenterTorso",
    "SimGameUID": "",
-   "hasPrefabName": false
+   "hasPrefabName": true,
+   "prefabName": ""
   }
  ],
  "HardpointDataDefID": "hardpointdatadef_salamander",
@@ -99,11 +107,7 @@
    "Hardpoints": [
     {
      "Omni": false,
-     "WeaponMount": "Missile"
-    },
-    {
-     "Omni": false,
-     "WeaponMount": "AntiPersonnel"
+     "WeaponMountID": "Missile"
     }
    ],
    "InternalStructure": 65,
@@ -117,7 +121,7 @@
    "Hardpoints": [
     {
      "Omni": false,
-     "WeaponMount": "Missile"
+     "WeaponMountID": "Missile"
     }
    ],
    "InternalStructure": 85,
@@ -131,11 +135,11 @@
    "Hardpoints": [
     {
      "Omni": false,
-     "WeaponMount": "Energy"
+     "WeaponMountID": "Energy"
     },
     {
      "Omni": false,
-     "WeaponMount": "Energy"
+     "WeaponMountID": "Energy"
     },
     {
      "Omni": false,
@@ -165,11 +169,11 @@
    "Hardpoints": [
     {
      "Omni": false,
-     "WeaponMount": "Missile"
+     "WeaponMountID": "Missile"
     },
     {
      "Omni": false,
-     "WeaponMount": "AntiPersonnel"
+     "WeaponMountID": "AntiPersonnel"
     }
    ],
    "InternalStructure": 85,
@@ -208,6 +212,8 @@
   }
  ],
  "MaxJumpjets": 20,
+ "MechPartCount": 0,
+ "MechPartMax": 0,
  "MeleeDamage": 40,
  "MeleeInstability": 20,
  "MeleeToHitModifier": 0,
@@ -229,12 +235,12 @@
   0,
   0
  ],
- "StockRole": "Heavy Sniper & Defender",
+ "StockRole": "Missile Boat",
  "Tonnage": 80,
  "TopSpeed": 105,
  "TurnRadius": 90,
  "VariantName": "PPR-5S",
  "VisibilityMultiplier": 1,
- "YangsThoughts": "A 'Mech that truly lives up to its name! The Awesome 8Q mounts a frightening trio of PPCs that can destroy, knock down, or debilitate any target in no time. It's ungainly, but it can shrug off huge amounts of incoming fire.",
+ "YangsThoughts": "An assault grade fire support mech, the Salamander entered production in 3055. An 80 ton mech, the Salamander is built around a 320 rated XL Engine and an Endo Steel Skeleton, allowing it to carry 43 tons of weapons and equipment. The Salamander PPR-5S is armed with a trio of LRM-20’s. A pair of Medium Lasers act as back up weapons.",
  "weightClass": "ASSAULT"
 }

@@ -1,21 +1,28 @@
 {
  "AMSImmune": true,
  "AOECapable": true,
- "AOEDamage": 6,
- "AOEInstability": 6,
- "AOERange": 120,
+ "AOEDamage": 25,
+ "AOEInstability": 15,
+ "AOERange": 90,
  "APArmorShardsMod": 0,
  "APCriticalChanceMultiplier": 0.5,
  "APMaxArmorThickness": 200,
- "AccuracyModifier": -2,
+ "AccuracyModifier": 0,
  "AllowedLocations": "CenterTorso",
  "AlwaysIndirectVisuals": true,
  "AmmoCategory": "POD",
  "AttackRecoil": 4,
+ "BallisticDamagePerPallet": true,
  "BattleValue": 0,
  "BonusValueA": "",
  "BonusValueB": "",
  "CantHitUnaffecedByPathing": true,
+ "ChassisTagsAccuracyModifiers": {
+  "unit_mech": 100,
+  "unit_powerarmor": -20,
+  "unit_turret": 100,
+  "unit_vehicle": 100
+ },
  "ComponentSubType": "Weapon",
  "ComponentTags": {
   "items": [
@@ -31,15 +38,15 @@
   "BonusDescriptions": {
    "Bonuses": [
     "IsMelee",
-    "BoltOn: 2",
+    "BoltOn: 1",
     "1shot",
     "NoSelfHarm",
-    "AreaOfEffectDmg: 25",
-    "AreaOfEffect: 120",
+    "AreaOfEffectDmg: 50",
+    "AreaOfEffect: 90",
     "PipsIgnored: 10",
     "AccuracyUnit: PowerArmor",
     "AccuracyUnit2: +20",
-    "AccuracyUnit: Mech/Vehicle",
+    "AccuracyUnit: All Others",
     "AccuracyUnit2: -100",
     "NoAA"
    ]
@@ -58,14 +65,15 @@
   },
   "HandHeld": {
    "HandsUsed": false,
-   "Tonnage": 2
+   "Tonnage": 1
   },
   "InventorySorter": {
    "SortKey": "04002"
   },
   "MechConfiguration": {}
  },
- "Damage": 30,
+ "Damage": 60,
+ "DamageNotDivided": true,
  "DamageVariance": 0,
  "Description": {
   "Cost": 15000,
@@ -88,13 +96,13 @@
  "IFFDef": "notblanksowontdamageselfbutcandamagefriendlies",
  "ImprovedBallistic": true,
  "IndirectFireCapable": false,
- "Instability": 12.5,
+ "Instability": 30,
  "InventorySize": 1,
  "MaxRange": 60,
  "MinRange": 0,
  "OverheatedDamageMultiplier": 0,
  "PrefabIdentifier": "AC2",
- "ProjectilesPerShot": 4,
+ "ProjectilesPerShot": 2,
  "RangeSplit": [
   60,
   60,
@@ -104,9 +112,9 @@
  "ShotsWhenFired": 1,
  "StartingAmmoCapacity": 1,
  "Tonnage": 0,
- "Type": "SRM",
+ "Type": "MachineGun",
  "WeaponEffectID": "WeaponEffect-Weapon_SRM2",
- "WeaponSubType": "SRM2",
+ "WeaponSubType": "MachineGun",
  "statusEffects": [],
  "weaponCategoryID": "SpecialMelee"
 }
