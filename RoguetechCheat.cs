@@ -193,7 +193,7 @@ namespace RoguetechCheat
             Local.state.setItem(
                 "shopitem.csv",
                 System.IO.File.ReadAllText(
-                    System.IO.Path.Combine(cwd, "settings.json")
+                    System.IO.Path.Combine(cwd, "shopitem.csv")
                 ).Replace("\r", "").Trim()
             );
             Local.stateChangedAfter();
