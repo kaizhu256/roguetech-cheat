@@ -35,17 +35,12 @@ namespace RoguetechCheat
                 )
                 : val.ToString()
             ).Trim();
-            val2 = System.Text.RegularExpressions.Regex.Replace(
-                val2,
-                "^true$",
-                "1",
-                System.Text.RegularExpressions.RegexOptions.IgnoreCase
-            );
-            val2 = System.Text.RegularExpressions.Regex.Replace(
+            val2 = Regex.Replace(val2, "^true$", "1", RegexOptions.IgnoreCase);
+            val2 = Regex.Replace(
                 val2,
                 "^false$",
                 "",
-                System.Text.RegularExpressions.RegexOptions.IgnoreCase
+                RegexOptions.IgnoreCase
             );
             this[key.ToLower()] = val2;
         }
@@ -157,9 +152,7 @@ namespace RoguetechCheat
             };
             // init state from README.md
             Local.state = Local.jsonParseDict2(
-                new System.Text.RegularExpressions.Regex(
-                    @"```\w*?\n([\S\s]*?)\n```"
-                ).Match(
+                new Regex(@"```\w*?\n([\S\s]*?)\n```").Match(
                     System.IO.File.ReadAllText(
                         System.IO.Path.Combine(cwd, "README.md")
                     )
@@ -675,12 +668,12 @@ namespace RoguetechCheat
     public class
     Patch_NaturalStringComparer_Compare
     {
-        private static Regex _re = new Regex(
+        public static Regex _re = new Regex(
             "(?<=\\D)(?=\\d)|(?<=\\d)(?=\\D)",
             RegexOptions.Compiled
         );
 
-        private static int PartCompare(string x, string y)
+        public static int PartCompare(string x, string y)
         {
             int num;
             int value;
@@ -691,6 +684,48 @@ namespace RoguetechCheat
             return x.CompareTo(y);
         }
 
+		public static int Compare(InventoryDataObject_BASE a, InventoryDataObject_BASE b)
+		{
+			string text = a.GetId();
+			string text2 = b.GetId();
+			if (text == null)
+			{
+				text = "";
+			}
+			if (text2 == null)
+			{
+				text2 = "";
+			}
+			text = text.ToLower();
+			text2 = text2.ToLower();
+			if (string.Compare(text, 0, text2, 0, Math.Min(text.Length, text2.Length)) != 0)
+			{
+				string[] array = _re.Split(text);
+				string[] array2 = _re.Split(text2);
+				int num = 0;
+				int num2;
+				for (;;)
+				{
+					num2 = PartCompare(array[num], array2[num]);
+					if (num2 != 0)
+					{
+						break;
+					}
+					num++;
+				}
+				return num2;
+			}
+			if (text.Length == text2.Length)
+			{
+				return 0;
+			}
+			if (text.Length >= text2.Length)
+			{
+				return 1;
+			}
+			return -1;
+		}
+
         public static void
         Postfix(
             InventoryDataObject_BASE a,
@@ -698,62 +733,11 @@ namespace RoguetechCheat
             ref int __result
         )
         {
-            if (!Local.cheat_shopnuke_on)
+            if (Local.cheat_shopnuke_on)
             {
+                __result = Compare(a, b);
                 return;
             }
-            string text = a.GetName();
-            string text2 = b.GetName();
-            if (text == null)
-            {
-                text = "";
-            }
-            if (text2 == null)
-            {
-                text2 = "";
-            }
-            text = text.ToLower();
-            text2 = text2.ToLower();
-            if (
-                string.Compare(
-                    text,
-                    0,
-                    text2,
-                    0,
-                    Math.Min(text.Length, text2.Length)
-                ) != 0)
-            {
-                string[] array = _re.Split(text);
-                string[] array2 = _re.Split(text2);
-                int num = 0;
-                int num2;
-                for (; ; )
-                {
-                    num2 = PartCompare(
-                        array[num],
-                        array2[num]
-                    );
-                    if (num2 != 0)
-                    {
-                        break;
-                    }
-                    num++;
-                }
-                __result = num2;
-                return;
-            }
-            if (text.Length == text2.Length)
-            {
-                __result = 0;
-                return;
-            }
-            if (text.Length >= text2.Length)
-            {
-                __result = 1;
-                return;
-            }
-            __result = -1;
-            return;
         }
     }
     [HarmonyPatch(typeof(SG_Shop_Screen))]
