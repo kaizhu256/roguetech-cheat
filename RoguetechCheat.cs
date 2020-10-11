@@ -530,13 +530,11 @@ namespace RoguetechCheat
             {
                 return;
             }
-            Local.debugLog("shopitem", "4");
             string shopItemType;
             foreach (
                 var item in Local.state.getItem("shopitem.csv").Split('\n')
             )
             {
-                Local.debugLog("shopitem1", item.Split(','));
                 shopItemType = item.Split(',')[0];
                 obj.Entries.Add(new ItemCollectionDef.Entry(
                     item.Split(',')[1], // string ID
