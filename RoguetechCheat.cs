@@ -3,7 +3,6 @@ using BattleTech.UI;
 using Harmony;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 using UnityEngine;
 
@@ -682,55 +681,44 @@ namespace RoguetechCheat
             {
                 return;
             }
-			if (
-                !___isInBuyingState
-                || shop != ___theSystem.SystemShop
-            )
+            string text = a.GetName();
+            string text2 = b.GetName();
+            if (text == null)
             {
-                return;
+                text = "";
             }
-            foreach (
-                var item in
-                System.IO.File.ReadAllText(Local.state.getItem("shopitem.csv"))
-                .Replace("\r", "")
-                .Trim()
-                .Split('\n')
-            )
+            if (text2 == null)
             {
-                string shopItemType;
-                shopItemType = item.Split(',')[0];
-                __instance.AddShopItemToWidget(
-                    new ShopDefItem(
-                        item.Split(',')[1], // string ID
-                        (
-                            shopItemType == "AmmunitionBox"
-                            ? ShopItemType.AmmunitionBox
-                            : shopItemType == "HeatSink"
-                            ? ShopItemType.HeatSink
-                            : shopItemType == "JumpJet"
-                            ? ShopItemType.JumpJet
-                            : shopItemType == "Mech"
-                            ? ShopItemType.Mech
-                            : shopItemType == "MechPart"
-                            ? ShopItemType.MechPart
-                            : shopItemType == "Reference"
-                            ? ShopItemType.Reference
-                            : shopItemType == "Upgrade"
-                            ? ShopItemType.Upgrade
-                            : shopItemType == "Weapon"
-                            ? ShopItemType.Weapon
-                            : ShopItemType.None
-                        ), // ShopItemType Type
-                        1.0f, // float DiscountModifier
-                        0, // int Count
-                        true, // bool IsInfinite
-                        false, // bool IsDamaged
-                        0 // int SellCost
-                    ),
-                    shop,
-                    ___inventoryWidget
-                );
+                text2 = "";
             }
+            text = text.ToLower();
+            text2 = text2.ToLower();
+            if (string.Compare(text, 0, text2, 0, Math.Min(text.Length, text2.Length)) != 0)
+            {
+                string[] array = NaturalStringComparer._re.Split(text);
+                string[] array2 = NaturalStringComparer._re.Split(text2);
+                int num = 0;
+                int num2;
+                for (; ; )
+                {
+                    num2 = NaturalStringComparer.PartCompare(array[num], array2[num]);
+                    if (num2 != 0)
+                    {
+                        break;
+                    }
+                    num++;
+                }
+                return num2;
+            }
+            if (text.Length == text2.Length)
+            {
+                return 0;
+            }
+            if (text.Length >= text2.Length)
+            {
+                return 1;
+            }
+            return -1;
         }
     }
     [HarmonyPatch(typeof(SG_Shop_Screen))]
@@ -751,7 +739,7 @@ namespace RoguetechCheat
             {
                 return;
             }
-			if (
+            if (
                 !___isInBuyingState
                 || shop != ___theSystem.SystemShop
             )
