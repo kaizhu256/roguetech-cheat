@@ -1,0 +1,14 @@
+AmmunitionBox,Ammo_AmmunitionBox_Nuke_ArrowIV
+AmmunitionBox,Ammo_AmmunitionBox_Nuke_LongTom
+AmmunitionBox,Ammo_AmmunitionBox_Nuke_Thumper
+HeatSink,emod_Pirate_FuelCell
+HeatSink,emod_engine_500
+JumpJet,RedLabmorBoostpack
+JumpJet,RedLabmorBoostpack
+Upgrade,Gear_Sensor_Prototype_ActiveProbe
+Upgrade,Gear_Sensor_Prototype_ECM
+Upgrade,Gear_armorslots_RISC
+Weapon,Weapon_Artillery_ArrowIV
+Weapon,Weapon_Artillery_LONGTOM
+Weapon,Weapon_Artillery_SNIPER
+Weapon,Weapon_Artillery_THUMPER

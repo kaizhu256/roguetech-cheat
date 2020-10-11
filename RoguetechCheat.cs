@@ -34,16 +34,18 @@ namespace RoguetechCheat
                     : ""
                 )
                 : val.ToString()
-            ).Trim().ToLower();
+            ).Trim();
             val2 = System.Text.RegularExpressions.Regex.Replace(
                 val2,
                 "^true$",
-                "1"
+                "1",
+                System.Text.RegularExpressions.RegexOptions.IgnoreCase
             );
             val2 = System.Text.RegularExpressions.Regex.Replace(
                 val2,
                 "^false$",
-                ""
+                "",
+                System.Text.RegularExpressions.RegexOptions.IgnoreCase
             );
             this[key.ToLower()] = val2;
         }
@@ -536,30 +538,30 @@ namespace RoguetechCheat
             {
                 Local.debugLog("shopitem1", item.Split(','));
                 shopItemType = item.Split(',')[0];
-                //!! obj.Entries.Add(new ItemCollectionDef.Entry(
-                    //!! item.Split(',')[1], // string ID
-                    //!! (
-                        //!! shopItemType == "AmmunitionBox"
-                        //!! ? ShopItemType.AmmunitionBox
-                        //!! : shopItemType == "HeatSink"
-                        //!! ? ShopItemType.HeatSink
-                        //!! : shopItemType == "JumpJet"
-                        //!! ? ShopItemType.JumpJet
-                        //!! : shopItemType == "Mech"
-                        //!! ? ShopItemType.Mech
-                        //!! : shopItemType == "MechPart"
-                        //!! ? ShopItemType.MechPart
-                        //!! : shopItemType == "Reference"
-                        //!! ? ShopItemType.Reference
-                        //!! : shopItemType == "Upgrade"
-                        //!! ? ShopItemType.Upgrade
-                        //!! : shopItemType == "Weapon"
-                        //!! ? ShopItemType.Weapon
-                        //!! : ShopItemType.None
-                    //!! ), // ShopItemType Type
-                    //!! 0, // int Count
-                    //!! 10 // int Weight
-                //!! ));
+                obj.Entries.Add(new ItemCollectionDef.Entry(
+                    item.Split(',')[1], // string ID
+                    (
+                        shopItemType == "AmmunitionBox"
+                        ? ShopItemType.AmmunitionBox
+                        : shopItemType == "HeatSink"
+                        ? ShopItemType.HeatSink
+                        : shopItemType == "JumpJet"
+                        ? ShopItemType.JumpJet
+                        : shopItemType == "Mech"
+                        ? ShopItemType.Mech
+                        : shopItemType == "MechPart"
+                        ? ShopItemType.MechPart
+                        : shopItemType == "Reference"
+                        ? ShopItemType.Reference
+                        : shopItemType == "Upgrade"
+                        ? ShopItemType.Upgrade
+                        : shopItemType == "Weapon"
+                        ? ShopItemType.Weapon
+                        : ShopItemType.None
+                    ), // ShopItemType Type
+                    0, // int Count
+                    10 // int Weight
+                ));
             }
         }
     }
