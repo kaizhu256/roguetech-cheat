@@ -3,7 +3,6 @@ using BattleTech.UI;
 using Harmony;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 using UnityEngine;
 
@@ -673,90 +672,71 @@ namespace RoguetechCheat
     [HarmonyPatch(typeof(NaturalStringComparer))]
     [HarmonyPatch("Compare")]
     public class
-    Patch_NaturalStringComparer_Compare
+    Patch_SG_Shop_Screen_AddShopInventory
     {
-        public static IEnumerable<CodeInstruction>
-        Transpiler(IEnumerable<CodeInstruction> instructions)
-        //!! public static void
-        //!! Postfix(
-            //!! InventoryDataObject_BASE a,
-            //!! InventoryDataObject_BASE b,
-            //!! ref int __result
-        //!! )
+        public static void
+        Postfix(
+            InventoryDataObject_BASE a,
+            InventoryDataObject_BASE b,
+            ref int __result
+        )
         {
             if (!Local.cheat_shopnuke_on)
             {
-                return instructions;
+                return;
             }
-            List<CodeInstruction> list = instructions.ToList();
-            // transpile - replace - MeleeGrid and WalkingGrid to SprintingGrid
-            list = list.MethodReplacer(
-                AccessTools.Property(
-                    typeof(Pathing),
-                    "GetName"
-                ).GetGetMethod(true),
-                AccessTools.Property(
-                    typeof(Pathing),
-                    "GetId"
-                ).GetGetMethod(true)
-            ).ToList();
-            return list;
-            //!! if (!Local.cheat_shopnuke_on)
-            //!! {
-                //!! return;
-            //!! }
-            //!! string text = a.GetName();
-            //!! string text2 = b.GetName();
-            //!! if (text == null)
-            //!! {
-                //!! text = "";
-            //!! }
-            //!! if (text2 == null)
-            //!! {
-                //!! text2 = "";
-            //!! }
-            //!! text = text.ToLower();
-            //!! text2 = text2.ToLower();
-            //!! if (
-                //!! string.Compare(
-                    //!! text,
-                    //!! 0,
-                    //!! text2,
-                    //!! 0,
-                    //!! Math.Min(text.Length, text2.Length)
-                //!! ) != 0)
-            //!! {
-                //!! string[] array = NaturalStringComparer._re.Split(text);
-                //!! string[] array2 = NaturalStringComparer._re.Split(text2);
-                //!! int num = 0;
-                //!! int num2;
-                //!! for (; ; )
-                //!! {
-                    //!! num2 = NaturalStringComparer.PartCompare(
-                        //!! array[num],
-                        //!! array2[num]
-                    //!! );
-                    //!! if (num2 != 0)
-                    //!! {
-                        //!! break;
-                    //!! }
-                    //!! num++;
-                //!! }
-                //!! __result = num2;
-                //!! return;
-            //!! }
-            //!! if (text.Length == text2.Length)
-            //!! {
-                //!! __result = 0;
-                //!! return;
-            //!! }
-            //!! if (text.Length >= text2.Length)
-            //!! {
-                //!! __result = 1;
-                //!! return;
-            //!! }
-            //!! __result = -1;
-            //!! return;
+            string text = a.GetName();
+            string text2 = b.GetName();
+            if (text == null)
+            {
+                text = "";
+            }
+            if (text2 == null)
+            {
+                text2 = "";
+            }
+            text = text.ToLower();
+            text2 = text2.ToLower();
+            if (
+                string.Compare(
+                    text,
+                    0,
+                    text2,
+                    0,
+                    Math.Min(text.Length, text2.Length)
+                ) != 0)
+            {
+                string[] array = NaturalStringComparer._re.Split(text);
+                string[] array2 = NaturalStringComparer._re.Split(text2);
+                int num = 0;
+                int num2;
+                for (; ; )
+                {
+                    num2 = NaturalStringComparer.PartCompare(
+                        array[num],
+                        array2[num]
+                    );
+                    if (num2 != 0)
+                    {
+                        break;
+                    }
+                    num++;
+                }
+                __result = num2;
+                return;
+            }
+            if (text.Length == text2.Length)
+            {
+                __result = 0;
+                return;
+            }
+            if (text.Length >= text2.Length)
+            {
+                __result = 1;
+                return;
+            }
+            __result = -1;
+            return;
         }
     }
     [HarmonyPatch(typeof(SG_Shop_Screen))]
