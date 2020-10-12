@@ -822,7 +822,6 @@ namespace RoguetechCheat
             }
         }
     }
-    /*
     [HarmonyPatch(typeof(SimGameState))]
     [HarmonyPatch("OnDayPassed")]
     public class
@@ -843,7 +842,6 @@ namespace RoguetechCheat
             }
         }
     }
-    */
 
     // patch - difficulty_settings
     [HarmonyPatch(typeof(SimGameDifficultySettingList))]
