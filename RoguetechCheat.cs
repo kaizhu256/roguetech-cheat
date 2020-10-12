@@ -832,10 +832,10 @@ namespace RoguetechCheat
             SimGameState __instance
         )
         {
-            // refresh shop every 5 days
+            // refresh shop every 10 days
             if (
                 Local.cheat_shopnuke_on
-                && __instance.DaysPassed % 5 == 1
+                && __instance.DaysPassed % 10 == 1
             )
             {
                 __instance.CurSystem.OnSystemChange();
