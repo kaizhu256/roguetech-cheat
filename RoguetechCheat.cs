@@ -683,6 +683,21 @@ namespace RoguetechCheat
     // patch - cheat_salvagetotal_300
 
     // patch - cheat_shopnuke_on
+    [HarmonyPatch(typeof(SG_Shop_Screen))]
+    [HarmonyPatch("RefreshAllMoneyListings")]
+    public class
+    Patch_SG_Shop_Screen_RefreshAllMoneyListings
+    {
+        public static void
+        Postfix()
+        {
+            if (!Local.cheat_shopnuke_on)
+            {
+                return;
+            }
+            Local.debugLog("RefreshAllMoneyListings", System.Environment.StackTrace);
+        }
+    }
     [HarmonyPatch(typeof(DynamicShops.Patches.StarSystem_OnSystemChange))]
     [HarmonyPatch("DoSystemShop")]
     public class
@@ -696,7 +711,7 @@ namespace RoguetechCheat
                 return;
             }
             var obj = systemShop.ItemCollections.FirstOrDefault();
-            Local.debugLog("systemshop1", obj);
+            //!! Local.debugLog("systemshop1", obj);
             if (obj == null)
             {
                 return;
@@ -736,11 +751,11 @@ namespace RoguetechCheat
                     10 // int Weight
                 ));
             }
-            Local.debugLog(
-                "shopitem.csv",
-                System.IO.File.ReadAllText(Local.state.getItem("shopitem.csv"))
-            );
-            Local.debugLog("systemshop2", obj);
+            //!! Local.debugLog(
+                //!! "shopitem.csv",
+                //!! System.IO.File.ReadAllText(Local.state.getItem("shopitem.csv"))
+            //!! );
+            //!! Local.debugLog("systemshop2", obj);
         }
     }
     [HarmonyPatch(typeof(NaturalStringComparer))]
