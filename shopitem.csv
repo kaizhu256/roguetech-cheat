@@ -8,7 +8,7 @@ HeatSink,emod_engineslots_cxxl_center
 HeatSink,emod_kit_dhs_proto
 JumpJet,Gear_JumpJet_Mechanical_10
 JumpJet,RedLabmorBoostpack
-MechPart,jihad_flashpoint.mech.mechdef_yurei_s-yr-3lam
+MechPart,mechdef_yurei_s-yr-3lam
 Upgrade,Gear_FCS_Buffered_VDNI
 Upgrade,Gear_Sensor_Prototype_ActiveProbe
 Upgrade,Gear_Sensor_Prototype_ECM

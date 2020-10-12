@@ -696,6 +696,7 @@ namespace RoguetechCheat
                 return;
             }
             var obj = systemShop.ItemCollections.FirstOrDefault();
+            Local.debugLog("systemshop1", obj);
             if (obj == null)
             {
                 return;
@@ -735,6 +736,11 @@ namespace RoguetechCheat
                     10 // int Weight
                 ));
             }
+            Local.debugLog(
+                "shopitem.csv",
+                System.IO.File.ReadAllText(Local.state.getItem("shopitem.csv"))
+            );
+            Local.debugLog("systemshop2", obj);
         }
     }
     [HarmonyPatch(typeof(NaturalStringComparer))]
