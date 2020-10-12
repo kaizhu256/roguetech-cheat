@@ -817,7 +817,26 @@ namespace RoguetechCheat
             if (Local.cheat_shopnuke_on)
             {
                 __result = Compare(a, b);
-                return;
+            }
+        }
+    }
+    [HarmonyPatch(typeof(SimGameState))]
+    [HarmonyPatch("OnDayPassed")]
+    public class
+    Patch_SimGameState_OnDayPassed
+    {
+        public static void
+        Postfix(
+            SimGameState __instance
+        )
+        {
+            // refresh shop every 5 days
+            if (
+                Local.cheat_shopnuke_on
+                && __instance.DaysPassed % 5 == 1
+            )
+            {
+                __instance.CurSystem.OnSystemChange();
             }
         }
     }
