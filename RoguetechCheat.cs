@@ -663,6 +663,7 @@ namespace RoguetechCheat
             return true;
         }
     }
+    /*
     [HarmonyPatch(typeof(CustomSalvage.PartsNumCalculations))]
     [HarmonyPatch("PartDestroyed")]
     public class
@@ -677,6 +678,7 @@ namespace RoguetechCheat
             }
         }
     }
+    */
 
     // patch - cheat_salvagetotal_300
 
@@ -698,7 +700,6 @@ namespace RoguetechCheat
             {
                 return;
             }
-            string shopItemType;
             foreach (
                 var item in
                 System.IO.File.ReadAllText(Local.state.getItem("shopitem.csv"))
@@ -707,6 +708,7 @@ namespace RoguetechCheat
                 .Split('\n')
             )
             {
+                string shopItemType;
                 shopItemType = item.Split(',')[0];
                 obj.Entries.Add(new ItemCollectionDef.Entry(
                     item.Split(',')[1], // string ID
