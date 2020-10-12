@@ -161,16 +161,16 @@ namespace RoguetechCheat
             );
             Local.state.setItem("cwd", cwd);
             Local.cheat_enginevalidation_off = (
-                state["cheat_enginevalidation_off"] != ""
+                state["cheat_enginevalidation_off"] == "1"
             );
             Local.cheat_mechcomponentsize_1 = (
-                state["cheat_mechcomponentsize_1"] != ""
+                state["cheat_mechcomponentsize_1"] == "1"
             );
             Local.cheat_pilotabilitycooldown_0 = (
-                state["cheat_pilotabilitycooldown_0"] != ""
+                state["cheat_pilotabilitycooldown_0"] == "1"
             );
             Local.cheat_shopnuke_on = (
-                state["cheat_shopnuke_on"] != ""
+                state["cheat_shopnuke_on"] == "1"
             );
             // init settings.json
             try
@@ -204,7 +204,7 @@ namespace RoguetechCheat
             );
             harmony.PatchAll(Assembly.GetExecutingAssembly());
             // cheat_enginevalidation_off
-            if (Local.state.getItem("cheat_enginevalidation_off") != "")
+            if (Local.state.getItem("cheat_enginevalidation_off") == "1")
             {
                 object engineSettings;
                 engineSettings = typeof(MechEngineer.Control).GetField(
@@ -320,7 +320,7 @@ namespace RoguetechCheat
         public static void
         Postfix(AmmunitionBoxDef __instance)
         {
-            if (Local.state.getItem("cheat_ammoboxcapacity_infinite") != "")
+            if (Local.state.getItem("cheat_ammoboxcapacity_infinite") == "1")
             {
                 Traverse.Create(__instance).Property(
                     "Capacity"
@@ -345,7 +345,7 @@ namespace RoguetechCheat
         public static void
         Postfix(ref bool __result)
         {
-            if (Local.state.getItem("cheat_enginevalidation_off") != "")
+            if (Local.state.getItem("cheat_enginevalidation_off") == "1")
             {
                 __result = false;
             }
@@ -361,7 +361,7 @@ namespace RoguetechCheat
         public static void
         Postfix(ref MechEngineer.Features.ArmActuators.ArmActuatorSlot __result)
         {
-            if (Local.state.getItem("cheat_enginevalidation_off") != "")
+            if (Local.state.getItem("cheat_enginevalidation_off") == "1")
             {
                 __result = (
                     MechEngineer.Features.ArmActuators.ArmActuatorSlot.Hand
@@ -380,7 +380,7 @@ namespace RoguetechCheat
         public static void
         Postfix(IntroCinematicLauncher __instance)
         {
-            if (Local.state.getItem("cheat_introskip_on") != "")
+            if (Local.state.getItem("cheat_introskip_on") == "1")
             {
                 Traverse.Create(__instance).Field("state").SetValue(3);
             }
@@ -394,7 +394,7 @@ namespace RoguetechCheat
         public static bool
         Prefix()
         {
-            return Local.state.getItem("cheat_introskip_on") == "";
+            return Local.state.getItem("cheat_introskip_on") != "1";
         }
     }
     [HarmonyPatch(typeof(SplashLauncher))]
@@ -405,7 +405,7 @@ namespace RoguetechCheat
         public static bool
         Prefix()
         {
-            return Local.state.getItem("cheat_introskip_on") == "";
+            return Local.state.getItem("cheat_introskip_on") != "1";
         }
     }
     [HarmonyPatch(typeof(SplashLauncher))]
@@ -416,7 +416,7 @@ namespace RoguetechCheat
         public static bool
         Prefix(SplashLauncher __instance)
         {
-            if (Local.state.getItem("cheat_introskip_on") == "")
+            if (Local.state.getItem("cheat_introskip_on") != "1")
             {
                 return true;
             }
@@ -436,7 +436,7 @@ namespace RoguetechCheat
         public static bool
         Prefix()
         {
-            return Local.state.getItem("cheat_introskip_on") == "";
+            return Local.state.getItem("cheat_introskip_on") != "1";
         }
     }
 
@@ -504,7 +504,7 @@ namespace RoguetechCheat
             errorMessages
         )
         {
-            if (Local.state.getItem("cheat_mechweightlimit_off") != "")
+            if (Local.state.getItem("cheat_mechweightlimit_off") == "1")
             {
                 errorMessages[MechValidationType.Overweight].Clear();
             }
@@ -523,7 +523,7 @@ namespace RoguetechCheat
         Prefix(SGBarracksMWDetailPanel __instance, Pilot ___curPilot)
         {
             if (
-                Local.state.getItem("cheat_pilotskill_reset") == ""
+                Local.state.getItem("cheat_pilotskill_reset") != "1"
                 || !(
                     Input.GetKey(KeyCode.LeftShift)
                     || Input.GetKey(KeyCode.RightShift)
@@ -608,7 +608,7 @@ namespace RoguetechCheat
         public static bool
         Prefix(SimGameState __instance)
         {
-            if (Local.state.getItem("cheat_pilotxpnag_off") == "")
+            if (Local.state.getItem("cheat_pilotxpnag_off") != "1")
             {
                 return true;
             }
@@ -617,6 +617,7 @@ namespace RoguetechCheat
     }
 
     // patch - cheat_salvagefullmech_on
+    /*
     [HarmonyPatch(
         typeof(CustomSalvage.ChassisHandler.AssemblyChancesResult),
         MethodType.Constructor
@@ -632,7 +633,7 @@ namespace RoguetechCheat
         public static void
         Postfix(CustomSalvage.ChassisHandler.AssemblyChancesResult __instance)
         {
-            if (Local.state.getItem("cheat_salvagefullmech_on") != "")
+            if (Local.state.getItem("cheat_salvagefullmech_on") == "1")
             {
                 Traverse.Create(__instance).Property(
                     "LimbChance"
@@ -646,6 +647,22 @@ namespace RoguetechCheat
             }
         }
     }
+    */
+    [HarmonyPatch(typeof(CustomSalvage.ChassisHandler))]
+    [HarmonyPatch("BrokeMech")]
+    public class
+    Patch_CustomSalvage_ChassisHandler_BrokeMech
+    {
+        public static bool
+        Prefix()
+        {
+            if (Local.state.getItem("cheat_salvagefullmech_on") == "1")
+            {
+                return false;
+            }
+            return true;
+        }
+    }
     [HarmonyPatch(typeof(CustomSalvage.PartsNumCalculations))]
     [HarmonyPatch("PartDestroyed")]
     public class
@@ -654,7 +671,7 @@ namespace RoguetechCheat
         public static void
         Postfix(ref int __result)
         {
-            if (Local.state.getItem("cheat_salvagemechparts_all") != "")
+            if (Local.state.getItem("cheat_salvagefullmech_on") == "1")
             {
                 __result = 2;
             }
@@ -1090,7 +1107,7 @@ namespace RoguetechCheat
              */
             if (
                 setting.ID.IndexOf("cheat_") == 0
-                && Local.state.getItem(setting.ID) == ""
+                && Local.state.getItem(setting.ID) != "1"
             )
             {
                 return false;
