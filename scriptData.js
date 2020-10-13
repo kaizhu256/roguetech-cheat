@@ -801,6 +801,7 @@ ORDER BY COALESCE(chassis1.rowid, 9999), mech1.rowid;
                 ]);
             });
             if (mode !== "patch") {
+                // export csv data.gear.csv
                 db.all((
                     "SELECT * FROM db_gear.data1 AS data1\n"
                     + "LEFT JOIN tmp1 ON\n"
@@ -809,6 +810,29 @@ ORDER BY COALESCE(chassis1.rowid, 9999), mech1.rowid;
                     onErrorThrow(err);
                     fs.writeFile((
                         "data.gear.csv"
+                    ), csvFromJson(data).replace((
+                        /\r/g
+                    ), ""), onErrorThrow);
+                });
+                // export csv data.gear.short.csv
+                db.all((
+                    "SELECT"
+                    + "description_cost,"
+                    + "category,"
+                    + "componentsubtype,"
+                    + "componenttype,"
+                    + "description_id,"
+                    + "description_details,"
+                    + "damage,"
+                    + "damage2,"
+                    + "heatgenerated"
+                    + "FROM db_gear.data1 AS data1\n"
+                    + "LEFT JOIN tmp1 ON\n"
+                    + "tmp1.component = data1.description_id;\n"
+                ), function (err, data) {
+                    onErrorThrow(err);
+                    fs.writeFile((
+                        "data.gear.short.csv"
                     ), csvFromJson(data).replace((
                         /\r/g
                     ), ""), onErrorThrow);
