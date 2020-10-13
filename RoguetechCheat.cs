@@ -696,7 +696,6 @@ namespace RoguetechCheat
                 return;
             }
             var obj = systemShop.ItemCollections.FirstOrDefault();
-            //!! Local.debugLog("systemshop1", obj);
             if (obj == null)
             {
                 return;
@@ -709,29 +708,32 @@ namespace RoguetechCheat
                 .Split('\n')
             )
             {
-                string shopItemType;
-                shopItemType = item.Split(',')[0];
+                var tmp = item.Split(',')[0];
+                var shopItemType = (
+                    tmp == "AmmunitionBox"
+                    ? ShopItemType.AmmunitionBox
+                    : tmp == "HeatSink"
+                    ? ShopItemType.HeatSink
+                    : tmp == "JumpJet"
+                    ? ShopItemType.JumpJet
+                    : tmp == "Mech"
+                    ? ShopItemType.Mech
+                    : tmp == "MechPart"
+                    ? ShopItemType.MechPart
+                    : tmp == "Reference"
+                    ? ShopItemType.Reference
+                    : tmp == "Upgrade"
+                    ? ShopItemType.Upgrade
+                    : tmp == "Weapon"
+                    ? ShopItemType.Weapon
+                    : ShopItemType.None
+                );
+                if (shopItemType == ShopItemType.None) {
+                    continue;
+                }
                 obj.Entries.Add(new ItemCollectionDef.Entry(
                     item.Split(',')[1], // string ID
-                    (
-                        shopItemType == "AmmunitionBox"
-                        ? ShopItemType.AmmunitionBox
-                        : shopItemType == "HeatSink"
-                        ? ShopItemType.HeatSink
-                        : shopItemType == "JumpJet"
-                        ? ShopItemType.JumpJet
-                        : shopItemType == "Mech"
-                        ? ShopItemType.Mech
-                        : shopItemType == "MechPart"
-                        ? ShopItemType.MechPart
-                        : shopItemType == "Reference"
-                        ? ShopItemType.Reference
-                        : shopItemType == "Upgrade"
-                        ? ShopItemType.Upgrade
-                        : shopItemType == "Weapon"
-                        ? ShopItemType.Weapon
-                        : ShopItemType.None
-                    ), // ShopItemType Type
+                    shopItemType, // ShopItemType Type
                     0, // int Count
                     10 // int Weight
                 ));
@@ -892,27 +894,27 @@ namespace RoguetechCheat
                 .Split('\n')
             )
             {
-                string shopItemType;
-                shopItemType = item.Split(',')[0];
+                string tmp;
+                tmp = item.Split(',')[0];
                 __instance.AddShopItemToWidget(
                     new ShopDefItem(
                         item.Split(',')[1], // string ID
                         (
-                            shopItemType == "AmmunitionBox"
+                            tmp == "AmmunitionBox"
                             ? ShopItemType.AmmunitionBox
-                            : shopItemType == "HeatSink"
+                            : tmp == "HeatSink"
                             ? ShopItemType.HeatSink
-                            : shopItemType == "JumpJet"
+                            : tmp == "JumpJet"
                             ? ShopItemType.JumpJet
-                            : shopItemType == "Mech"
+                            : tmp == "Mech"
                             ? ShopItemType.Mech
-                            : shopItemType == "MechPart"
+                            : tmp == "MechPart"
                             ? ShopItemType.MechPart
-                            : shopItemType == "Reference"
+                            : tmp == "Reference"
                             ? ShopItemType.Reference
-                            : shopItemType == "Upgrade"
+                            : tmp == "Upgrade"
                             ? ShopItemType.Upgrade
-                            : shopItemType == "Weapon"
+                            : tmp == "Weapon"
                             ? ShopItemType.Weapon
                             : ShopItemType.None
                         ), // ShopItemType Type
