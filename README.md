@@ -69,7 +69,7 @@ this mod will enable roguetech-specific cheats like build intact mech from singl
     "cheat_salvagetotal_300": "1",
 
     // cheat - can purchase nuclear-ammo from shop
-    (activates after traveling to another star-system)
+    // (activates after traveling to another star-system)
     "cheat_shopnuke_on": "1",
 }
 ```
