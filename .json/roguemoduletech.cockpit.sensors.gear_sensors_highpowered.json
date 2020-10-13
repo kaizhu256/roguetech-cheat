@@ -18,7 +18,8 @@
    "Bonuses": [
     "Sensors: +10%",
     "Sight: +5%",
-    "AdvancedSensors: 3"
+    "AdvancedSensors: 3",
+    "DetectMine"
    ]
   },
   "Category": [
@@ -178,6 +179,36 @@
     "triggerLimit": 0
    },
    "vfxData": null
+  },
+  {
+   "Description": {
+    "Details": "Detects Minefields",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "MineFieldDetection",
+    "Name": "Active Probe (Passive)"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1",
+    "operation": "Float_Add",
+    "statName": "MinefieldDetection"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
   }
  ]
 }

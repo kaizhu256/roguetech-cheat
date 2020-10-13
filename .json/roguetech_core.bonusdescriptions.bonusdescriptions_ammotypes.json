@@ -1,6 +1,18 @@
 {
  "Settings": [
   {
+   "Bonus": "MineIFF",
+   "Full": "This Minefield has an IFF System and will not detonate on allies.",
+   "Long": "IFFMine",
+   "Short": "IFFMine"
+  },
+  {
+   "Bonus": "DetectMine",
+   "Full": "Allows to detect Minefields",
+   "Long": "Detect",
+   "Short": "Detect"
+  },
+  {
    "Bonus": "Exhaust",
    "Full": "This ammo is rare, the bin can't be refilled when emptied.",
    "Long": "Rare Ammo",

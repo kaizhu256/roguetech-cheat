@@ -387,7 +387,8 @@
     "ECCMMode",
     "ECCMStrength: 2, 150",
     "ECCMFriendly: 2, 210",
-    "UAV: 360, 4, 15"
+    "UAV: 360, 4, 15",
+    "DetectMine"
    ]
   },
   "Category": [
@@ -551,6 +552,36 @@
    "targetingData": {
     "effectTargetType": "Creator",
     "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Detects Minefields",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "MineFieldDetection",
+    "Name": "Active Probe (Passive)"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1",
+    "operation": "Float_Add",
+    "statName": "MinefieldDetection"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
    }
   }
  ]

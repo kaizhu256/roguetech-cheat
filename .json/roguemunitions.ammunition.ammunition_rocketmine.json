@@ -43,7 +43,7 @@
   "VFXprefab": "vfxNstPrtl_vehicleCrushed_A",
   "burnReaction": "None",
   "statusEffects": [],
-  "stealthLevel": 1
+  "stealthLevel": 0
  },
  "SpreadRange": 120,
  "Type": "Normal"

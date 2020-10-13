@@ -38,7 +38,7 @@
   "FireOnSuccessHit": true,
   "FireTerrainChance": 0.001,
   "Heat": 0,
-  "IFFLevel": 0,
+  "IFFLevel": 1,
   "InstallCellRange": 6,
   "SFX": "enum:AudioEventList_explosion.explosion_propane_tank",
   "UIName": "Sensors",
@@ -125,7 +125,7 @@
     }
    }
   ],
-  "stealthLevel": 1
+  "stealthLevel": 0
  },
  "SpreadRange": 100,
  "Type": "Normal"

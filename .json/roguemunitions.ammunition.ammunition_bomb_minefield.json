@@ -38,7 +38,7 @@
   "UIName": "Minefield",
   "burnReaction": "None",
   "statusEffects": [],
-  "stealthLevel": 1
+  "stealthLevel": 0
  },
  "Type": "Normal"
 }

@@ -31,7 +31,7 @@
   "FireTerrainChance": 1,
   "FireTerrainStrength": 2,
   "Heat": 1,
-  "IFFLevel": 0,
+  "IFFLevel": 1,
   "InstallCellRange": 15,
   "SFX": "enum:AudioEventList_explosion.explosion_propane_tank",
   "UIName": "AIVFASCAM-I",

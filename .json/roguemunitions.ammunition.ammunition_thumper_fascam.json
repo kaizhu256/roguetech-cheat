@@ -30,11 +30,14 @@
   "FireTerrainChance": 0.01,
   "FireTerrainStrength": 0,
   "Heat": 0,
+  "IFFLevel": 0,
   "InstallCellRange": 8,
   "SFX": "enum:AudioEventList_explosion.explosion_propane_tank",
   "VFXMinDistance": 30,
   "VFXprefab": "vfxNstPrtl_vehicleCrushed_A",
-  "statusEffects": []
+  "burnReaction": "None",
+  "statusEffects": [],
+  "stealthLevel": 1
  },
  "Type": "Normal"
 }

@@ -40,7 +40,7 @@
   "FireOnSuccessHit": true,
   "FireTerrainChance": 0.01,
   "Heat": 0,
-  "IFFLevel": 0,
+  "IFFLevel": 1,
   "InstallCellRange": 0,
   "SFX": "enum:AudioEventList_explosion.explosion_propane_tank",
   "UIName": "Thunder",
