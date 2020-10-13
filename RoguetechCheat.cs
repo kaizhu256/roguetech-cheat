@@ -683,21 +683,6 @@ namespace RoguetechCheat
     // patch - cheat_salvagetotal_300
 
     // patch - cheat_shopnuke_on
-    [HarmonyPatch(typeof(SG_Shop_Screen))]
-    [HarmonyPatch("RefreshAllMoneyListings")]
-    public class
-    Patch_SG_Shop_Screen_RefreshAllMoneyListings
-    {
-        public static void
-        Postfix()
-        {
-            if (!Local.cheat_shopnuke_on)
-            {
-                return;
-            }
-            Local.debugLog("RefreshAllMoneyListings", System.Environment.StackTrace);
-        }
-    }
     [HarmonyPatch(typeof(DynamicShops.Patches.StarSystem_OnSystemChange))]
     [HarmonyPatch("DoSystemShop")]
     public class
@@ -767,7 +752,6 @@ namespace RoguetechCheat
             "(?<=\\D)(?=\\d)|(?<=\\d)(?=\\D)",
             RegexOptions.Compiled
         );
-
         public static int PartCompare(string x, string y)
         {
             int num;
@@ -778,7 +762,6 @@ namespace RoguetechCheat
             }
             return x.CompareTo(y);
         }
-
         public static int Compare(
             InventoryDataObject_BASE a,
             InventoryDataObject_BASE b
@@ -829,7 +812,6 @@ namespace RoguetechCheat
             }
             return -1;
         }
-
         public static void
         Postfix(
             InventoryDataObject_BASE a,
@@ -843,6 +825,109 @@ namespace RoguetechCheat
             }
         }
     }
+    [HarmonyPatch(typeof(SG_Shop_Screen))]
+    [HarmonyPatch("RefreshAllMoneyListings")]
+    public class
+    Patch_SG_Shop_Screen_RefreshAllMoneyListings
+    {
+        public static void
+        Postfix()
+        {
+            if (!Local.cheat_shopnuke_on)
+            {
+                return;
+            }
+            Local.debugLog("RefreshAllMoneyListings", System.Environment.StackTrace);
+        }
+    }
+    /*
+    [HarmonyPatch(typeof(SG_Stores_MultiPurchasePopup))]
+    [HarmonyPatch("OnConfirm")]
+    public class
+    Patch_SG_Stores_MultiPurchasePopup_OnConfirm
+    {
+        public static void
+        Postfix()
+        {
+            if (!Local.cheat_shopnuke_on)
+            {
+                return;
+            }
+            Local.debugLog("OnConfirm", System.Environment.StackTrace);
+        }
+    }
+    [HarmonyPatch(typeof(SG_Shop_Screen))]
+    [HarmonyPatch("AddShopInventory")]
+    public class
+    Patch_SG_Shop_Screen_AddShopInventory
+    {
+        public static void
+        Postfix(
+            MechLabInventoryWidget_ListView ___inventoryWidget,
+            SG_Shop_Screen __instance,
+            StarSystem ___theSystem,
+            bool ___isInBuyingState,
+            Shop shop
+        )
+        {
+            if (!Local.cheat_shopnuke_on)
+            {
+                return;
+            }
+            if (
+                !___isInBuyingState
+                || shop != ___theSystem.SystemShop
+            )
+            {
+                return;
+            }
+            foreach (
+                var item in
+                System.IO.File.ReadAllText(Local.state.getItem("shopitem.csv"))
+                //!! "AmmunitionBox,Ammo_AmmunitionBox_Nuke_ArrowIV"
+                .Replace("\r", "")
+                .Trim()
+                .Split('\n')
+            )
+            {
+                string shopItemType;
+                shopItemType = item.Split(',')[0];
+                __instance.AddShopItemToWidget(
+                    new ShopDefItem(
+                        item.Split(',')[1], // string ID
+                        (
+                            shopItemType == "AmmunitionBox"
+                            ? ShopItemType.AmmunitionBox
+                            : shopItemType == "HeatSink"
+                            ? ShopItemType.HeatSink
+                            : shopItemType == "JumpJet"
+                            ? ShopItemType.JumpJet
+                            : shopItemType == "Mech"
+                            ? ShopItemType.Mech
+                            : shopItemType == "MechPart"
+                            ? ShopItemType.MechPart
+                            : shopItemType == "Reference"
+                            ? ShopItemType.Reference
+                            : shopItemType == "Upgrade"
+                            ? ShopItemType.Upgrade
+                            : shopItemType == "Weapon"
+                            ? ShopItemType.Weapon
+                            : ShopItemType.None
+                        ), // ShopItemType Type
+                        1.0f, // float DiscountModifier
+                        0, // int Count
+                        true, // bool IsInfinite
+                        false, // bool IsDamaged
+                        0 // int SellCost
+                    ),
+                    shop,
+                    ___inventoryWidget
+                );
+            }
+            Local.debugLog("shop", shop);
+        }
+    }
+    */
     [HarmonyPatch(typeof(SimGameState))]
     [HarmonyPatch("OnDayPassed")]
     public class
@@ -859,7 +944,21 @@ namespace RoguetechCheat
                 && __instance.DaysPassed % 7 == 1
             )
             {
-                __instance.CurSystem.OnSystemChange();
+                //!! __instance.CurSystem.OnSystemChange();
+                typeof(
+                    DynamicShops.Patches.StarSystem_OnSystemChange
+                ).GetMethod(
+                    "DoSystemShop",
+                    BindingFlags.Static | BindingFlags.NonPublic
+                ).Invoke(null, new object[] {
+                    __instance.CurSystem,
+                    __instance.CurSystem.SystemShop
+                });
+                //!! ).Invoke(obj: null, parameters: new object[] { "Test" });
+                //!! DynamicShops.Patches.StarSystem_OnSystemChange.DoSystemShop(
+                    //!! __instance.CurSystem,
+                    //!! __instance.CurSystem.SystemShop
+                //!! );
             }
         }
     }
