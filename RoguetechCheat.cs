@@ -827,6 +827,7 @@ namespace RoguetechCheat
             }
         }
     }
+    /*
     [HarmonyPatch(typeof(SG_Shop_Screen))]
     [HarmonyPatch("RefreshAllMoneyListings")]
     public class
@@ -842,7 +843,6 @@ namespace RoguetechCheat
             Local.debugLog("RefreshAllMoneyListings", System.Environment.StackTrace);
         }
     }
-    /*
     [HarmonyPatch(typeof(SG_Stores_MultiPurchasePopup))]
     [HarmonyPatch("OnConfirm")]
     public class
