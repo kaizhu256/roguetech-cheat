@@ -1,6 +1,8 @@
 AmmunitionBox,Ammo_AmmunitionBox_Nuke_ArrowIV
 AmmunitionBox,Ammo_AmmunitionBox_Nuke_LongTom
 AmmunitionBox,Ammo_AmmunitionBox_Nuke_Thumper
+AmmunitionBox,Ammo_AmmunitionBox_Shaped_Sniper
+AmmunitionBox,Ammo_AmmunitionBox_Shaped_Thumper
 HeatSink,Gear_HeatSink_Prototype_Double
 HeatSink,emod_Pirate_FuelCell
 HeatSink,emod_engine_500
@@ -20,9 +22,11 @@ Upgrade,Gear_TargetingTrackingSystem_Sniper
 Upgrade,Gear_armorslots_RISC
 Upgrade,Gear_boosted_C3_Master
 Upgrade,Special_AdvancedOptics_MK3
+Upgrade,emod_armorslots_NullSignatureSystem_CLAN
 Weapon,Weapon_AMS_Advanced
 Weapon,Weapon_Artillery_ArrowIV
 Weapon,Weapon_Artillery_LONGTOM
+Weapon,Weapon_Artillery_SNIPER
 Weapon,Weapon_Artillery_THUMPER
 Weapon,Weapon_Gauss_Gauss_3-Blackwell
 Weapon,Weapon_Gauss_RAILGUN
