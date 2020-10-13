@@ -736,11 +736,13 @@ namespace RoguetechCheat
                     10 // int Weight
                 ));
             }
-            //!! Local.debugLog(
-                //!! "shopitem.csv",
-                //!! System.IO.File.ReadAllText(Local.state.getItem("shopitem.csv"))
-            //!! );
-            //!! Local.debugLog("systemshop2", obj);
+            /*
+            Local.debugLog(
+                "shopitem.csv",
+                System.IO.File.ReadAllText(Local.state.getItem("shopitem.csv"))
+            );
+            Local.debugLog("systemshop", obj);
+            */
         }
     }
     [HarmonyPatch(typeof(NaturalStringComparer))]
@@ -927,7 +929,6 @@ namespace RoguetechCheat
             Local.debugLog("shop", shop);
         }
     }
-    */
     [HarmonyPatch(typeof(SimGameState))]
     [HarmonyPatch("OnDayPassed")]
     public class
@@ -962,6 +963,7 @@ namespace RoguetechCheat
             }
         }
     }
+    */
 
     // patch - difficulty_settings
     [HarmonyPatch(typeof(SimGameDifficultySettingList))]
