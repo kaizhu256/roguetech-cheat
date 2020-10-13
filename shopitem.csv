@@ -26,6 +26,8 @@ Weapon,Weapon_Gauss_Gauss_3-Blackwell
 Weapon,Weapon_Gauss_RAILGUN
 Weapon,Weapon_Laser_AMS_CLAN_Advanced
 Weapon,Weapon_Laser_HyperLargeLaser
+Weapon,Weapon_Laser_LargeLaserERPulse_CLAN
+Weapon,Weapon_Laser_LargeLaser_Chemical_Rotary
 Weapon,Weapon_PPC_PPC_SILLY
 
 MechPart,mechdef_archer_ARC-6W
