@@ -728,7 +728,8 @@ namespace RoguetechCheat
                     ? ShopItemType.Weapon
                     : ShopItemType.None
                 );
-                if (shopItemType == ShopItemType.None) {
+                if (shopItemType == ShopItemType.None)
+                {
                     continue;
                 }
                 obj.Entries.Add(new ItemCollectionDef.Entry(
