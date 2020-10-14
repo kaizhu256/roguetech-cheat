@@ -47,6 +47,8 @@ JumpJet,RedLabmorBoostpack
 JumpJet,Special_JumpBooster_1
 JumpJet,Special_JumpBooster_2
 JumpJet,Special_JumpBooster_3
+Upgrade,Gear_Actuator_CoolingJacket
+Upgrade,Gear_Actuator_Coventry_X75-Standard
 Upgrade,Gear_Bloodhound_AP
 Upgrade,Gear_EWS_overcharged
 Upgrade,Gear_FCS_Buffered_VDNI
@@ -55,10 +57,13 @@ Upgrade,Gear_Sensor_Prototype_ActiveProbe
 Upgrade,Gear_Sensor_Prototype_ECM
 Upgrade,Gear_Sensor_Prototype_EWE
 Upgrade,Gear_TargetingTrackingSystem_Headshot
+Upgrade,Gear_TargetingTrackingSystem_MediumRange
+Upgrade,Gear_TargetingTrackingSystem_ShortRange
 Upgrade,Gear_TargetingTrackingSystem_Sniper
 Upgrade,Gear_armorslots_RISC
 Upgrade,Gear_boosted_C3_Master
 Upgrade,Special_AdvancedOptics_MK3
+Upgrade,Xenorauder_Claws_Queen
 Upgrade,emod_armorslots_NullSignatureSystem_CLAN
 Weapon,Weapon_AMS_Advanced
 Weapon,Weapon_Artillery_ArrowIV
@@ -88,9 +93,12 @@ MechPart,mechdef_savage_wolf_MCIV-PR
 MechPart,mechdef_scarecrow_UCU-F4
 MechPart,mechdef_stone_rhino_STR-4
 MechPart,mechdef_urbanmech_UM-R25
-MechPart,mechdef_urbanmech_UM-R25A
-MechPart,mechdef_urbanmech_UM-R25B
 
 MechPart,mechdef_berkut_SHX-OF
 MechPart,mechdef_screamer_SCR-1X-LAM
 MechPart,mechdef_yurei_S-YR-3LAM
+
+MechPart,mechdef_archer_ARC-4MI
+MechPart,mechdef_catapult_iii_CPLTR6
+MechPart,mechdef_hel_HBRIIPrime
+MechPart,mechdef_timber_wolf_TWRC
