@@ -44,8 +44,6 @@ JumpJet,PartialWing_LAM
 JumpJet,Quirk_JumpJet_LAM
 JumpJet,Quirk_PartialWing_LAM
 JumpJet,RedLabmorBoostpack
-JumpJet,Special_JumpBooster_1
-JumpJet,Special_JumpBooster_2
 JumpJet,Special_JumpBooster_3
 Upgrade,Gear_Actuator_CoolingJacket
 Upgrade,Gear_Actuator_Coventry_X75-Standard
@@ -53,6 +51,7 @@ Upgrade,Gear_Bloodhound_AP
 Upgrade,Gear_EWS_overcharged
 Upgrade,Gear_FCS_Buffered_VDNI
 Upgrade,Gear_Guardian_ECM
+Upgrade,Gear_PartialWing_Clan
 Upgrade,Gear_Sensor_Prototype_ActiveProbe
 Upgrade,Gear_Sensor_Prototype_ECM
 Upgrade,Gear_Sensor_Prototype_EWE
