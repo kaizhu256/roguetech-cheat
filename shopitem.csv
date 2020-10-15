@@ -47,6 +47,7 @@ JumpJet,RedLabmorBoostpack
 JumpJet,Special_JumpBooster_3
 Upgrade,Gear_Actuator_CoolingJacket
 Upgrade,Gear_Actuator_Coventry_X75-Standard
+Upgrade,Gear_Actuator_Friedhof_CompensatorPlus
 Upgrade,Gear_Bloodhound_AP
 Upgrade,Gear_EWS_overcharged
 Upgrade,Gear_FCS_Buffered_VDNI
@@ -61,6 +62,7 @@ Upgrade,Gear_TargetingTrackingSystem_ShortRange
 Upgrade,Gear_TargetingTrackingSystem_Sniper
 Upgrade,Gear_armorslots_RISC
 Upgrade,Gear_boosted_C3_Master
+Upgrade,Lootable_Actuator_CoolingJacket
 Upgrade,Special_AdvancedOptics_MK3
 Upgrade,Xenorauder_Claws_Queen
 Upgrade,emod_armorslots_NullSignatureSystem_CLAN
