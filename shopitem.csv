@@ -143,7 +143,18 @@ MechPart,mechdef_berkut_SHX-OF
 MechPart,mechdef_screamer_SCR-1X-LAM
 MechPart,mechdef_yurei_S-YR-3LAM
 
+MechPart,mechdef_Gungnir_MAD
 MechPart,mechdef_archer_ARC-4MI
 MechPart,mechdef_catapult_iii_CPLT-R6
 MechPart,mechdef_hel_HBRII-Prime
 MechPart,mechdef_timber_wolf_TW-RC
+
+MechPart,mechdef_black_lanner_BKL-Prime
+MechPart,mechdef_executioner_EXE-Prime
+MechPart,mechdef_gargoyle_GAR-PRIME
+MechPart,mechdef_ice_ferret_IFR-Prime
+MechPart,mechdef_linebacker_LBK-PRIME
+MechPart,mechdef_mad_cat_TW-S7
+MechPart,mechdef_naga_NGA-PRIME
+MechPart,mechdef_phantom_PTM-Prime
+MechPart,mechdef_warwolf_WW1-PRIME
