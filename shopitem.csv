@@ -117,6 +117,7 @@ Weapon,Weapon_Artillery_SNIPER
 Weapon,Weapon_Artillery_THUMPER
 Weapon,Weapon_Gauss_Gauss_3-Blackwell
 Weapon,Weapon_Gauss_RAILGUN
+Weapon,Weapon_LRM_LRM20_EXTENTED
 Weapon,Weapon_Laser_AMS_CLAN_Advanced
 Weapon,Weapon_Laser_HyperLargeLaser
 Weapon,Weapon_Laser_LargeLaserERPulse_CLAN
@@ -136,7 +137,6 @@ MechPart,mechdef_marauder_ii_MAD-4HB
 MechPart,mechdef_matar_SAM-RS2
 MechPart,mechdef_savage_wolf_MCIV-PR
 MechPart,mechdef_scarecrow_UCU-F4
-MechPart,mechdef_screamer_SCR-1X-LAM
 MechPart,mechdef_stone_rhino_STR-4
 MechPart,mechdef_urbanmech_UM-R25
 
@@ -144,6 +144,8 @@ MechPart,mechdef_Gungnir_MAD
 MechPart,mechdef_archer_ARC-4MI
 MechPart,mechdef_catapult_iii_CPLT-R6
 MechPart,mechdef_hel_HBRII-Prime
+MechPart,mechdef_mad_cat_TW-S7
+MechPart,mechdef_screamer_SCR-1X-LAM
 MechPart,mechdef_timber_wolf_TW-RC
 
 MechPart,mechdef_black_lanner_BKL-Prime
@@ -151,7 +153,7 @@ MechPart,mechdef_executioner_EXE-Prime
 MechPart,mechdef_gargoyle_GAR-PRIME
 MechPart,mechdef_ice_ferret_IFR-Prime
 MechPart,mechdef_linebacker_LBK-PRIME
-MechPart,mechdef_mad_cat_TW-S7
 MechPart,mechdef_naga_NGA-PRIME
 MechPart,mechdef_phantom_PTM-Prime
+MechPart,mechdef_timber_wolf_TW-Prime
 MechPart,mechdef_warwolf_WW1-PRIME
