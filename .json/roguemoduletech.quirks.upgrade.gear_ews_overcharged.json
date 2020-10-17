@@ -3,6 +3,32 @@
  "AllowedLocations": "All",
  "Auras": [
   {
+   "AllyStealthAffection": "None",
+   "ApplySelf": true,
+   "EnemyStealthAffection": "None",
+   "HideOnNotSelected": true,
+   "Id": "MINEDETECTIONAURA",
+   "IsNegativeToEnemy": false,
+   "IsPositiveToAlly": false,
+   "LineType": "Dots",
+   "MinefieldDetector": true,
+   "Name": "Minesweeper",
+   "Range": 180,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "white",
+   "State": "Persistent",
+   "isSpining": false,
+   "ownerSFX": [],
+   "ownerVFX": [],
+   "removeOwnerSFX": [],
+   "removeOwnerVFX": [],
+   "removeTargetSFX": [],
+   "removeTargetVFX": [],
+   "statusEffects": [],
+   "targetSFX": [],
+   "targetVFX": []
+  },
+  {
    "AllyStealthAffection": "PositiveOne",
    "ApplySelf": true,
    "EnemyStealthAffection": "None",
@@ -204,7 +230,8 @@
     "Jammer: 4, 320",
     "IsProbe: 3",
     "AdvancedSensors: 3",
-    "UAV: 310, 2, 15"
+    "UAV: 310, 2, 15",
+    "DetectMine: 180"
    ]
   },
   "Category": [
@@ -463,6 +490,36 @@
    "targetingData": {
     "effectTargetType": "Creator",
     "effectTriggerType": "Passive"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Detects Minefields",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "MineFieldDetection",
+    "Name": "Active Probe (Passive)"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1",
+    "operation": "Float_Add",
+    "statName": "MinefieldDetection"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
    }
   }
  ]

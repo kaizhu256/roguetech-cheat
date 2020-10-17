@@ -1,6 +1,34 @@
 {
  "AbsoluteModifier": 0,
  "AllowedLocations": "All",
+ "Auras": [
+  {
+   "AllyStealthAffection": "None",
+   "ApplySelf": true,
+   "EnemyStealthAffection": "None",
+   "HideOnNotSelected": true,
+   "Id": "MINEDETECTIONAURA",
+   "IsNegativeToEnemy": false,
+   "IsPositiveToAlly": false,
+   "LineType": "Dots",
+   "MinefieldDetector": true,
+   "Name": "Minesweeper",
+   "Range": 90,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "white",
+   "State": "Persistent",
+   "isSpining": false,
+   "ownerSFX": [],
+   "ownerVFX": [],
+   "removeOwnerSFX": [],
+   "removeOwnerVFX": [],
+   "removeTargetSFX": [],
+   "removeTargetVFX": [],
+   "statusEffects": [],
+   "targetSFX": [],
+   "targetVFX": []
+  }
+ ],
  "BattleValue": 20,
  "BonusValueA": "+1 Health/Resolve.",
  "BonusValueB": "+20% Sensors/Sight",
@@ -20,7 +48,7 @@
     "Sight: +20%",
     "IsProbe: 1",
     "AdvancedSensors: 2",
-    "DetectMine"
+    "DetectMine: 90"
    ]
   },
   "Category": [

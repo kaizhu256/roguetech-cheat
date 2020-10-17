@@ -4,6 +4,32 @@
  "Auras": [
   {
    "AllyStealthAffection": "None",
+   "ApplySelf": true,
+   "EnemyStealthAffection": "None",
+   "HideOnNotSelected": true,
+   "Id": "MINEDETECTIONAURA",
+   "IsNegativeToEnemy": false,
+   "IsPositiveToAlly": false,
+   "LineType": "Dots",
+   "MinefieldDetector": true,
+   "Name": "Minesweeper",
+   "Range": 150,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "white",
+   "State": "Persistent",
+   "isSpining": false,
+   "ownerSFX": [],
+   "ownerVFX": [],
+   "removeOwnerSFX": [],
+   "removeOwnerVFX": [],
+   "removeTargetSFX": [],
+   "removeTargetVFX": [],
+   "statusEffects": [],
+   "targetSFX": [],
+   "targetVFX": []
+  },
+  {
+   "AllyStealthAffection": "None",
    "ApplySelf": false,
    "EnemyStealthAffection": "NegativeOne",
    "Id": "Gear_C3owens",
@@ -165,7 +191,7 @@
     "C3LanceSensors: +6%, 240",
     "C3LanceSight: +10%, 240",
     "C3: 1, 240",
-    "DetectMine",
+    "DetectMine: 150",
     "Sharer"
    ]
   },

@@ -371,17 +371,6 @@
    "prefabName": null
   },
   {
-   "ComponentDefID": "Gear_Cockpit_LifeSupportA_Standard",
-   "ComponentDefType": "Upgrade",
-   "DamageLevel": "Functional",
-   "GUID": null,
-   "HardpointSlot": -1,
-   "MountedLocation": "Head",
-   "SimGameUID": "",
-   "hasPrefabName": false,
-   "prefabName": null
-  },
-  {
    "ComponentDefID": "Gear_Sensors_Generic_Standard",
    "ComponentDefType": "Upgrade",
    "DamageLevel": "Functional",

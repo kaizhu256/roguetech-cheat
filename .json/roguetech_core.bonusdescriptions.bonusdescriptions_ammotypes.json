@@ -8,7 +8,7 @@
   },
   {
    "Bonus": "DetectMine",
-   "Full": "Allows to detect Minefields",
+   "Full": "Allows to detect Minefields in {0}m Radius. White dotted Circle.",
    "Long": "Detect",
    "Short": "Detect"
   },

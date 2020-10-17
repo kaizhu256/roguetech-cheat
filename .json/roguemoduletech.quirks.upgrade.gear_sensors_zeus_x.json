@@ -1,6 +1,34 @@
 {
  "AbsoluteModifier": 0,
  "AllowedLocations": "Head",
+ "Auras": [
+  {
+   "AllyStealthAffection": "None",
+   "ApplySelf": true,
+   "EnemyStealthAffection": "None",
+   "HideOnNotSelected": true,
+   "Id": "MINEDETECTIONAURA",
+   "IsNegativeToEnemy": false,
+   "IsPositiveToAlly": false,
+   "LineType": "Dots",
+   "MinefieldDetector": true,
+   "Name": "Minesweeper",
+   "Range": 150,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "white",
+   "State": "Persistent",
+   "isSpining": false,
+   "ownerSFX": [],
+   "ownerVFX": [],
+   "removeOwnerSFX": [],
+   "removeOwnerVFX": [],
+   "removeTargetSFX": [],
+   "removeTargetVFX": [],
+   "statusEffects": [],
+   "targetSFX": [],
+   "targetVFX": []
+  }
+ ],
  "BattleValue": 0,
  "BonusValueA": "Breaching Shot",
  "BonusValueB": "",
@@ -22,6 +50,7 @@
     "AllLanceSight: +5%",
     "Tacticon: +1",
     "AdvancedSensors: 2",
+    "DetectMine: 150",
     "Sharer"
    ]
   },
@@ -214,6 +243,36 @@
     "modValue": "true",
     "operation": "Set",
     "statName": "LV_SHARES_VISION"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Detects Minefields",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "MineFieldDetection",
+    "Name": "Active Probe (Passive)"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1",
+    "operation": "Float_Add",
+    "statName": "MinefieldDetection"
    },
    "targetingData": {
     "effectTargetType": "Creator",

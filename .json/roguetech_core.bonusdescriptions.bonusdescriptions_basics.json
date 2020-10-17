@@ -1,6 +1,24 @@
 {
  "Settings": [
   {
+   "Bonus": "AmmoCost",
+   "Full": "{0} Cbills Cost per Shot",
+   "Long": "{0} Cbills",
+   "Short": "{0} Cbills"
+  },
+  {
+   "Bonus": "CoolantCost",
+   "Full": "{0} Cbills Coolant Cost",
+   "Long": "{0} Coolant",
+   "Short": "{0} Coolant"
+  },
+  {
+   "Bonus": "CoolantCostMulti",
+   "Full": "{0} Cbills Coolant Cost Multiplier",
+   "Long": "{0} CoolMulti",
+   "Short": "{0} CoolMulti"
+  },
+  {
    "Bonus": "EngineWeight",
    "Full": "{0} engine weight factor change",
    "Long": "{0} Engine Weight",

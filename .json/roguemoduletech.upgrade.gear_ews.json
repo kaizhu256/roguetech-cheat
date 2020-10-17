@@ -3,6 +3,32 @@
  "AllowedLocations": "All",
  "Auras": [
   {
+   "AllyStealthAffection": "None",
+   "ApplySelf": true,
+   "EnemyStealthAffection": "None",
+   "HideOnNotSelected": true,
+   "Id": "MINEDETECTIONAURA",
+   "IsNegativeToEnemy": false,
+   "IsPositiveToAlly": false,
+   "LineType": "Dots",
+   "MinefieldDetector": true,
+   "Name": "Minesweeper",
+   "Range": 120,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "white",
+   "State": "Persistent",
+   "isSpining": false,
+   "ownerSFX": [],
+   "ownerVFX": [],
+   "removeOwnerSFX": [],
+   "removeOwnerVFX": [],
+   "removeTargetSFX": [],
+   "removeTargetVFX": [],
+   "statusEffects": [],
+   "targetSFX": [],
+   "targetVFX": []
+  },
+  {
    "AllyStealthAffection": "PositiveTwo",
    "ApplySelf": true,
    "EnemyStealthAffection": "None",
@@ -387,7 +413,8 @@
     "ECCMMode",
     "ECCMStrength: 3, 190",
     "ECCMFriendly: 2, 260",
-    "UAV: 310, 2, 15"
+    "UAV: 310, 2, 15",
+    "DetectMine: 120"
    ]
   },
   "Category": [

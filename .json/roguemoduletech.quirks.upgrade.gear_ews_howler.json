@@ -3,6 +3,32 @@
  "AllowedLocations": "Head",
  "Auras": [
   {
+   "AllyStealthAffection": "None",
+   "ApplySelf": true,
+   "EnemyStealthAffection": "None",
+   "HideOnNotSelected": true,
+   "Id": "MINEDETECTIONAURA",
+   "IsNegativeToEnemy": false,
+   "IsPositiveToAlly": false,
+   "LineType": "Dots",
+   "MinefieldDetector": true,
+   "Name": "Minesweeper",
+   "Range": 90,
+   "RemoveOnSensorLock": false,
+   "ReticleColor": "white",
+   "State": "Persistent",
+   "isSpining": false,
+   "ownerSFX": [],
+   "ownerVFX": [],
+   "removeOwnerSFX": [],
+   "removeOwnerVFX": [],
+   "removeTargetSFX": [],
+   "removeTargetVFX": [],
+   "statusEffects": [],
+   "targetSFX": [],
+   "targetVFX": []
+  },
+  {
    "AllyStealthAffection": "PositiveOne",
    "ApplySelf": true,
    "EnemyStealthAffection": "None",
@@ -192,7 +218,8 @@
     "Jammer: 2, 160",
     "IsProbe: 1",
     "AdvancedSensors: 1",
-    "CockpitEWS"
+    "CockpitEWS",
+    "DetectMine: 90"
    ]
   },
   "Category": [
@@ -297,6 +324,36 @@
     "modValue": "1",
     "operation": "Int_Add",
     "statName": "LV_ADVANCED_SENSORS"
+   },
+   "targetingData": {
+    "effectTargetType": "Creator",
+    "effectTriggerType": "Passive",
+    "forcePathRebuild": false,
+    "forceVisRebuild": true,
+    "range": 0,
+    "showInStatusPanel": false,
+    "showInTargetPreview": false,
+    "specialRules": "NotSet"
+   }
+  },
+  {
+   "Description": {
+    "Details": "Detects Minefields",
+    "Icon": "uixSvgIcon_status_ECM-ghost",
+    "Id": "MineFieldDetection",
+    "Name": "Active Probe (Passive)"
+   },
+   "durationData": {
+    "duration": -1,
+    "stackLimit": -1
+   },
+   "effectType": "StatisticEffect",
+   "nature": "Buff",
+   "statisticData": {
+    "modType": "System.Single",
+    "modValue": "1",
+    "operation": "Float_Add",
+    "statName": "MinefieldDetection"
    },
    "targetingData": {
     "effectTargetType": "Creator",
