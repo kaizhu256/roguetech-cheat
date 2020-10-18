@@ -60,6 +60,7 @@ Upgrade,Gear_Bloodhound_AP
 Upgrade,Gear_EWS_overcharged
 Upgrade,Gear_FCS_Buffered_VDNI
 Upgrade,Gear_Guardian_ECM
+Upgrade,Gear_Gyro_Hermes_Equilibrium
 Upgrade,Gear_PartialWing_Clan
 Upgrade,Gear_Sensor_Prototype_ActiveProbe
 Upgrade,Gear_Sensor_Prototype_ECM
@@ -110,6 +111,8 @@ Upgrade,Lootable_Actuator_CoolingJacket
 Upgrade,Special_AdvancedOptics_MK3
 Upgrade,Xenorauder_Claws_Queen
 Upgrade,emod_armorslots_NullSignatureSystem_CLAN
+Upgrade,lootable_ChameleonLightPolarizationShield
+Upgrade,lootable_Gyro_Coventry_Dreadnought
 Weapon,Weapon_AMS_Advanced
 Weapon,Weapon_Artillery_ArrowIV
 Weapon,Weapon_Artillery_LONGTOM
