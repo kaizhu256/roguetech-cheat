@@ -827,6 +827,7 @@ ORDER BY COALESCE(chassis1.rowid, 9999), mech1.rowid;
                     + "damage,\n"
                     + "damage2,\n"
                     + "heatgenerated,\n"
+                    + "rangesplit,\n"
                     + "aura2_ams,\n"
                     + "aura2_c3,\n"
                     + "aura2_c3i,\n"
