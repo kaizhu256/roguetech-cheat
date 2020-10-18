@@ -1,5 +1,6 @@
 HeatSink,Gear_EmergencyCoolant_6
 JumpJet,Gear_Articulated_Generic_Standard
+JumpJet,Gear_JumpJet_Vectored_Thrust_Kit
 JumpJet,Gear_LegJet_Standard_Lower
 JumpJet,Gear_LegJet_Standard_Upper
 JumpJet,RedLabmorBoostpack
@@ -15,6 +16,7 @@ Upgrade,Gear_Gyro_Friedhof_Sparrow,defense++
 Upgrade,Gear_PartialWing_Clan
 Upgrade,Gear_Sensors_Recon_Clan
 Upgrade,Gear_TargetingTrackingSystem_Evasion,tracking
+Upgrade,Gear_TargetingTrackingSystem_Gunnery
 Upgrade,Gear_TargetingTrackingSystem_Hartford_S2000,missile
 Upgrade,Gear_TargetingTrackingSystem_Headshot
 Upgrade,Gear_TargetingTrackingSystem_Kallon_HardLock,ballistic
